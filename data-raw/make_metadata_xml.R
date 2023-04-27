@@ -6,9 +6,9 @@ library(EML)
 datatable_metadata <-
   dplyr::tibble(filepath = c("data/environmental.csv",
                              "data/catch.csv",
-                             "data/mark_existing.csv",
+                             "data/markexisting.csv",
                              "data/release.csv",
-                             "data/release_fish.csv",
+                             "data/releasefish.csv",
                              "data/trap.csv"),
                 attribute_info = c("data-raw/metadata/camp_environmental_metadata.xlsx",
                                    "data-raw/metadata/camp_catch_metadata.xlsx",
@@ -55,17 +55,17 @@ dataset <- list() %>%
   add_datatable(datatable_metadata)
 
 # GO through and check on all units
-# custom_units <- data.frame(id = c("number of fish", "rotations per minute", "rotations", "nephelometric turbidity units", "day"),
-#                            unitType = c("density", "dimensionless", "dimensionless", "dimensionless", "dimensionless"),
-#                            parentSI = c(NA, NA, NA, NA, NA),
-#                            multiplierToSI = c(NA, NA, NA, NA, NA),
-#                            description = c("Fish density in the enclosure, number of fish in total enclosure space",
-#                                            "Number of trap rotations in one minute",
-#                                            "Total rotations",
-#                                            "Nephelometric turbidity units, common unit for measuring turbidity",
-#                                            "The day sampling occured"))
+custom_units <- data.frame(id = c("count of fish", "see unit column", "day", "number of rotations", "revolutions per minute"),
+                           unitType = c("dimensionless", "dimensionless", "dimensionless", "dimensionless", "dimensionless"),
+                           parentSI = c(NA, NA, NA, NA, NA),
+                           multiplierToSI = c(NA, NA, NA, NA, NA),
+                           description = c("Count of fish",
+                                           "UnitID column will have unit information",
+                                           "Number of days",
+                                           "Total rotations",
+                                           "Number of revolutions per minute"))
 
-# unitList <- EML::set_unitList(custom_units)
+unitList <- EML::set_unitList(custom_units)
 
 eml <- list(packageId = edi_number,
             system = "EDI",

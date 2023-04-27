@@ -5,6 +5,7 @@ library(googleCloudStorageR)
 library(Hmisc)
 
 # metadata notes
+# TODO need to fill out project metadata excel
 # TODO overall: do we want characters or codes in the clean data files?
 # TODO overall: and do we want to list levels in the definition? way more for KNL than for others
 # TODO catch metadata table has all taxon ID codes listed in definitions - keep?
