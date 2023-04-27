@@ -7,6 +7,8 @@ library(Hmisc)
 
 # read in db --------------------------------------------------------------
 
+# TODO do we want to upload the .mdb to google cloud and then pull in here,
+# save to disk, and then read?
 mdb.get(here::here("data-raw", "CAMP.mdb"), tables = TRUE)
 
 catch_raw <- mdb.get(here::here("data-raw", "CAMP.mdb"), "CatchRaw") |>
