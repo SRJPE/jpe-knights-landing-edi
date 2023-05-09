@@ -5,6 +5,10 @@
       <principal>public</principal>
       <permission>read</permission>
     </allow>
+    <allow>
+      <principal>cvpia</principal>
+      <permission>write</permission>
+    </allow>
   </access>
   <dataset>
     <shortName>Knights Landing RST</shortName>
@@ -26,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2022-10-21</pubDate>
+    <pubDate>2023-05-09</pubDate>
     <abstract>
       <para>
     Abstract here!
@@ -52,13 +56,29 @@
       <identifier>CC0-1.0</identifier>
     </licensed>
     <coverage>
-      <geographicCoverage/>
+      <geographicCoverage>
+        <geographicDescription>Knights Landing Rotary Screw Trap</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-121.6988</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.6988</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.8023</northBoundingCoordinate>
+          <southBoundingCoordinate>38.8023</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
       <temporalCoverage>
-        <rangeOfDates/>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2006-10-02</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2022-05-18</calendarDate>
+          </endDate>
+        </rangeOfDates>
       </temporalCoverage>
     </coverage>
     <maintenance>
       <description>ongoing</description>
+      <maintenanceUpdateFrequency>annually</maintenanceUpdateFrequency>
     </maintenance>
     <contact>
       <individualName>
@@ -119,7 +139,11 @@
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
           <measurementScale>
             <nominal>
-              <nonNumericDomain/>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP ProjectDescription table</definition>
+                </textDomain>
+              </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
@@ -157,11 +181,14 @@
           <attributeDefinition>Instantaneous stream discharge measurement</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>see unit column</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">32.9</minimum>
+                  <maximum exclusive="false">28700</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -227,11 +254,14 @@
           <attributeDefinition>Instantaneous water velocity measured</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>see unit column</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">5431</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -281,11 +311,14 @@
           <attributeDefinition>Instantaneous water temperature measured</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>see unit column</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">6.9</minimum>
+                  <maximum exclusive="false">78</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -355,11 +388,14 @@
           <attributeDefinition>Instantaneous light penetration measured</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>see unit column</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0.2</minimum>
+                  <maximum exclusive="false">214</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -393,16 +429,9 @@
           <measurementScale>
             <nominal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>25</code>
-                    <definition>Secchi disk</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Code for the sample gear used</definition>
+                </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
@@ -413,11 +442,14 @@
           <attributeDefinition>Instantaneous turbidity measurement</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>see unit column</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0.42</minimum>
+                  <maximum exclusive="false">1513</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -482,8 +514,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
+                  <maximum exclusive="false">2022-05-18 02:30:25</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -498,8 +530,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
+                  <maximum exclusive="false">2022-05-18 02:30:25</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -933,7 +965,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>5798</numberOfRecords>
+      <numberOfRecords>6035</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>catch.csv</entityName>
@@ -1780,13 +1812,13 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>millimeters</customUnit>
+                <standardUnit>millimeter</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">991</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1794,18 +1826,18 @@
         </attribute>
         <attribute>
           <attributeName>totalLength</attributeName>
-          <attributeLabel>catcg</attributeLabel>
+          <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Total length of the fish measured in millimeters</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>millimeters</customUnit>
+                <standardUnit>millimeter</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">905</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1818,13 +1850,13 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>grams</customUnit>
+                <standardUnit>gram</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1004</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1836,11 +1868,14 @@
           <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">15105</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1990,8 +2025,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
+                  <maximum exclusive="false">2022-05-18 02:30:56</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -2006,8 +2041,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2022-05-18 09:30:56</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -2441,13 +2476,13 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>139787</numberOfRecords>
+      <numberOfRecords>147128</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>mark_existing.csv</entityName>
+      <entityName>markexisting.csv</entityName>
       <entityDescription>Existing marks on catch</entityDescription>
       <physical>
-        <objectName>mark_existing.csv</objectName>
+        <objectName>markexisting.csv</objectName>
         <size unit="bytes">14</size>
         <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
@@ -2854,7 +2889,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>140335</numberOfRecords>
+      <numberOfRecords>147676</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>release.csv</entityName>
@@ -3530,7 +3565,102 @@
           <attributeDefinition>Site where fish used for release were from</attributeDefinition>
           <measurementScale>
             <nominal>
-              <nonNumericDomain/>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>3000</code>
+                    <definition>Eye Riffle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44000</code>
+                    <definition>Eye riffle_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52000</code>
+                    <definition>Gateway Riffle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>51000</code>
+                    <definition>Gateway_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5000</code>
+                    <definition>Herringer Riffle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46000</code>
+                    <definition>Herringer_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4000</code>
+                    <definition>Live Oak</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>45000</code>
+                    <definition>Live Oak_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>252</code>
+                    <definition>Not applicable</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>251</code>
+                    <definition>Not recorded</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>255</code>
+                    <definition>Not yet assigned</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>53000</code>
+                    <definition>Reserved # 1 Feather River Program</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>54000</code>
+                    <definition>Reserved # 2 Feather River Program</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>55000</code>
+                    <definition>Reserved # 3 Feather River Program</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>56000</code>
+                    <definition>Reserved # 4 Feather River Program</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>50000</code>
+                    <definition>Shawn_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7000</code>
+                    <definition>Shawn's Beach</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2000</code>
+                    <definition>Steep Riffle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>43000</code>
+                    <definition>Steep Riffle_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6000</code>
+                    <definition>Sunset Pumps</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>47000</code>
+                    <definition>Sunset_release site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>90000</code>
+                    <definition>Test Release Site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>253</code>
+                    <definition>Unknown</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
@@ -3906,11 +4036,14 @@
           <attributeDefinition>Number of fish that died while being handled and marked</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">407</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -3922,11 +4055,14 @@
           <attributeDefinition>Number of fish that died after being marked and before released</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">46</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -3938,11 +4074,14 @@
           <attributeDefinition>Number of fish released that were alive with mark intact</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">81</minimum>
+                  <maximum exclusive="false">7180</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -3957,8 +4096,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-12-18 05:15:50</minimum>
+                  <maximum exclusive="false">2022-04-15 02:45:20</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -4028,13 +4167,13 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>days</customUnit>
+                <customUnit>day</customUnit>
               </unit>
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">136</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4397,19 +4536,23 @@
           <attributeLabel>release</attributeLabel>
           <attributeDefinition>Code for mark/tag applied to release group</attributeDefinition>
           <measurementScale>
-            <nominal>
-              <nonNumericDomain/>
-            </nominal>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for mark/tag applied to release group</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>91</numberOfRecords>
+      <numberOfRecords>100</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>release_fish.csv</entityName>
+      <entityName>releasefish.csv</entityName>
       <entityDescription>Release fish measurements</entityDescription>
       <physical>
-        <objectName>release_fish.csv</objectName>
+        <objectName>releasefish.csv</objectName>
         <size unit="bytes">14</size>
         <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
@@ -4480,11 +4623,14 @@
           <attributeDefinition>Number of fish marked that weight/length measurements apply to</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">3</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4497,13 +4643,13 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>milimeters</customUnit>
+                <standardUnit>millimeter</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">41</minimum>
+                  <maximum exclusive="false">191</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4516,20 +4662,20 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>grams</customUnit>
+                <standardUnit>gram</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">40</minimum>
+                  <maximum exclusive="false">58</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>2465</numberOfRecords>
+      <numberOfRecords>2560</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>trap.csv</entityName>
@@ -4557,11 +4703,15 @@
       <attributeList>
         <attribute>
           <attributeName>projectDescriptionID</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
           <measurementScale>
             <nominal>
-              <nonNumericDomain/>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP ProjectDescription table</definition>
+                </textDomain>
+              </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
@@ -4691,9 +4841,256 @@
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for position of trap within the site</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>2001</code>
+                    <definition>#Steep Riffle_RST</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44018</code>
+                    <definition>Below Weir Riffle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44007</code>
+                    <definition>Eye Pool Left &amp; Right RM 60.5</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44017</code>
+                    <definition>Eye Pool Left RM 60.5</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44016</code>
+                    <definition>Eye Pool Right RM60.5</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44013</code>
+                    <definition>Eye Pool RM 60.5</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3001</code>
+                    <definition>Eye riffle_north</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3002</code>
+                    <definition>Eye riffle_Side Channel</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52003</code>
+                    <definition>Gateway Main 400' Up River</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>51002</code>
+                    <definition>Gateway release boxes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>51003</code>
+                    <definition>Gateway release_RL &amp; RR</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52001</code>
+                    <definition>Gateway_main1</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52002</code>
+                    <definition>Gateway_Rootball</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52004</code>
+                    <definition>Gateway_Rootball_River_Left</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>90001</code>
+                    <definition>Gray's Beach</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46003</code>
+                    <definition>half mile above trap RM</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46001</code>
+                    <definition>Herringer Release boxes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46004</code>
+                    <definition>Herringer release_ RL &amp; RR</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5001</code>
+                    <definition>Herringer_east</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5003</code>
+                    <definition>Herringer_Upper_west</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5002</code>
+                    <definition>Herringer_west</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4001</code>
+                    <definition>Live Oak</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4002</code>
+                    <definition>Live Oak_west</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44010</code>
+                    <definition>Lower Robinson RM 61.4</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>51001</code>
+                    <definition>next to Gateway release boxes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46002</code>
+                    <definition>next to Herringer Release boxes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>43000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>45000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>47000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>50000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>51000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>53000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>54000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>55000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>56000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>90000</code>
+                    <definition>Not applicable (n/a)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44001</code>
+                    <definition>Release at river left</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44003</code>
+                    <definition>Release river left and right</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44002</code>
+                    <definition>Release river middle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44004</code>
+                    <definition>Release river right</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>47002</code>
+                    <definition>release_100m above falls</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>47001</code>
+                    <definition>release_below falls</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44009</code>
+                    <definition>Robinson Main RM 61.6</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44006</code>
+                    <definition>Robinson Side &amp; Main RM 61.6</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44008</code>
+                    <definition>Robinson Side RM 61.6</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7002</code>
+                    <definition>Shawns_east</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7003</code>
+                    <definition>Shawns_west</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44012</code>
+                    <definition>Steep Pool Left Middle Right RM 60.9</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44014</code>
+                    <definition>Steep Pool Left RM 60.9</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44011</code>
+                    <definition>Steep Pool Right &amp; Left RM 60.9</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44015</code>
+                    <definition>Steep Pool Right RM 60.9</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44005</code>
+                    <definition>Steep Pool RM 60.9</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>43001</code>
+                    <definition>Steep release_RR &amp; RL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2004</code>
+                    <definition>Steep Riffle_10' ext</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2003</code>
+                    <definition>Steep Riffle_100' below</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2002</code>
+                    <definition>Steep Riffle_Opposite RST</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2005</code>
+                    <definition>Steep Side Channel</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6002</code>
+                    <definition>Sunset East bank</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6003</code>
+                    <definition>Sunset West bank</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
             </ordinal>
           </measurementScale>
@@ -4707,8 +5104,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
+                  <maximum exclusive="false">2022-05-18 02:30:56</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -4723,8 +5120,8 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
+                  <maximum exclusive="false">2022-05-18 02:30:56</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -4740,27 +5137,35 @@
                 <enumeratedDomain>
                   <codeDefinition>
                     <code>1</code>
-                    <definition>Start trap and begin trapping [Used when trap had not been operating, or when it is moved or reconfigured. Defines the&#13;beginning of a sampling period. Fish are never processed during this type of visit.]</definition>
+                    <definition>Start trap and begin trapping [Used when trap had not been operating, or when it is moved or reconfigured. Defines the&#13;
+beginning of a sampling period. Fish are never processed during this type of visit.]</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>2</code>
-                    <definition>Continue trapping in same position and configuration without interruption [Used when there is no break in trap operations.&#13;Defines the break between two sampling periods. Fish are usually processed during this type of visit.]</definition>
+                    <definition>Continue trapping in same position and configuration without interruption [Used when there is no break in trap operations.&#13;
+Defines the break between two sampling periods. Fish are usually processed during this type of visit.]</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>3</code>
-                    <definition>Unplanned restart of trap after malfunction (in same position and configuration) [Used when the trap had stopped&#13;operating. Defines the break between two sampling periods. Fish are usually processed during this type of visit.]</definition>
+                    <definition>Unplanned restart of trap after malfunction (in same position and configuration) [Used when the trap had stopped&#13;
+operating. Defines the break between two sampling periods. Fish are usually processed during this type of visit.]</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>4</code>
-                    <definition>End trapping in current position or configuration [Used when trap is moved or stopped. Defines the end of a sampling&#13;period. Fish are usually processed during this type of visit.]</definition>
+                    <definition>End trapping in current position or configuration [Used when trap is moved or stopped. Defines the end of a sampling&#13;
+period. Fish are usually processed during this type of visit.]</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>5</code>
-                    <definition>"Drive by" [Trap is scanned to ensure it is functioning, but fish are not processed and trap is not adjusted. Environmental&#13;measures may be taken. If a "drive by" results in fish being sampled or trap being serviced, then use an alternative code as&#13;appropriate. Does not define the beginning or end of a sampling period.]</definition>
+                    <definition>"Drive by" [Trap is scanned to ensure it is functioning, but fish are not processed and trap is not adjusted. Environmental&#13;
+measures may be taken. If a "drive by" results in fish being sampled or trap being serviced, then use an alternative code as&#13;
+appropriate. Does not define the beginning or end of a sampling period.]</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>6</code>
-                    <definition>Service / adjust / clean trap [Adjustment is made to trap during a sampling period, such as returning it to desired sampling&#13;position or removing debris. Does not define the beginning or end of a sampling period. Fish are not processed during this&#13;type of visit.]</definition>
+                    <definition>Service / adjust / clean trap [Adjustment is made to trap during a sampling period, such as returning it to desired sampling&#13;
+position or removing debris. Does not define the beginning or end of a sampling period. Fish are not processed during this&#13;
+type of visit.]</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>251</code>
@@ -4878,8 +5283,8 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">18326</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4897,8 +5302,8 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">32404</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4916,8 +5321,8 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">5</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4928,18 +5333,18 @@
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Number of seconds in the rpm measurement before cleaning trap (normally this will be 60)</attributeDefinition>
           <measurementScale>
-            <interval>
+            <ratio>
               <unit>
-                <customUnit>seconds</customUnit>
+                <standardUnit>second</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">60</maximum>
                 </bounds>
               </numericDomain>
-            </interval>
+            </ratio>
           </measurementScale>
         </attribute>
         <attribute>
@@ -4954,8 +5359,8 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">5</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -4966,18 +5371,18 @@
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Number of seconds in the rpm measurement after cleaning trap (normally this will be 60)</attributeDefinition>
           <measurementScale>
-            <interval>
+            <ratio>
               <unit>
-                <customUnit>seconds</customUnit>
+                <standardUnit>second</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">60</maximum>
                 </bounds>
               </numericDomain>
-            </interval>
+            </ratio>
           </measurementScale>
         </attribute>
         <attribute>
@@ -5085,11 +5490,14 @@
           <attributeDefinition>Volume of debris removed from trap live box</attributeDefinition>
           <measurementScale>
             <ratio>
+              <unit>
+                <customUnit>see unit column</customUnit>
+              </unit>
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false"/>
-                  <maximum exclusive="false"/>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">0</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -5110,7 +5518,28 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>6708</numberOfRecords>
+      <numberOfRecords>7177</numberOfRecords>
     </dataTable>
   </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="count of fish" name="count of fish" unitType="dimensionless">
+          <description>Count of fish</description>
+        </unit>
+        <unit id="see unit column" name="see unit column" unitType="dimensionless">
+          <description>UnitID column will have unit information</description>
+        </unit>
+        <unit id="day" name="day" unitType="dimensionless">
+          <description>Number of days</description>
+        </unit>
+        <unit id="number of rotations" name="number of rotations" unitType="dimensionless">
+          <description>Total rotations</description>
+        </unit>
+        <unit id="revolutions per minute" name="revolutions per minute" unitType="dimensionless">
+          <description>Number of revolutions per minute</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
 </eml:eml>
