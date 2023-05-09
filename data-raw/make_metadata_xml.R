@@ -70,12 +70,12 @@ unitList <- EML::set_unitList(custom_units)
 eml <- list(packageId = edi_number,
             system = "EDI",
             access = add_access(),
-            dataset = dataset
-            # additionalMetadata = list(metadata = list(unitList = unitList))
+            dataset = dataset,
+            additionalMetadata = list(metadata = list(unitList = unitList))
 )
 
 EML::write_eml(eml, "edi.1243.1.xml")
-#EML::eml_validate("edi.1243.1.xml")
+EML::eml_validate("edi.1243.1.xml")
 
 # EMLaide::evaluate_edi_package(Sys.getenv("user_ID"), Sys.getenv("password"), "edi.1047.1.xml")
 # EMLaide::upload_edi_package(Sys.getenv("user_ID"), Sys.getenv("password"), "edi.1047.1.xml")
