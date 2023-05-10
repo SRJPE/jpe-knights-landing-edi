@@ -5,14 +5,8 @@ library(googleCloudStorageR)
 library(Hmisc)
 
 # metadata notes
-# TODO need to fill out project metadata excel
-# TODO overall: do we want characters or codes in the clean data files?
+# TODO overall: do we want characters or codes in the clean data file - i.e. join with LU tables?
 # TODO overall: and do we want to list levels in the definition? way more for KNL than for others
-# TODO catch metadata table has all taxon ID codes listed in definitions - keep?
-# TODO trap metadata has all code definitions in definitions (siteID, halfConeID, etc.) - keep?
-# TODO release metadata has all taxon ID in definitions
-# TODO environmental metadata has all code IDs in definitions
-# TODO markexisting metadata has all code IDs in definitions
 # read in db --------------------------------------------------------------
 
 # TODO do we want to upload the .mdb to google cloud and then pull in here,
@@ -66,9 +60,7 @@ trap <- trap_raw |>
 
 # TODO do we want to keep mortID?
 # TODO do we want to keep actualCountID?
-# TODO do we want to use lookup tables to get character values for mortID,
-# fishOriginID, finalRunMethodID, finalRunID, atCaptureRunID, atCaptureRunMethodID,
-# lifestageID?
+
 catch <- catch_raw |>
   select(projectDescriptionID, catchRawID, trapVisitID, taxonID, atCaptureRunID,
          atCaptureRunMethodID, finalRunID, finalRunMethodID, fishOriginID,
@@ -81,8 +73,6 @@ catch <- catch_raw |>
   relocate(releaseID, .before = taxonID) |>
   glimpse()
 
-# TODO same question as catch - which IDs do we want character values for (i.e. pull in lookup tables),
-# and which are ok to leave as IDs?
 # TODO appliedMarkCode is empty right now
 # TODO keep nMortAtCheck and nMortWhileHandling?
 release <- release_raw |>
