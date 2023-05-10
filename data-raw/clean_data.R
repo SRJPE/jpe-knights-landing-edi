@@ -33,6 +33,96 @@ subsite_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "SubSite") |>
   select(subSiteName, subSiteID, siteID) |>
   filter(subSiteName != "N/A") |>
   glimpse()
+active_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luActive") |>
+  glimpse()
+bodypart_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luBodyPart") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+color_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luColor") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+cone_debris_vol_cat_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luConeDebrisVolumeCat") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+debris_vol_cat_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luDebrisVolumeCat") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+fish_origin_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luFishOrigin") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+lifestage_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luLifeStage") |>
+  filter(activeID != 2) |>
+  select(-c(activeID, lifeStageCAMPID)) |>
+  glimpse()
+lightcondition_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luLightCondition") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+marktype_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luMarkType") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+marktype_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luMarkType") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+noyes_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luNoYes") |>
+  glimpse()
+release_purpose_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luReleasePurpose") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+run_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luRun") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+run_method_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luRunMethod") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+sample_gear_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luSampleGear") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+specimen_type_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luSpecimenType") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+subsample_method_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luSubsampleMethod") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+taxon_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luTaxon") |>
+  filter(activeID != 2) |>
+  select(taxonID, commonName) |>
+  mutate(taxonID = as.numeric(taxonID)) |>
+  glimpse()
+trap_functioning_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luTrapFunctioning") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+unit_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luUnit") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+visit_type_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luVisitType") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+agency_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luAgency") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+fish_processed_lu <- mdb.get(here::here("data-raw", "CAMP.mdb"), "luFishProcessed") |>
+  filter(activeID != 2) |>
+  select(-activeID) |>
+  glimpse()
+
 
 # other
 mark_applied <- mdb.get(here::here("data-raw", "CAMP.mdb"), "MarkApplied")
@@ -44,7 +134,6 @@ environmental_raw <- mdb.get(here::here("data-raw", "CAMP.mdb"), "EnvDataRaw")
 
 # TODO debrisVolume and debrisVolumeUnits are NAs
 # TODO do we want to keep includeCatchID?
-# TODO what is debrisVolumeCatID?
 trap <- trap_raw |>
   select(projectDescriptionID, trapVisitID, trapPositionID, visitTime, visitTime2,
          visitTypeID, fishProcessedID, inThalwegID, trapFunctioningID, counterAtStart,
@@ -52,39 +141,73 @@ trap <- trap_raw |>
          rpmSecondsAtEnd, halfConeID, includeCatchID, debrisVolumeCatID, debrisVolume,
          debrisVolumeUnits) |>
   left_join(subsite_lu, by = c("trapPositionID" = "subSiteID")) |>
-  select(-subSiteName) |>
+  left_join(visit_type_lu, by = "visitTypeID") |>
+  left_join(fish_processed_lu, by = "fishProcessedID") |>
+  left_join(trap_functioning_lu, by = "trapFunctioningID") |>
+  left_join(cone_debris_vol_cat_lu, by = "debrisVolumeCatID") |>
+  left_join(noyes_lu, by = c("includeCatchID" = "noYesID")) |>
+  rename(includeCatch = noYes) |>
+  select(-c(subSiteName, fishProcessedID,
+            trapFunctioningID, debrisVolumeCatID)) |>
   mutate(visitTime = as.POSIXct(visitTime),
          visitTime2 = as.POSIXct(visitTime2)) |>
   relocate(siteID, .before = trapPositionID) |>
   glimpse()
 
-# TODO do we want to keep mortID?
 # TODO do we want to keep actualCountID?
 
 catch <- catch_raw |>
   select(projectDescriptionID, catchRawID, trapVisitID, taxonID, atCaptureRunID,
          atCaptureRunMethodID, finalRunID, finalRunMethodID, fishOriginID,
          lifeStageID, forkLength, totalLength, weight, n, randomID, actualCountID,
-         releaseID, mortID) |>
+         releaseID) |>
   left_join(trap |>
               select(projectDescriptionID, trapVisitID, visitTime,
                      visitTime2, visitTypeID, siteID, trapPositionID),
             by = c("trapVisitID", "projectDescriptionID")) |>
-  relocate(releaseID, .before = taxonID) |>
+  left_join(visit_type_lu, by = "visitTypeID") |>
+  left_join(taxon_lu, by = "taxonID") |>
+  left_join(run_lu, by = c("atCaptureRunID" = "runID")) |>
+  left_join(run_method_lu, by = c("atCaptureRunMethodID" = "runMethodID")) |>
+  rename(atCaptureRun = run, atCaptureRunMethod = runMethod) |>
+  left_join(run_method_lu, by = c("finalRunMethodID" = "runMethodID")) |>
+  left_join(run_lu, by = c("finalRunID" = "runID")) |>
+  rename(finalRun = run, finalRunMethod = runMethod) |>
+  left_join(fish_origin_lu, by = "fishOriginID") |>
+  left_join(lifestage_lu, by = "lifeStageID") |>
+  left_join(noyes_lu, by = c("actualCountID" = "noYesID")) |>
+  rename(actualCount = noYes) |>
+  left_join(noyes_lu, by = c("randomID" = "noYesID")) |>
+  rename(random = noYes) |>
+  #relocate(releaseID, .before = commonName) |>
+  select(-c(visitTypeID, taxonID, atCaptureRunID, atCaptureRunMethodID,
+            finalRunMethodID, finalRunID, fishOriginID, lifeStageID,
+            actualCountID, randomID)) |>
   glimpse()
 
-# TODO appliedMarkCode is empty right now
-# TODO keep nMortAtCheck and nMortWhileHandling?
 release <- release_raw |>
   select(projectDescriptionID, releaseID, releasePurposeID, markedTaxonID,
          markedRunID, markedLifeStageID, markedFishOriginID, sourceOfFishSiteID,
-         releaseSiteID, releaseSubSiteID, nMortWhileHandling, nMortAtCheck,
+         releaseSiteID, releaseSubSiteID,
          nReleased, releaseTime, releaseLightConditionID,
          testDays, includeTestID) |>
   left_join(mark_applied |>
               select(projectDescriptionID, releaseID, appliedMarkTypeID,
-                     appliedMarkColorID, appliedMarkPositionID, appliedMarkCode),
+                     appliedMarkColorID, appliedMarkPositionID),
             by = c("projectDescriptionID", "releaseID")) |>
+  left_join(release_purpose_lu, by = c("releasePurposeID" = "releasePursposeID")) |>
+  left_join(taxon_lu, by = c("markedTaxonID" = "taxonID")) |>
+  left_join(run_lu, by = c("markedRunID" = "runID")) |>
+  left_join(lifestage_lu, by = c("markedLifeStageID" = "lifeStageID")) |>
+  left_join(fish_origin_lu, by = c("markedFishOriginID" = "fishOriginID")) |>
+  left_join(lightcondition_lu, by = c("releaseLightConditionID" = "lightConditionID")) |>
+  left_join(noyes_lu, by = c("includeTestID" = "noYesID")) |>
+  rename(includeTest = noYes) |>
+  left_join(marktype_lu, by = c("appliedMarkTypeID" = "markTypeID")) |>
+  left_join(color_lu, by = c("appliedMarkColorID" = "colorID")) |>
+  select(-c(releasePurposeID, markedTaxonID, markedRunID, markedLifeStageID,
+            markedFishOriginID, releaseLightConditionID, includeTestID,
+            appliedMarkTypeID, appliedMarkColorID)) |>
   glimpse()
 
 releasefish <- releasefish_raw |>
@@ -97,6 +220,9 @@ mark_existing <- mark_existing_raw |>
   select(projectDescriptionID, catchRawID, markExistingID, markTypeID,
          markColorID, markPositionID, markCode) |>
   mutate(markCode = ifelse(markCode == "", NA_character_, markCode)) |>
+  left_join(marktype_lu, by = c("markTypeID" = "markTypeID")) |>
+  left_join(color_lu, by = c("markColorID" = "colorID")) |>
+  select(-c(markTypeID, markColorID)) |>
   glimpse()
 
 environmental <- environmental_raw |>
@@ -107,7 +233,32 @@ environmental <- environmental_raw |>
               select(projectDescriptionID, trapVisitID, visitTime,
                      visitTime2, visitTypeID, siteID, trapPositionID),
             by = c("trapVisitID", "projectDescriptionID")) |>
+  left_join(unit_lu, by = c("dischargeUnitID" = "unitID")) |>
+  rename(dischargeUnit = unit) |>
+  left_join(unit_lu, by = c("waterVelUnitID" = "unitID")) |>
+  rename(waterVelUnit = unit) |>
+  left_join(unit_lu, by = c("waterTempUnitID" = "unitID")) |>
+  rename(waterTempUnit = unit) |>
+  left_join(unit_lu, by = c("lightPenetrationUnitID" = "unitID")) |>
+  rename(lightPenetrationUnit = unit) |>
+  left_join(unit_lu, by = c("turbidityUnitID" = "unitID")) |>
+  rename(turbidityUnit = unit) |>
+  left_join(sample_gear_lu, by = c("dischargeSampleGearID" = "sampleGearID")) |>
+  rename(dischargeSampleGear = sampleGear) |>
+  left_join(sample_gear_lu, by = c("waterVelSampleGearID" = "sampleGearID")) |>
+  rename(waterVelSampleGear = sampleGear) |>
+  left_join(sample_gear_lu, by = c("waterTempSampleGearID" = "sampleGearID")) |>
+  rename(waterTempSampleGear = sampleGear) |>
+  left_join(sample_gear_lu, by = c("lightPenetrationSampleGearID" = "sampleGearID")) |>
+  rename(lightPenetrationSampleGear = sampleGear) |>
+  left_join(sample_gear_lu, by = c("turbiditySampleGearID" = "sampleGearID")) |>
+  rename(turbiditySampleGear = sampleGear) |>
+  select(-c(dischargeUnitID, waterVelUnitID, waterTempUnitID, lightPenetrationUnitID,
+            turbidityUnitID, dischargeSampleGearID, waterVelSampleGearID,
+            waterTempSampleGearID, lightPenetrationSampleGearID, turbiditySampleGearID)) |>
   glimpse()
+
+trap <- trap |> select(-visitTypeID) # remove ID column after joins
 
 # write clean tables ------------------------------------------------------
 
