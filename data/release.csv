@@ -1,4 +1,4 @@
-projectDescriptionID,releaseID,sourceOfFishSiteID,releaseSiteID,releaseSubSiteID,nReleased,releaseTime,testDays,appliedMarkPositionID,releasePurpose,commonName,run,lifeStage,fishOrigin,lightCondition,includeTest,markType,color
+projectDescriptionID,releaseID,sourceOfFishSiteID,releaseSiteID,releaseSubSiteID,nReleased,releaseTime,testDays,appliedMarkPositionID,releasePurpose,commonName,markedRun,markedLifeStage,markedFishOrigin,releaseLightCondition,includeTest,appliedMarkType,appliedMarkColor
 9,0,255,252,NA,NA,NA,0,NA,Not applicable (n/a),NA,Not recorded,NA,Not recorded,NA,No,NA,NA
 9,1,63000,62000,62000,2870,2015-02-10T09:00:17Z,4,21,Trap capture efficiency test,Chinook salmon,Not recorded,NA,Unknown,NA,Yes,Pigment / dye,Brown
 9,255,255,252,NA,NA,NA,0,NA,Not applicable (n/a),NA,Not recorded,NA,Not recorded,NA,No,NA,NA

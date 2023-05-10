@@ -147,8 +147,11 @@ trap <- trap_raw |>
   left_join(cone_debris_vol_cat_lu, by = "debrisVolumeCatID") |>
   left_join(noyes_lu, by = c("includeCatchID" = "noYesID")) |>
   rename(includeCatch = noYes) |>
+  left_join(noyes_lu, by = c("halfConeID" = "noYesID")) |>
+  rename(halfCone = noYes) |>
   select(-c(subSiteName, fishProcessedID,
-            trapFunctioningID, debrisVolumeCatID)) |>
+            trapFunctioningID, debrisVolumeCatID,
+            includeCatchID, halfConeID)) |>
   mutate(visitTime = as.POSIXct(visitTime),
          visitTime2 = as.POSIXct(visitTime2)) |>
   relocate(siteID, .before = trapPositionID) |>
