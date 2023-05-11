@@ -30,10 +30,72 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-05-10</pubDate>
+    <pubDate>2023-05-11</pubDate>
     <abstract>
       <para>
-    Abstract here!
+    Since 1995, the rotary screw traps (RSTs) at Knights Landing have
+    provided water management agencies an early warning of emigrating
+    juvenile Chinook salmon (Oncorhynchus tshawytscha) and steelhead
+    trout (O. mykiss) making their way to the Sacramento-San Joaquin
+    Delta (Delta). Due to the proximity of the site to other major
+    tributaries of the Sacramento River, such as the Feather and
+    American Rivers, it is assumed that salmonids captured at the
+    Knights Landing RSTs originate from the upper Sacramento River and
+    its tributaries, a stretch of river that provides spawning and
+    rearing habitat for all four runs of natural origin Chinook salmon:
+    winter-run (State and federally listed as endangered), spring-run
+    (State and federally listed as threatened), late fall-run and
+    fall-run, as well as steelhead trout (federally listed as
+    threatened).  
+  </para>
+      <para>
+    The near real-time information RST monitoring data provides on
+    emigration timing and relative abundance for protected runs of
+    juvenile Chinook salmon and steelhead improves the ability for
+    resource agencies and water managers to implement protective
+    measures that help them navigate through the maze of waterways in
+    the Delta. By utilizing emigration data in adaptive management,
+    reservoir releases, export rates, water transfers, and Delta Cross
+    Channel Gate operations can be modified to minimize the risk of
+    predation, entrainment, and take, thereby maximizing juvenile
+    salmonid survival through the Delta.   
+  </para>
+      <para>
+    The primary goals of the Knights Landing Monitoring Program are to
+    (1) Provide early warning of listed salmonids emigrating toward the
+    Delta, (2) Document passage of emigrating salmonids including
+    timing, relative abundance, and environmental conditions, (3)
+    Develop passage estimates of salmonids emigrating through the lower
+    Sacramento River above the Delta, and (4) Develop a long-term
+    dataset on juvenile salmonid emigration to compare changes over
+    time.
+  </para>
+      <para>
+    The California Department of Fish and Wildlife (CDFW) issued ITP
+    2081-2019-066-00 to DWR on March 31, 2020, for the long-term
+    operation of the State Water Project (SWP) in the Delta. Condition
+    7.5.2 of the ITP requires the development and establishment of a
+    spring-run Chinook salmon juvenile production estimate (JPE) to
+    increase understanding of the impacts water operations have on the
+    spring-run Chinook salmon population in the Sacramento River
+    watershed and inform the development of minimization measures to
+    reduce take of spring-run Chinook salmon at Delta fish salvage
+    facilities. Data from the Knights Landing RST will be used along
+    with other datasets from juvenile salmonid monitoring programs in
+    the Sacramento River Watershed to inform the development of JPE
+    modeling approaches.
+  </para>
+      <para>
+    Salmonid data collected from the Knights Landing RST, among other
+    datasets, is also used by the Salmon Monitoring Team (SaMT) to
+    understand the movement of juvenile salmon in the Sacramento River
+    Watershed to estimate the number of winter-run and spring-run
+    Chinook salmon that have entered the Delta. SaMT is a real-time
+    operations monitoring team required by Condition of Approval 8.1.2
+    of the ITP which meets weekly from October through June, to provide
+    advice for real-time management of SWP operations to DWR, CDFW, and
+    the Water Operation Management Team (WOMT) to minimize take of
+    winter-run and spring-run Chinook salmon in the Delta.
   </para>
     </abstract>
     <keywordSet>
@@ -91,9 +153,93 @@
     <methods>
       <methodStep>
         <description>
-          <para>
-    Describe methods!
-  </para>
+          <section>
+            <title>Trap equipment</title>
+            <para>
+      Two in-line 8-foot diameter rotary screw traps.
+    </para>
+          </section>
+          <section>
+            <title>Current trap locations</title>
+            <para>
+      Sacramento River (River Mile 88.5) near Knights Landing,
+      California.
+    </para>
+          </section>
+          <section>
+            <title>Monitoring schedule</title>
+            <para>
+      From September through June. Continuously trapping except under
+      high flows and unsafe working conditions. Serviced daily
+      approximately every 24 hours, more often if needed due to high
+      debris amounts or fish catch. Trapping ceases when conditions are
+      unsafe.
+    </para>
+          </section>
+          <section>
+            <title>Daily environmental data</title>
+            <para>
+      Daily environmental data collected are flow (cubic feet per
+      second) recorded from the CDEC Gauging station (Sacramento River
+      Below Wilkins Slough (WLK)); water temperature (Celsius); river
+      depth (meters); turbidity (nephelometric turbidity units);
+      dissolved oxygen (percent); conductivity (microSiemens per
+      centimeter), velocity (meters per second), and light penetration
+      (centimeters).
+    </para>
+          </section>
+          <section>
+            <title>Fish measurements</title>
+            <para>
+      Fork length measurements to the nearest mm taken for all Chinook
+      salmon and steelhead. For chinook salmon: 100 randomly selected
+      salmon per run: spring-, fall-, winter- or late-fall runs. Run
+      assigned by length-at-date criteria (Fisher 1992). For
+      non-salmonid fish, first 10 measured for total length and recorded
+      to the nearest mm.
+    </para>
+          </section>
+          <section>
+            <title>Fish counts</title>
+            <para>
+      All fish not measured are tallied by hand.
+    </para>
+          </section>
+          <section>
+            <title>Trap efficiency trials</title>
+            <para>
+      Utilize trap-captured Chinook salmon falling within size criteria
+      for unmarked: fall-, spring-, and late-fall run. Utilize
+      trap-captured Chinok salmon falling within the size crieria for
+      hatchery origin fish: fall- and late-fall run. If trap captures
+      are too low for efficiency trails, fall-run Chinook salmon are
+      obtained from Coleman National Fish Hatchery (CNFH). • Frequency
+      of once per week from December to May across variable flow and
+      environmental conditions as catch totals and/or hatchery
+      availability allows. • A minimum of three consecutive days of
+      fishing after the release date is required for a release to be
+      included in analyses. • Mortality between the release point and
+      the trap is assumed to be negligible. • Release site approximately
+      0.5-mile upstream of the trapping site.
+    </para>
+          </section>
+          <section>
+            <title>Trap efficiency marks</title>
+            <para>
+      Salmon captured in the RSTs are marked with Bismarck Brown Y (BBY)
+      or Methylene Blue whole body stain. Salmon obtained from CNFH are
+      marked with a Visible Implant Elastomer (VIE) Tag.
+    </para>
+          </section>
+          <section>
+            <title>References</title>
+            <para>
+      Fisher, F. W. 1992. Chinook salmon, Oncorhynchus tshawytscha,
+      growth and occurrence in the Sacramento-San Joaquin River system.
+      Draft report dated June 1992. Sacramento, CA: Inland Fisheries
+      Division, California Department Fish and Game. 42 p.
+    </para>
+          </section>
         </description>
       </methodStep>
     </methods>
@@ -114,8 +260,8 @@
       <entityDescription>Environmental covariates</entityDescription>
       <physical>
         <objectName>environmental.csv</objectName>
-        <size unit="bytes">1674034</size>
-        <authentication method="MD5">b6ad915b3b97ade4e4e72abfe81ba096</authentication>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -128,7 +274,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download"/>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/environmental.csv</url>
           </online>
         </distribution>
       </physical>
@@ -653,8 +799,8 @@
       <entityDescription>Daily catch</entityDescription>
       <physical>
         <objectName>catch.csv</objectName>
-        <size unit="bytes">27877701</size>
-        <authentication method="MD5">555225d15d09fa90fd37e1efce06a530</authentication>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -667,7 +813,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download"/>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/catch.csv</url>
           </online>
         </distribution>
       </physical>
@@ -1369,8 +1515,8 @@
       <entityDescription>Existing marks on catch</entityDescription>
       <physical>
         <objectName>markexisting.csv</objectName>
-        <size unit="bytes">8712467</size>
-        <authentication method="MD5">31d58445141926d89a9b82801a95a91e</authentication>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1383,7 +1529,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download"/>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/mark_existing.csv</url>
           </online>
         </distribution>
       </physical>
@@ -1628,8 +1774,8 @@
       <entityDescription>Release trial summary</entityDescription>
       <physical>
         <objectName>release.csv</objectName>
-        <size unit="bytes">14791</size>
-        <authentication method="MD5">ccb991f7d8c73d8c5198dfb314c4784f</authentication>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1642,7 +1788,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download"/>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release.csv</url>
           </online>
         </distribution>
       </physical>
@@ -2480,8 +2626,8 @@
       <entityDescription>Release fish measurements</entityDescription>
       <physical>
         <objectName>releasefish.csv</objectName>
-        <size unit="bytes">48225</size>
-        <authentication method="MD5">299325a7e3da204fef2a7eafe2582283</authentication>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2494,7 +2640,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download"/>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release_fish.csv</url>
           </online>
         </distribution>
       </physical>
@@ -2609,8 +2755,8 @@
       <entityDescription>Daily trap operations</entityDescription>
       <physical>
         <objectName>trap.csv</objectName>
-        <size unit="bytes">1276074</size>
-        <authentication method="MD5">e2e2dc848f60b786b1b9ef9351bab01d</authentication>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2623,7 +2769,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download"/>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/trap.csv</url>
           </online>
         </distribution>
       </physical>
