@@ -208,6 +208,10 @@ release <- release_raw |>
   rename(includeTest = noYes) |>
   left_join(marktype_lu, by = c("appliedMarkTypeID" = "markTypeID")) |>
   left_join(color_lu, by = c("appliedMarkColorID" = "colorID")) |>
+  rename(markedRun = run, markedLifeStage = lifeStage,
+         markedFishOrigin = fishOrigin,
+         releaseLightCondition = lightCondition,
+         appliedMarkType = markType, appliedMarkColor = color) |>
   select(-c(releasePurposeID, markedTaxonID, markedRunID, markedLifeStageID,
             markedFishOriginID, releaseLightConditionID, includeTestID,
             appliedMarkTypeID, appliedMarkColorID)) |>
@@ -225,6 +229,7 @@ mark_existing <- mark_existing_raw |>
   mutate(markCode = ifelse(markCode == "", NA_character_, markCode)) |>
   left_join(marktype_lu, by = c("markTypeID" = "markTypeID")) |>
   left_join(color_lu, by = c("markColorID" = "colorID")) |>
+  rename(markColor = color) |>
   select(-c(markTypeID, markColorID)) |>
   glimpse()
 

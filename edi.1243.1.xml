@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-05-09</pubDate>
+    <pubDate>2023-05-10</pubDate>
     <abstract>
       <para>
     Abstract here!
@@ -114,8 +114,8 @@
       <entityDescription>Environmental covariates</entityDescription>
       <physical>
         <objectName>environmental.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">1674034</size>
+        <authentication method="MD5">b6ad915b3b97ade4e4e72abfe81ba096</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -128,7 +128,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/environmental.csv</url>
+            <url function="download"/>
           </online>
         </distribution>
       </physical>
@@ -140,9 +140,12 @@
           <measurementScale>
             <nominal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Knights Landing RST Program</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
@@ -195,60 +198,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>dischargeUnitID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the unit of measure</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>cubic feet/second (cfs)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>cubic meters/second (m3/sec)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>dischargeSampleGearID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the sample gear used</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Gauging station (non-USGS)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>18</code>
-                    <definition>Staff gauge</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>19</code>
-                    <definition>USGS gauging station</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>waterVel</attributeName>
           <attributeLabel>environmental</attributeLabel>
           <attributeDefinition>Instantaneous water velocity measured</attributeDefinition>
@@ -265,44 +214,6 @@
                 </bounds>
               </numericDomain>
             </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterVelUnitID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the unit of measure</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>feet/second (ft/sec)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterVelSampleGearID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the sample gear used</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Electronic meter</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -325,64 +236,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>waterTempUnitID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the unit of measure</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>19</code>
-                    <definition>°F</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>18</code>
-                    <definition>C</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterTempSampleGearID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the sample gear used</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Analog hand-held thermometer</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Gauging station (non-USGS)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Electronic meter</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Data logger without probe</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>lightPenetration</attributeName>
           <attributeLabel>environmental</attributeLabel>
           <attributeDefinition>Instantaneous light penetration measured</attributeDefinition>
@@ -402,41 +255,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>lightPenetrationUnitID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the unit of measure</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>meter (m)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>lightPenetrationSampleGearID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the sample gear used</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for the sample gear used</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>turbidity</attributeName>
           <attributeLabel>environmental</attributeLabel>
           <attributeDefinition>Instantaneous turbidity measurement</attributeDefinition>
@@ -453,56 +271,6 @@
                 </bounds>
               </numericDomain>
             </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>turbidityUnitID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the unit of measure</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>nephelometric turbidity units (NTU)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>turbiditySampleGearID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for the sample gear used</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Data logger without probe</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Electronic meter</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Gauging station (non-USGS)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -706,260 +474,173 @@
         <attribute>
           <attributeName>trapPositionID</attributeName>
           <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for position of trap within the site</attributeDefinition>
+          <attributeDefinition>Code for position of trap within the site. Levels = c(63004, 63003)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2001</code>
-                    <definition>#Steep Riffle_RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44018</code>
-                    <definition>Below Weir Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44007</code>
-                    <definition>Eye Pool Left &amp; Right RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44017</code>
-                    <definition>Eye Pool Left RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44016</code>
-                    <definition>Eye Pool Right RM60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44013</code>
-                    <definition>Eye Pool RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3001</code>
-                    <definition>Eye riffle_north</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3002</code>
-                    <definition>Eye riffle_Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52003</code>
-                    <definition>Gateway Main 400' Up River</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51002</code>
-                    <definition>Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51003</code>
-                    <definition>Gateway release_RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52001</code>
-                    <definition>Gateway_main1</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52002</code>
-                    <definition>Gateway_Rootball</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52004</code>
-                    <definition>Gateway_Rootball_River_Left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90001</code>
-                    <definition>Gray's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46003</code>
-                    <definition>half mile above trap RM</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46001</code>
-                    <definition>Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46004</code>
-                    <definition>Herringer release_ RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5001</code>
-                    <definition>Herringer_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5003</code>
-                    <definition>Herringer_Upper_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5002</code>
-                    <definition>Herringer_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4001</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4002</code>
-                    <definition>Live Oak_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44010</code>
-                    <definition>Lower Robinson RM 61.4</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51001</code>
-                    <definition>next to Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46002</code>
-                    <definition>next to Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44001</code>
-                    <definition>Release at river left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44003</code>
-                    <definition>Release river left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44002</code>
-                    <definition>Release river middle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44004</code>
-                    <definition>Release river right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47002</code>
-                    <definition>release_100m above falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47001</code>
-                    <definition>release_below falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44009</code>
-                    <definition>Robinson Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44006</code>
-                    <definition>Robinson Side &amp; Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44008</code>
-                    <definition>Robinson Side RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7002</code>
-                    <definition>Shawns_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7003</code>
-                    <definition>Shawns_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44012</code>
-                    <definition>Steep Pool Left Middle Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44014</code>
-                    <definition>Steep Pool Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44011</code>
-                    <definition>Steep Pool Right &amp; Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44015</code>
-                    <definition>Steep Pool Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44005</code>
-                    <definition>Steep Pool RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43001</code>
-                    <definition>Steep release_RR &amp; RL</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2004</code>
-                    <definition>Steep Riffle_10' ext</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2003</code>
-                    <definition>Steep Riffle_100' below</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2002</code>
-                    <definition>Steep Riffle_Opposite RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2005</code>
-                    <definition>Steep Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6002</code>
-                    <definition>Sunset East bank</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6003</code>
-                    <definition>Sunset West bank</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Code for position of trap within the site. Levels = c(63004, 63003)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dischargeUnit</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>Unit of measure. Levels = c("cubic feet/second (cfs)", NA, "Not recorded", "centimeter (cm)", &#13;
+"nephelometric turbidity units (NTU)", "feet/second (ft/sec)", &#13;
+"cubic meters/second (m3/sec)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit of measure. Levels = c("cubic feet/second (cfs)", NA, "Not recorded", "centimeter (cm)", &#13;
+"nephelometric turbidity units (NTU)", "feet/second (ft/sec)", &#13;
+"cubic meters/second (m3/sec)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterVelUnit</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>Unit of measure. Levels = c("feet/second (ft/sec)", NA, "Not recorded", "cubic feet/second (cfs)", &#13;
+"meters/second (m/sec)", "meter (m)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit of measure. Levels = c("feet/second (ft/sec)", NA, "Not recorded", "cubic feet/second (cfs)", &#13;
+"meters/second (m/sec)", "meter (m)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterTempUnit</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>Unit of measure. Levels = c(NA, "Not recorded", "feet/second (ft/sec)", "C")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit of measure. Levels = c(NA, "Not recorded", "feet/second (ft/sec)", "C")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lightPenetrationUnit</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>Unit of measure. Levels = c(NA, "Not recorded", "percent (%)", "centimeter (cm)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit of measure. Levels = c(NA, "Not recorded", "percent (%)", "centimeter (cm)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>turbidityUnit</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>Unit of measure. Levels = c("nephelometric turbidity units (NTU)", NA, "Not recorded", &#13;
+"meters/second (m/sec)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit of measure. Levels = c("nephelometric turbidity units (NTU)", NA, "Not recorded", &#13;
+"meters/second (m/sec)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dischargeSampleGear</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>The sample gear used. Levels = c("Gauging station (non-USGS)", NA, "Electronic meter", "Electronic depth finder", &#13;
+"Not recorded")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>The sample gear used. Levels = c("Gauging station (non-USGS)", NA, "Electronic meter", "Electronic depth finder", &#13;
+"Not recorded")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterVelSampleGear</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder"&#13;
+)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder"&#13;
+)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterTempSampleGear</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>The sample gear used. Levels = c("Analog hand-held thermometer", NA, "Not recorded", "Electronic depth finder", &#13;
+"Electronic meter", "Gauging station (non-USGS)", "Secchi disk"&#13;
+)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>The sample gear used. Levels = c("Analog hand-held thermometer", NA, "Not recorded", "Electronic depth finder", &#13;
+"Electronic meter", "Gauging station (non-USGS)", "Secchi disk"&#13;
+)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lightPenetrationSampleGear</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>The sample gear used. Levels = c("Secchi disk", NA, "Not recorded", "Electronic meter", "Electronic depth finder", &#13;
+"Gauging station (non-USGS)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>The sample gear used. Levels = c("Secchi disk", NA, "Not recorded", "Electronic meter", "Electronic depth finder", &#13;
+"Gauging station (non-USGS)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>turbiditySampleGear</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder", &#13;
+"Analog hand-held thermometer", "Gauging station (non-USGS)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder", &#13;
+"Analog hand-held thermometer", "Gauging station (non-USGS)")</definition>
+                </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
@@ -972,8 +653,8 @@
       <entityDescription>Daily catch</entityDescription>
       <physical>
         <objectName>catch.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">27877701</size>
+        <authentication method="MD5">555225d15d09fa90fd37e1efce06a530</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -986,7 +667,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/catch.csv</url>
+            <url function="download"/>
           </online>
         </distribution>
       </physical>
@@ -1000,8 +681,8 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>2</code>
-                    <definition>Feather River RST Program</definition>
+                    <code>9</code>
+                    <definition>Knights Landing RST program</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -1034,775 +715,6 @@
                 </textDomain>
               </nonNumericDomain>
             </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign Key to the CAMP Release table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>taxonID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Taxonomic identifier of marked species associated with taxa codes at http://itis.gov</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>159697</code>
-                    <definition>Unknown lamprey (Entosphenus or Lampetra)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159698</code>
-                    <definition>Pacific lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159700</code>
-                    <definition>Unknown Lampetra</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159707</code>
-                    <definition>Western brook lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159709</code>
-                    <definition>Kern brook lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159710</code>
-                    <definition>Pit-Klamath brook lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159713</code>
-                    <definition>Pacific lamprey (no longer valid)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161030</code>
-                    <definition>Unknown bony fish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161064</code>
-                    <definition>Sturgeon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161067</code>
-                    <definition>Green sturgeon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161068</code>
-                    <definition>White sturgeon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161127</code>
-                    <definition>American eel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161702</code>
-                    <definition>American shad</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161738</code>
-                    <definition>Threadfin shad</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161931</code>
-                    <definition>Salmonid</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161974</code>
-                    <definition>Oncorhynchus</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161975</code>
-                    <definition>Pink salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161977</code>
-                    <definition>Coho salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161979</code>
-                    <definition>Kokanee / sockeye salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161980</code>
-                    <definition>Chinook salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161989</code>
-                    <definition>Steelhead / rainbow trout</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161997</code>
-                    <definition>Brown trout</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>162003</code>
-                    <definition>Brook trout</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>162032</code>
-                    <definition>Delta smelt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>162033</code>
-                    <definition>Wakasagi / Japanese smelt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163342</code>
-                    <definition>Unknown minnow</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163344</code>
-                    <definition>Common carp</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163350</code>
-                    <definition>Goldfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163368</code>
-                    <definition>Golden shiner</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163387</code>
-                    <definition>Speckled dace</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163517</code>
-                    <definition>Fathead minnow</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163524</code>
-                    <definition>Sacramento pikeminnow</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163565</code>
-                    <definition>California roach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163569</code>
-                    <definition>Hitch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163587</code>
-                    <definition>Hardhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163589</code>
-                    <definition>Sacramento blackfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163603</code>
-                    <definition>Splittail</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163792</code>
-                    <definition>Red shiner</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163892</code>
-                    <definition>Sucker</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163908</code>
-                    <definition>Sacramento sucker</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163995</code>
-                    <definition>Unknown catfish or bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163998</code>
-                    <definition>Channel catfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164034</code>
-                    <definition>Bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164037</code>
-                    <definition>White catfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164039</code>
-                    <definition>Black bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164041</code>
-                    <definition>Yellow bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164043</code>
-                    <definition>Brown bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165679</code>
-                    <definition>Rainwater killifish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165877</code>
-                    <definition>Mosquitofish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165878</code>
-                    <definition>Western mosquitofish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165993</code>
-                    <definition>Inland silverside</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165998</code>
-                    <definition>Mississippi silverside</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>166365</code>
-                    <definition>Threespine stickleback</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167229</code>
-                    <definition>Unknown sculpin (Cottus)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167233</code>
-                    <definition>Prickly sculpin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167234</code>
-                    <definition>Riffle sculpin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167680</code>
-                    <definition>Striped bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168093</code>
-                    <definition>Unknown Centrarchid</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168130</code>
-                    <definition>Unknown sunfish (Lepomis)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168132</code>
-                    <definition>Green sunfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168139</code>
-                    <definition>Warmouth</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168141</code>
-                    <definition>Bluegill</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168144</code>
-                    <definition>Pumpkinseed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168154</code>
-                    <definition>Redear sunfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168158</code>
-                    <definition>Unknown bass (Micropterus)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168160</code>
-                    <definition>Largemouth bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168161</code>
-                    <definition>Spotted bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168163</code>
-                    <definition>Redeye bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168165</code>
-                    <definition>Unknown crappie (Pomoxis)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168166</code>
-                    <definition>White crappie</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168167</code>
-                    <definition>Black crappie</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168175</code>
-                    <definition>Sacramento perch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168487</code>
-                    <definition>Bigscale logperch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>171882</code>
-                    <definition>Yellowfin goby</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>550562</code>
-                    <definition>Smallmouth bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>553322</code>
-                    <definition>Tule perch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>622248</code>
-                    <definition>River lamprey</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>atCaptureRunID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for fish run as assigned at the time of the capture.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Fall</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Late fall</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Spring</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Summer</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Winter</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>atCaptureRunMethodID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for method used to make the run assigment at capture</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Appearance</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Genetic analysis</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Length-at-date criteria</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Modified length-at-date</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Morphometrics</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Only one run at location</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>finalRunID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for final run designation as determined in the field or as assigned at a later date. This is the field used in analysis.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Fall</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Late fall</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Spring</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Summer</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Winter</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>finalRunMethodID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for method used to make the final run assignment</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Appearance</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Genetic analysis</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Length-at-date criteria</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Modified length-at-date</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Morphometrics</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Only one run at location</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>fishOriginID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for origin/production type of the fish.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Hatchery</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Natural</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>lifeStageID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for life stage of the fish</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Adult</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Age I+</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>Ammocoete</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>17</code>
-                    <definition>Button-up fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Grilse / jack</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Juvenile</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Larva</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>Macropthalmia (transformer lamprey)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Parr</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>Pre-smolt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>19</code>
-                    <definition>Seamed fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Silvery parr</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>Smolt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Subadult</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>18</code>
-                    <definition>Unbuttoned fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Yearling</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yolk sac fry (alevin)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>YOY (young of the year)</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -1882,138 +794,17 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>randomID</attributeName>
+          <attributeName>releaseID</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Whether fish were sampled randomly</attributeDefinition>
+          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
           <measurementScale>
-            <nominal>
+            <ordinal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Foreign Key to the CAMP Release table</definition>
+                </textDomain>
               </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>actualCountID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for whether the count (n) is an actual count or estimate</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>mortID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for whether fish died due to being captured or handled</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -2046,67 +837,6 @@
                 </bounds>
               </dateTimeDomain>
             </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitTypeID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for work that was done during visit to trap</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Continue trapping</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Drive-by only</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>End trapping</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Service/adjust/clean trap</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Start trap &amp; begin trapping</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Unplanned restart</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -2475,6 +1205,162 @@
             </nominal>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Code for work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
+"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
+)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
+"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
+)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Common name of marked species.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of marked species.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>atCaptureRun</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Fish run as assigned at the time of the capture. Levels = c("Not recorded", "Winter", "Spring", "Late fall", "Fall", "Other", &#13;
+"Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Fish run as assigned at the time of the capture. Levels = c("Not recorded", "Winter", "Spring", "Late fall", "Fall", "Other", &#13;
+"Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>atCaptureRunMethod</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Method used to make the run assigment at capture. Levels = c("Not recorded", "Length-at-date criteria", "Appearance", "Modified length-at-date", &#13;
+"Hatchery attribute")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Method used to make the run assigment at capture. Levels = c("Not recorded", "Length-at-date criteria", "Appearance", "Modified length-at-date", &#13;
+"Hatchery attribute")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>finalRunMethod</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Method used to make the final run assignment. Levels = c("Not recorded", NA, "Length-at-date criteria", "Appearance", &#13;
+"Hatchery attribute")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Method used to make the final run assignment. Levels = c("Not recorded", NA, "Length-at-date criteria", "Appearance", &#13;
+"Hatchery attribute")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>finalRun</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Final run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", NA, "Winter", "Spring", "Late fall", "Fall", &#13;
+"Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Final run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", NA, "Winter", "Spring", "Late fall", "Fall", &#13;
+"Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishOrigin</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Code for origin/production type of the fish.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for origin/production type of the fish.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lifeStage</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Parr", "Ammocoete", "Silvery parr", NA, "Smolt", &#13;
+"Juvenile", "Adult", "Yolk sac fry (alevin)", "Yearling", "Fry", &#13;
+"YOY (young of the year)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Life stage of the fish. Levels = c("Not recorded", "Parr", "Ammocoete", "Silvery parr", NA, "Smolt", &#13;
+"Juvenile", "Adult", "Yolk sac fry (alevin)", "Yearling", "Fry", &#13;
+"YOY (young of the year)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>actualCount</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Code for whether the count (n) is an actual count or estimate. Levels = c("No", "Yes")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for whether the count (n) is an actual count or estimate. Levels = c("No", "Yes")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>random</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Whether fish were sampled randomly. Levels = c("No", "Yes")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether fish were sampled randomly. Levels = c("No", "Yes")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
       </attributeList>
       <numberOfRecords>147128</numberOfRecords>
     </dataTable>
@@ -2483,8 +1369,8 @@
       <entityDescription>Existing marks on catch</entityDescription>
       <physical>
         <objectName>markexisting.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">8712467</size>
+        <authentication method="MD5">31d58445141926d89a9b82801a95a91e</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2497,7 +1383,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/mark_existing.csv</url>
+            <url function="download"/>
           </online>
         </distribution>
       </physical>
@@ -2511,8 +1397,8 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>2</code>
-                    <definition>Feather River RST Program</definition>
+                    <code>9</code>
+                    <definition>Knights Landing RST Program</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -2545,192 +1431,6 @@
                 </textDomain>
               </nonNumericDomain>
             </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markTypeID</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Code for the type of mark found on fish</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>Acoustic telemetry tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Coded wire tag (CWT)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Elastomer</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Fin clip</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Floy tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Freeze brand (bar)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Freeze brand (dot)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>0</code>
-                    <definition>No marks or tags</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Photonic Dye</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Pigment / dye</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>PIT tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Radio telemetry tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markColorID</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Code for the color of mark found on fish</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>Black</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Brown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Cobalt blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Dark blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Flourescent blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Flourescent green</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Flourescent red</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Green</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>Magenta</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Orange</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Pink</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Purple / Violet</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Red</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>White</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>Yellow</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -2888,6 +1588,38 @@
             </nominal>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>markType</attributeName>
+          <attributeLabel>mark_existing</attributeLabel>
+          <attributeDefinition>Type of mark found on fish. Levels = c("No marks or tags", "Fin clip", "Pigment / dye", "Elastomer", &#13;
+"Acoustic telemetry tag", "Coded wire tag (CWT)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Type of mark found on fish. Levels = c("No marks or tags", "Fin clip", "Pigment / dye", "Elastomer", &#13;
+"Acoustic telemetry tag", "Coded wire tag (CWT)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markColor</attributeName>
+          <attributeLabel>mark_existing</attributeLabel>
+          <attributeDefinition>Color of mark found on fish. Levles = c("Not applicable (n/a)", "Brown", "Blue", "Purple / Violet", &#13;
+"Orange", "Pink", "Green", "Not recorded")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Color of mark found on fish. Levles = c("Not applicable (n/a)", "Brown", "Blue", "Purple / Violet", &#13;
+"Orange", "Pink", "Green", "Not recorded")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
       </attributeList>
       <numberOfRecords>147676</numberOfRecords>
     </dataTable>
@@ -2896,8 +1628,8 @@
       <entityDescription>Release trial summary</entityDescription>
       <physical>
         <objectName>release.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">14791</size>
+        <authentication method="MD5">ccb991f7d8c73d8c5198dfb314c4784f</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2910,7 +1642,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release.csv</url>
+            <url function="download"/>
           </online>
         </distribution>
       </physical>
@@ -2924,8 +1656,8 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>2</code>
-                    <definition>Feather River RST Program</definition>
+                    <code>9</code>
+                    <definition>Knights Landing RST Program</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -2944,619 +1676,6 @@
                 </textDomain>
               </nonNumericDomain>
             </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releasePurposeID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Purpose of the release</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Hatchery release</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>In-river survival estimate</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Livebox retention test</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Trap capture efficiency test</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedTaxonID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Common name of marked species</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>159697</code>
-                    <definition>Unknown lamprey (Entosphenus or Lampetra)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159698</code>
-                    <definition>Pacific lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159700</code>
-                    <definition>Unknown Lampetra</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159707</code>
-                    <definition>Western brook lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159709</code>
-                    <definition>Kern brook lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159710</code>
-                    <definition>Pit-Klamath brook lamprey</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>159713</code>
-                    <definition>Pacific lamprey (no longer valid)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161030</code>
-                    <definition>Unknown bony fish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161064</code>
-                    <definition>Sturgeon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161067</code>
-                    <definition>Green sturgeon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161068</code>
-                    <definition>White sturgeon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161127</code>
-                    <definition>American eel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161702</code>
-                    <definition>American shad</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161738</code>
-                    <definition>Threadfin shad</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161931</code>
-                    <definition>Salmonid</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161974</code>
-                    <definition>Oncorhynchus</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161975</code>
-                    <definition>Pink salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161977</code>
-                    <definition>Coho salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161979</code>
-                    <definition>Kokanee / sockeye salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161980</code>
-                    <definition>Chinook salmon</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161989</code>
-                    <definition>Steelhead / rainbow trout</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>161997</code>
-                    <definition>Brown trout</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>162003</code>
-                    <definition>Brook trout</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>162032</code>
-                    <definition>Delta smelt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>162033</code>
-                    <definition>Wakasagi / Japanese smelt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163342</code>
-                    <definition>Unknown minnow</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163344</code>
-                    <definition>Common carp</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163350</code>
-                    <definition>Goldfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163368</code>
-                    <definition>Golden shiner</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163387</code>
-                    <definition>Speckled dace</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163517</code>
-                    <definition>Fathead minnow</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163524</code>
-                    <definition>Sacramento pikeminnow</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163565</code>
-                    <definition>California roach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163569</code>
-                    <definition>Hitch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163587</code>
-                    <definition>Hardhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163589</code>
-                    <definition>Sacramento blackfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163603</code>
-                    <definition>Splittail</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163792</code>
-                    <definition>Red shiner</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163892</code>
-                    <definition>Sucker</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163908</code>
-                    <definition>Sacramento sucker</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163995</code>
-                    <definition>Unknown catfish or bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>163998</code>
-                    <definition>Channel catfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164034</code>
-                    <definition>Bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164037</code>
-                    <definition>White catfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164039</code>
-                    <definition>Black bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164041</code>
-                    <definition>Yellow bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>164043</code>
-                    <definition>Brown bullhead</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165679</code>
-                    <definition>Rainwater killifish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165877</code>
-                    <definition>Mosquitofish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165878</code>
-                    <definition>Western mosquitofish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165993</code>
-                    <definition>Inland silverside</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>165998</code>
-                    <definition>Mississippi silverside</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>166365</code>
-                    <definition>Threespine stickleback</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167229</code>
-                    <definition>Unknown sculpin (Cottus)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167233</code>
-                    <definition>Prickly sculpin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167234</code>
-                    <definition>Riffle sculpin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>167680</code>
-                    <definition>Striped bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168093</code>
-                    <definition>Unknown Centrarchid</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168130</code>
-                    <definition>Unknown sunfish (Lepomis)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168132</code>
-                    <definition>Green sunfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168139</code>
-                    <definition>Warmouth</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168141</code>
-                    <definition>Bluegill</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168144</code>
-                    <definition>Pumpkinseed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168154</code>
-                    <definition>Redear sunfish</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168158</code>
-                    <definition>Unknown bass (Micropterus)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168160</code>
-                    <definition>Largemouth bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168161</code>
-                    <definition>Spotted bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168163</code>
-                    <definition>Redeye bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168165</code>
-                    <definition>Unknown crappie (Pomoxis)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168166</code>
-                    <definition>White crappie</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168167</code>
-                    <definition>Black crappie</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168175</code>
-                    <definition>Sacramento perch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>168487</code>
-                    <definition>Bigscale logperch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>171882</code>
-                    <definition>Yellowfin goby</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>550562</code>
-                    <definition>Smallmouth bass</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>553322</code>
-                    <definition>Tule perch</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>622248</code>
-                    <definition>River lamprey</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedRunID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Run of fish marked</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Fall</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Late fall</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Spring</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Summer</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Winter</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedLifeStageID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Lifestage of fish marked</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Adult</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Age I+</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>Ammocoete</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>17</code>
-                    <definition>Button-up fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Grilse / jack</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Juvenile</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Larva</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>Macropthalmia (transformer lamprey)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Parr</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>Pre-smolt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>19</code>
-                    <definition>Seamed fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Silvery parr</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>Smolt</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Subadult</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>18</code>
-                    <definition>Unbuttoned fry</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Yearling</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yolk sac fry (alevin)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>YOY (young of the year)</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedFishOriginID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Origin or production type of fish marked</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Hatchery</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Mixed</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Natural</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -4031,44 +2150,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>nMortWhileHandling</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Number of fish that died while being handled and marked</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>count of fish</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">407</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>nMortAtCheck</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Number of fish that died after being marked and before released</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>count of fish</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">46</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>nReleased</attributeName>
           <attributeLabel>release</attributeLabel>
           <attributeDefinition>Number of fish released that were alive with mark intact</attributeDefinition>
@@ -4104,63 +2185,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>releaseLightConditionID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Light condition when fish were released</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Dark day</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Daylight</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>0</code>
-                    <definition>Night, dark</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Night, moonlit</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Twilight / dusk</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>testDays</attributeName>
           <attributeLabel>release</attributeLabel>
           <attributeDefinition>Number of days this trap test is considered valid</attributeDefinition>
@@ -4177,217 +2201,6 @@
                 </bounds>
               </numericDomain>
             </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>includeTestID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Code for whether release trial should be included</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>appliedMarkTypeID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Mark type that was applied to the release group</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>Acoustic telemetry tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Coded wire tag (CWT)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Elastomer</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Fin clip</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Floy tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Freeze brand (bar)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Freeze brand (dot)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>0</code>
-                    <definition>No marks or tags</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Photonic Dye</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Pigment / dye</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>PIT tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Radio telemetry tag</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>appliedMarkColorID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Color of mark that was applied to the release group</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>Black</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Brown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Cobalt blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Dark blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Flourescent blue</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Flourescent green</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Flourescent red</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Green</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>Magenta</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Orange</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Pink</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Purple / Violet</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Red</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>White</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>Yellow</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -4532,17 +2345,131 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>appliedMarkCode</attributeName>
+          <attributeName>releasePurpose</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Code for mark/tag applied to release group</attributeDefinition>
+          <attributeDefinition>Purpose of the release</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Code for mark/tag applied to release group</definition>
+                  <definition>Purpose of the release</definition>
                 </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Common name of marked species</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of marked species</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedRun</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Run of fish marked. Levels = c("Not recorded", "Fall", "Other", "Late fall")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run of fish marked. Levels = c("Not recorded", "Fall", "Other", "Late fall")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedLifeStage</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Lifestage of fish marked. Levels = c(NA, "Smolt", "Juvenile", "Not recorded")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Lifestage of fish marked. Levels = c(NA, "Smolt", "Juvenile", "Not recorded")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedFishOrigin</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Origin or production type of fish marked. Levels = c("Not recorded", "Unknown", "Hatchery", "Natural")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin or production type of fish marked. Levels = c("Not recorded", "Unknown", "Hatchery", "Natural")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseLightCondition</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Light condition when fish were released. Levels = c(NA, "Daylight")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Light condition when fish were released. Levels = c(NA, "Daylight")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>includeTest</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Code for whether release trial should be included</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for whether release trial should be included</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkType</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Mark type that was applied to the release group. Levels = c(NA, "Pigment / dye", "Elastomer", "Fin clip")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mark type that was applied to the release group. Levels = c(NA, "Pigment / dye", "Elastomer", "Fin clip")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkColor</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Color of mark that was applied to the release group. Levels = c(NA, "Brown", "Orange", "Red", "Pink", "Blue", "Purple / Violet", &#13;
+"Green", "Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Color of mark that was applied to the release group. Levels = c(NA, "Brown", "Orange", "Red", "Pink", "Blue", "Purple / Violet", &#13;
+"Green", "Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
           </measurementScale>
         </attribute>
       </attributeList>
@@ -4553,8 +2480,8 @@
       <entityDescription>Release fish measurements</entityDescription>
       <physical>
         <objectName>releasefish.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">48225</size>
+        <authentication method="MD5">299325a7e3da204fef2a7eafe2582283</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -4567,7 +2494,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release_fish.csv</url>
+            <url function="download"/>
           </online>
         </distribution>
       </physical>
@@ -4581,8 +2508,8 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>2</code>
-                    <definition>Feather River RST Program</definition>
+                    <code>9</code>
+                    <definition>Knights Landing RST Program</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -4682,8 +2609,8 @@
       <entityDescription>Daily trap operations</entityDescription>
       <physical>
         <objectName>trap.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <size unit="bytes">1276074</size>
+        <authentication method="MD5">e2e2dc848f60b786b1b9ef9351bab01d</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -4696,7 +2623,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/trap.csv</url>
+            <url function="download"/>
           </online>
         </distribution>
       </physical>
@@ -4708,9 +2635,12 @@
           <measurementScale>
             <nominal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Knights Landing RST Program</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
@@ -5128,96 +3058,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>visitTypeID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Work that was done during visit to trap (luVisitType)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Start trap and begin trapping [Used when trap had not been operating, or when it is moved or reconfigured. Defines the&#13;
-beginning of a sampling period. Fish are never processed during this type of visit.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Continue trapping in same position and configuration without interruption [Used when there is no break in trap operations.&#13;
-Defines the break between two sampling periods. Fish are usually processed during this type of visit.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Unplanned restart of trap after malfunction (in same position and configuration) [Used when the trap had stopped&#13;
-operating. Defines the break between two sampling periods. Fish are usually processed during this type of visit.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>End trapping in current position or configuration [Used when trap is moved or stopped. Defines the end of a sampling&#13;
-period. Fish are usually processed during this type of visit.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>"Drive by" [Trap is scanned to ensure it is functioning, but fish are not processed and trap is not adjusted. Environmental&#13;
-measures may be taken. If a "drive by" results in fish being sampled or trap being serviced, then use an alternative code as&#13;
-appropriate. Does not define the beginning or end of a sampling period.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Service / adjust / clean trap [Adjustment is made to trap during a sampling period, such as returning it to desired sampling&#13;
-position or removing debris. Does not define the beginning or end of a sampling period. Fish are not processed during this&#13;
-type of visit.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>fishProcessedID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code describing if fish processed during trap visit</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>0</code>
-                    <definition>No fish were caught [If no fish were caught, use this code and enter a record with n=0 for each targeted taxon.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Processed fish [At least one record in CatchRaw should exist for each targeted taxon.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No catch data; fish left in live box [No records in CatchRaw should exist.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>No catch data; fish released [No records in CatchRaw should exist.]</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>inThalwegID</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Code for whether trap was sampling in the thalweg of the stream at the beginning of the trap visit (luNoYes)</attributeDefinition>
@@ -5236,35 +3076,6 @@ type of visit.]</definition>
                   <codeDefinition>
                     <code>251</code>
                     <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>trapFunctioningID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for description of how well trap is functioning when visit to trap began</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Trap functioning normally</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Trap functioning, but not normally</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Trap stopped functioning</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Trap not in service</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -5386,105 +3197,6 @@ type of visit.]</definition>
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>halfConeID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for whether trap was in half cone configuration (luNoYes)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>includeCatchID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for whether this record is considered of high enough quality to include in analysis</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>debrisVolumeCatID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for description of volume of debris removed from live box</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>0</code>
-                    <definition>None</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Light</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Medium</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Heavy</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Very Heavy</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>debrisVolume</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Volume of debris removed from trap live box</attributeDefinition>
@@ -5512,6 +3224,100 @@ type of visit.]</definition>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Units used for the volume of debris removed from livebox</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Type of visit. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
+"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
+)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Type of visit. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
+"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
+)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishProcessed</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>If fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
+"No catch data; fish released")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>If fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
+"No catch data; fish released")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapFunctioning</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", &#13;
+"Trap not in service")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", &#13;
+"Trap not in service")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>debrisVolumeCat</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Description of volume of debris removed from live box. c("Partially Blocked", NA, "Clear", "Completely Blocked", "Backed up into Cone", &#13;
+"Not recorded")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Description of volume of debris removed from live box. c("Partially Blocked", NA, "Clear", "Completely Blocked", "Backed up into Cone", &#13;
+"Not recorded")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>includeCatch</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>halfCone</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Whether trap was in half cone configuration. Levels = c("No", "Yes")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether trap was in half cone configuration. Levels = c("No", "Yes")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
