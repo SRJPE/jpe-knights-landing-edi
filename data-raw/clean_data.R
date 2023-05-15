@@ -146,11 +146,13 @@ trap <- trap_raw |>
   left_join(cone_debris_vol_cat_lu, by = "debrisVolumeCatID") |>
   left_join(noyes_lu, by = c("includeCatchID" = "noYesID")) |>
   rename(includeCatch = noYes) |>
+  left_join(noyes_lu, by = c("inThalwegID" = "noYesID")) |>
+  rename(inThalweg = noYes) |>
   left_join(noyes_lu, by = c("halfConeID" = "noYesID")) |>
   rename(halfCone = noYes) |>
   select(-c(subSiteName, fishProcessedID,
             trapFunctioningID, debrisVolumeCatID,
-            includeCatchID, halfConeID)) |>
+            includeCatchID, halfConeID, inThalwegID, debrisVolumeUnits)) |>
   mutate(visitTime = as.POSIXct(visitTime),
          visitTime2 = as.POSIXct(visitTime2)) |>
   relocate(siteID, .before = trapPositionID) |>
@@ -265,6 +267,7 @@ environmental <- environmental_raw |>
             turbidityUnitID, dischargeSampleGearID, waterVelSampleGearID,
             waterTempSampleGearID, lightPenetrationSampleGearID, turbiditySampleGearID,
             visitTypeID)) |>
+  select(-c(dischargeUnit, waterVelUnit, waterTempUnit, lightPenetrationUnit, turbidityUnit)) |>
   glimpse()
 
 trap <- trap |> select(-visitTypeID) # remove ID column after joins

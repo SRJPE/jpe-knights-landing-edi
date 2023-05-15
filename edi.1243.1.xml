@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-05-11</pubDate>
+    <pubDate>2023-05-15</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -331,7 +331,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>see unit column</customUnit>
+                <standardUnit>cubicFeetPerSecond</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -350,7 +350,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>see unit column</customUnit>
+                <standardUnit>metersPerSecond</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -369,7 +369,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>see unit column</customUnit>
+                <standardUnit>celsius</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -388,7 +388,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>see unit column</customUnit>
+                <standardUnit>centimeter</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -407,7 +407,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>see unit column</customUnit>
+                <customUnit>Nephelometric Turbidity Units (NTU)</customUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -449,67 +449,6 @@
                 </bounds>
               </dateTimeDomain>
             </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitTypeID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for work that was done during visit to trap</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Continue trapping</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Drive-by only</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>End trapping</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Service/adjust/clean trap</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Start trap &amp; begin trapping</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Unplanned restart</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -632,84 +571,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>dischargeUnit</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Unit of measure. Levels = c("cubic feet/second (cfs)", NA, "Not recorded", "centimeter (cm)", &#13;
-"nephelometric turbidity units (NTU)", "feet/second (ft/sec)", &#13;
-"cubic meters/second (m3/sec)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit of measure. Levels = c("cubic feet/second (cfs)", NA, "Not recorded", "centimeter (cm)", &#13;
-"nephelometric turbidity units (NTU)", "feet/second (ft/sec)", &#13;
-"cubic meters/second (m3/sec)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterVelUnit</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Unit of measure. Levels = c("feet/second (ft/sec)", NA, "Not recorded", "cubic feet/second (cfs)", &#13;
-"meters/second (m/sec)", "meter (m)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit of measure. Levels = c("feet/second (ft/sec)", NA, "Not recorded", "cubic feet/second (cfs)", &#13;
-"meters/second (m/sec)", "meter (m)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterTempUnit</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Unit of measure. Levels = c(NA, "Not recorded", "feet/second (ft/sec)", "C")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit of measure. Levels = c(NA, "Not recorded", "feet/second (ft/sec)", "C")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>lightPenetrationUnit</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Unit of measure. Levels = c(NA, "Not recorded", "percent (%)", "centimeter (cm)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit of measure. Levels = c(NA, "Not recorded", "percent (%)", "centimeter (cm)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>turbidityUnit</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Unit of measure. Levels = c("nephelometric turbidity units (NTU)", NA, "Not recorded", &#13;
-"meters/second (m/sec)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Unit of measure. Levels = c("nephelometric turbidity units (NTU)", NA, "Not recorded", &#13;
-"meters/second (m/sec)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>dischargeSampleGear</attributeName>
           <attributeLabel>environmental</attributeLabel>
           <attributeDefinition>The sample gear used. Levels = c("Gauging station (non-USGS)", NA, "Electronic meter", "Electronic depth finder", &#13;
@@ -786,6 +647,24 @@
                 <textDomain>
                   <definition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder", &#13;
 "Analog hand-held thermometer", "Gauging station (non-USGS)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>environmental</attributeLabel>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
+"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
+)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
+"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
+)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -3204,31 +3083,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>inThalwegID</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for whether trap was sampling in the thalweg of the stream at the beginning of the trap visit (luNoYes)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Yes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>No</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>counterAtStart</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Reading on the rotation counter at the start of the trap visit</attributeDefinition>
@@ -3349,7 +3203,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <customUnit>see unit column</customUnit>
+                <standardUnit>cubicMeter</standardUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -3359,20 +3213,6 @@
                 </bounds>
               </numericDomain>
             </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>debrisVolumeUnits</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Units used for the volume of debris removed from livebox</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Units used for the volume of debris removed from livebox</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -3456,6 +3296,20 @@
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>inThalweg</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Whether trap was sampling in the thalweg of the stream at the beginning of the trap visit.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether trap was sampling in the thalweg of the stream at the beginning of the trap visit.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>halfCone</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Whether trap was in half cone configuration. Levels = c("No", "Yes")</attributeDefinition>
@@ -3479,8 +3333,8 @@
         <unit id="count of fish" name="count of fish" unitType="dimensionless">
           <description>Count of fish</description>
         </unit>
-        <unit id="see unit column" name="see unit column" unitType="dimensionless">
-          <description>UnitID column will have unit information</description>
+        <unit id="Nephelometric Turbidity Units (NTU)" name="Nephelometric Turbidity Units (NTU)" unitType="dimensionless">
+          <description>Unit of measurement for turbidity</description>
         </unit>
         <unit id="day" name="day" unitType="dimensionless">
           <description>Number of days</description>

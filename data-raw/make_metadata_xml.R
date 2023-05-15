@@ -55,12 +55,12 @@ dataset <- list() %>%
   add_datatable(datatable_metadata)
 
 # GO through and check on all units
-custom_units <- data.frame(id = c("count of fish", "see unit column", "day", "number of rotations", "revolutions per minute"),
+custom_units <- data.frame(id = c("count of fish", "Nephelometric Turbidity Units (NTU)", "day", "number of rotations", "revolutions per minute"),
                            unitType = c("dimensionless", "dimensionless", "dimensionless", "dimensionless", "dimensionless"),
                            parentSI = c(NA, NA, NA, NA, NA),
                            multiplierToSI = c(NA, NA, NA, NA, NA),
                            description = c("Count of fish",
-                                           "UnitID column will have unit information",
+                                           "Unit of measurement for turbidity",
                                            "Number of days",
                                            "Total rotations",
                                            "Number of revolutions per minute"))
