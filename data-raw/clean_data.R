@@ -133,7 +133,6 @@ environmental_raw <- mdb.get(here::here("data-raw", "CAMP.mdb"), "EnvDataRaw")
 # clean up and format data tables -----------------------------------------
 
 # TODO debrisVolume and debrisVolumeUnits are NAs
-# TODO do we want to keep includeCatchID?
 trap <- trap_raw |>
   select(projectDescriptionID, trapVisitID, trapPositionID, visitTime, visitTime2,
          visitTypeID, fishProcessedID, inThalwegID, trapFunctioningID, counterAtStart,
@@ -261,9 +260,11 @@ environmental <- environmental_raw |>
   rename(lightPenetrationSampleGear = sampleGear) |>
   left_join(sample_gear_lu, by = c("turbiditySampleGearID" = "sampleGearID")) |>
   rename(turbiditySampleGear = sampleGear) |>
+  left_join(visit_type_lu, by = "visitTypeID") |>
   select(-c(dischargeUnitID, waterVelUnitID, waterTempUnitID, lightPenetrationUnitID,
             turbidityUnitID, dischargeSampleGearID, waterVelSampleGearID,
-            waterTempSampleGearID, lightPenetrationSampleGearID, turbiditySampleGearID)) |>
+            waterTempSampleGearID, lightPenetrationSampleGearID, turbiditySampleGearID,
+            visitTypeID)) |>
   glimpse()
 
 trap <- trap |> select(-visitTypeID) # remove ID column after joins
