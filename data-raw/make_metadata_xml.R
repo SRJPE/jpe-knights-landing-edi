@@ -26,7 +26,7 @@ datatable_metadata <-
                                          "release_fish.csv",
                                          "release.csv")))
 # save cleaned data to `data/`
-excel_path <- "data-raw/metadata/camp_metadata.xlsx"
+excel_path <- "data-raw/metadata/KDL_project_metadata.xlsx"
 sheets <- readxl::excel_sheets(excel_path)
 metadata <- lapply(sheets, function(x) readxl::read_excel(excel_path, sheet = x))
 names(metadata) <- sheets
@@ -51,15 +51,18 @@ dataset <- list() %>%
   add_datatable(datatable_metadata)
 
 # GO through and check on all units
-custom_units <- data.frame(id = c("count of fish", "Nephelometric Turbidity Units (NTU)", "day", "number of rotations", "revolutions per minute"),
-                           unitType = c("dimensionless", "dimensionless", "dimensionless", "dimensionless", "dimensionless"),
-                           parentSI = c(NA, NA, NA, NA, NA),
-                           multiplierToSI = c(NA, NA, NA, NA, NA),
+custom_units <- data.frame(id = c("count of fish", "Nephelometric Turbidity Units (NTU)", "day", "number of rotations",
+                                  "revolutions per minute", "microSiemens per centimeter"),
+                           unitType = c("dimensionless", "dimensionless", "dimensionless",
+                                        "dimensionless", "dimensionless", "dimensionless"),
+                           parentSI = c(NA, NA, NA, NA, NA, NA),
+                           multiplierToSI = c(NA, NA, NA, NA, NA, NA),
                            description = c("Count of fish",
                                            "Unit of measurement for turbidity",
                                            "Number of days",
                                            "Total rotations",
-                                           "Number of revolutions per minute"))
+                                           "Number of revolutions per minute",
+                                           "Unit of measurement for conductivity"))
 
 unitList <- EML::set_unitList(custom_units)
 

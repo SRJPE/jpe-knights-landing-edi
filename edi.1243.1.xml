@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-05-15</pubDate>
+    <pubDate>2023-05-17</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -256,2380 +256,6 @@
       </personnel>
     </project>
     <dataTable>
-      <entityName>environmental.csv</entityName>
-      <entityDescription>Environmental covariates</entityDescription>
-      <physical>
-        <objectName>environmental.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
-        <dataFormat>
-          <textFormat>
-            <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\n</recordDelimiter>
-            <attributeOrientation>column</attributeOrientation>
-            <simpleDelimited>
-              <fieldDelimiter>,</fieldDelimiter>
-            </simpleDelimited>
-          </textFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/environmental.csv</url>
-          </online>
-        </distribution>
-      </physical>
-      <attributeList>
-        <attribute>
-          <attributeName>projectDescriptionID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Knights Landing RST Program</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>envDataRawID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Primary key that defines record in table.</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Primary key that defines record in table.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>trapVisitID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP TrapVisit table.</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP TrapVisit table.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>discharge</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Instantaneous stream discharge measurement</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>cubicFeetPerSecond</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">32.9</minimum>
-                  <maximum exclusive="false">28700</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterVel</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Instantaneous water velocity measured</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>metersPerSecond</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">5431</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterTemp</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Instantaneous water temperature measured</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>celsius</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">6.9</minimum>
-                  <maximum exclusive="false">78</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>lightPenetration</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Instantaneous light penetration measured</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>centimeter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0.2</minimum>
-                  <maximum exclusive="false">214</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>turbidity</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Instantaneous turbidity measurement</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>Nephelometric Turbidity Units (NTU)</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0.42</minimum>
-                  <maximum exclusive="false">1513</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitTime</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 5, or 6 this is the date and the time of day of arrival at the trap. For visitTypeID=2, 3, or 4 this is the date and the time of day the trap was emptied.)</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
-                  <maximum exclusive="false">2022-05-18 02:30:25</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitTime2</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 2, or 3 this is the date and the time of day the trap began fishing. For visitTypeID=4, 5, or 6 this is the date and the time of day of the end of the visit.)</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
-                  <maximum exclusive="false">2022-05-18 02:30:25</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>siteID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for name of the sampling site</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3000</code>
-                    <definition>Eye Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Eye riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Gateway Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Gateway_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5000</code>
-                    <definition>Herringer Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Herringer_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4000</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Live Oak_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Reserved # 1 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Reserved # 2 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Reserved # 3 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Reserved # 4 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Shawn_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7000</code>
-                    <definition>Shawn's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2000</code>
-                    <definition>Steep Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Steep Riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6000</code>
-                    <definition>Sunset Pumps</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Sunset_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Test Release Site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>trapPositionID</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Code for position of trap within the site. Levels = c(63004, 63003)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for position of trap within the site. Levels = c(63004, 63003)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>dischargeSampleGear</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>The sample gear used. Levels = c("Gauging station (non-USGS)", NA, "Electronic meter", "Electronic depth finder", &#13;
-"Not recorded")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>The sample gear used. Levels = c("Gauging station (non-USGS)", NA, "Electronic meter", "Electronic depth finder", &#13;
-"Not recorded")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterVelSampleGear</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder"&#13;
-)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder"&#13;
-)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>waterTempSampleGear</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>The sample gear used. Levels = c("Analog hand-held thermometer", NA, "Not recorded", "Electronic depth finder", &#13;
-"Electronic meter", "Gauging station (non-USGS)", "Secchi disk"&#13;
-)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>The sample gear used. Levels = c("Analog hand-held thermometer", NA, "Not recorded", "Electronic depth finder", &#13;
-"Electronic meter", "Gauging station (non-USGS)", "Secchi disk"&#13;
-)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>lightPenetrationSampleGear</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>The sample gear used. Levels = c("Secchi disk", NA, "Not recorded", "Electronic meter", "Electronic depth finder", &#13;
-"Gauging station (non-USGS)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>The sample gear used. Levels = c("Secchi disk", NA, "Not recorded", "Electronic meter", "Electronic depth finder", &#13;
-"Gauging station (non-USGS)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>turbiditySampleGear</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder", &#13;
-"Analog hand-held thermometer", "Gauging station (non-USGS)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>The sample gear used. Levels = c("Electronic meter", NA, "Not recorded", "Electronic depth finder", &#13;
-"Analog hand-held thermometer", "Gauging station (non-USGS)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitType</attributeName>
-          <attributeLabel>environmental</attributeLabel>
-          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
-"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
-)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
-"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
-)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-      </attributeList>
-      <numberOfRecords>6035</numberOfRecords>
-    </dataTable>
-    <dataTable>
-      <entityName>catch.csv</entityName>
-      <entityDescription>Daily catch</entityDescription>
-      <physical>
-        <objectName>catch.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
-        <dataFormat>
-          <textFormat>
-            <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\n</recordDelimiter>
-            <attributeOrientation>column</attributeOrientation>
-            <simpleDelimited>
-              <fieldDelimiter>,</fieldDelimiter>
-            </simpleDelimited>
-          </textFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/catch.csv</url>
-          </online>
-        </distribution>
-      </physical>
-      <attributeList>
-        <attribute>
-          <attributeName>projectDescriptionID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Knights Landing RST program</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>catchRawID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Primary key in the CAMP CatchRaw table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Primary key in the CAMP CatchRaw table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>trapVisitID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP TrapVisit table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP TrapVisit table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>forkLength</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Fork length of the fish measured in millimeters</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>millimeter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">991</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>totalLength</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Total length of the fish measured in millimeters</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>millimeter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">905</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>weight</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Weight of the fish measured in grams</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>gram</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">1004</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>n</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>count of fish</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">15105</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign Key to the CAMP Release table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitTime</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 5, or 6 this is the date and the time of day of arrival at the trap. For visitTypeID=2, 3, or 4 this is the date and the time of day the trap was emptied.)</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
-                  <maximum exclusive="false">2022-05-18 02:30:56</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitTime2</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 2, or 3 this is the date and the time of day the trap began fishing. For visitTypeID=4, 5, or 6 this is the date and the time of day of the end of the visit.)</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2022-05-18 09:30:56</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>siteID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for name of the sampling site</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3000</code>
-                    <definition>Eye Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Eye riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Gateway Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Gateway_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5000</code>
-                    <definition>Herringer Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Herringer_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4000</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Live Oak_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Reserved # 1 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Reserved # 2 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Reserved # 3 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Reserved # 4 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Shawn_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7000</code>
-                    <definition>Shawn's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2000</code>
-                    <definition>Steep Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Steep Riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6000</code>
-                    <definition>Sunset Pumps</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Sunset_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Test Release Site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>trapPositionID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for name of the trap or trap location</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2001</code>
-                    <definition>#Steep Riffle_RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44018</code>
-                    <definition>Below Weir Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44007</code>
-                    <definition>Eye Pool Left &amp; Right RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44017</code>
-                    <definition>Eye Pool Left RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44016</code>
-                    <definition>Eye Pool Right RM60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44013</code>
-                    <definition>Eye Pool RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3001</code>
-                    <definition>Eye riffle_north</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3002</code>
-                    <definition>Eye riffle_Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52003</code>
-                    <definition>Gateway Main 400' Up River</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51002</code>
-                    <definition>Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51003</code>
-                    <definition>Gateway release_RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52001</code>
-                    <definition>Gateway_main1</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52002</code>
-                    <definition>Gateway_Rootball</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52004</code>
-                    <definition>Gateway_Rootball_River_Left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90001</code>
-                    <definition>Gray's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46003</code>
-                    <definition>half mile above trap RM</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46001</code>
-                    <definition>Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46004</code>
-                    <definition>Herringer release_ RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5001</code>
-                    <definition>Herringer_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5003</code>
-                    <definition>Herringer_Upper_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5002</code>
-                    <definition>Herringer_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4001</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4002</code>
-                    <definition>Live Oak_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44010</code>
-                    <definition>Lower Robinson RM 61.4</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51001</code>
-                    <definition>next to Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46002</code>
-                    <definition>next to Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44001</code>
-                    <definition>Release at river left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44003</code>
-                    <definition>Release river left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44002</code>
-                    <definition>Release river middle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44004</code>
-                    <definition>Release river right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47002</code>
-                    <definition>release_100m above falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47001</code>
-                    <definition>release_below falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44009</code>
-                    <definition>Robinson Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44006</code>
-                    <definition>Robinson Side &amp; Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44008</code>
-                    <definition>Robinson Side RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7002</code>
-                    <definition>Shawns_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7003</code>
-                    <definition>Shawns_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44012</code>
-                    <definition>Steep Pool Left Middle Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44014</code>
-                    <definition>Steep Pool Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44011</code>
-                    <definition>Steep Pool Right &amp; Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44015</code>
-                    <definition>Steep Pool Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44005</code>
-                    <definition>Steep Pool RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43001</code>
-                    <definition>Steep release_RR &amp; RL</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2004</code>
-                    <definition>Steep Riffle_10' ext</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2003</code>
-                    <definition>Steep Riffle_100' below</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2002</code>
-                    <definition>Steep Riffle_Opposite RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2005</code>
-                    <definition>Steep Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6002</code>
-                    <definition>Sunset East bank</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6003</code>
-                    <definition>Sunset West bank</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitType</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
-"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
-)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for work that was done during visit to trap. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
-"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
-)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>commonName</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Common name of marked species.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Common name of marked species.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>atCaptureRun</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Fish run as assigned at the time of the capture. Levels = c("Not recorded", "Winter", "Spring", "Late fall", "Fall", "Other", &#13;
-"Not applicable (n/a)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Fish run as assigned at the time of the capture. Levels = c("Not recorded", "Winter", "Spring", "Late fall", "Fall", "Other", &#13;
-"Not applicable (n/a)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>atCaptureRunMethod</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Method used to make the run assigment at capture. Levels = c("Not recorded", "Length-at-date criteria", "Appearance", "Modified length-at-date", &#13;
-"Hatchery attribute")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Method used to make the run assigment at capture. Levels = c("Not recorded", "Length-at-date criteria", "Appearance", "Modified length-at-date", &#13;
-"Hatchery attribute")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>finalRunMethod</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Method used to make the final run assignment. Levels = c("Not recorded", NA, "Length-at-date criteria", "Appearance", &#13;
-"Hatchery attribute")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Method used to make the final run assignment. Levels = c("Not recorded", NA, "Length-at-date criteria", "Appearance", &#13;
-"Hatchery attribute")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>finalRun</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Final run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", NA, "Winter", "Spring", "Late fall", "Fall", &#13;
-"Not applicable (n/a)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Final run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", NA, "Winter", "Spring", "Late fall", "Fall", &#13;
-"Not applicable (n/a)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>fishOrigin</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for origin/production type of the fish.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for origin/production type of the fish.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>lifeStage</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Parr", "Ammocoete", "Silvery parr", NA, "Smolt", &#13;
-"Juvenile", "Adult", "Yolk sac fry (alevin)", "Yearling", "Fry", &#13;
-"YOY (young of the year)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Life stage of the fish. Levels = c("Not recorded", "Parr", "Ammocoete", "Silvery parr", NA, "Smolt", &#13;
-"Juvenile", "Adult", "Yolk sac fry (alevin)", "Yearling", "Fry", &#13;
-"YOY (young of the year)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>actualCount</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Code for whether the count (n) is an actual count or estimate. Levels = c("No", "Yes")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for whether the count (n) is an actual count or estimate. Levels = c("No", "Yes")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>random</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Whether fish were sampled randomly. Levels = c("No", "Yes")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Whether fish were sampled randomly. Levels = c("No", "Yes")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-      </attributeList>
-      <numberOfRecords>147128</numberOfRecords>
-    </dataTable>
-    <dataTable>
-      <entityName>markexisting.csv</entityName>
-      <entityDescription>Existing marks on catch</entityDescription>
-      <physical>
-        <objectName>markexisting.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
-        <dataFormat>
-          <textFormat>
-            <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\n</recordDelimiter>
-            <attributeOrientation>column</attributeOrientation>
-            <simpleDelimited>
-              <fieldDelimiter>,</fieldDelimiter>
-            </simpleDelimited>
-          </textFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/mark_existing.csv</url>
-          </online>
-        </distribution>
-      </physical>
-      <attributeList>
-        <attribute>
-          <attributeName>projectDescriptionID</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Knights Landing RST Program</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>catchRawID</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Foreign to the CatchRaw table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign to the CatchRaw table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markExistingID</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Primary key for record in this table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Primary key for record in this table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markPositionID</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Code for the position of mark found on fish</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Adipose fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Anal fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Caudal fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Caudal fin bottom lobe</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Caudal fin top and bottom lobes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Caudal fin top lobe</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>23</code>
-                    <definition>Caudal peduncle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>24</code>
-                    <definition>Caudal peduncle left side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>25</code>
-                    <definition>Caudal peduncle right side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Dorsal fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>26</code>
-                    <definition>Head</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>22</code>
-                    <definition>Internal / coelom</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Left side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>17</code>
-                    <definition>Left side, back</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Left side, front</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>Nose</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Pectoral fin, left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Pectoral fin, left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>Pectoral fin, right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>Pelvic fin, left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>Pelvic fin, left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Pelvic fin, right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>18</code>
-                    <definition>Right side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Right side, back</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>19</code>
-                    <definition>Right side, front</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>21</code>
-                    <definition>Whole body</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markCode</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Code information for mark types that contain codes</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code information for mark types that contain codes</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markType</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Type of mark found on fish. Levels = c("No marks or tags", "Fin clip", "Pigment / dye", "Elastomer", &#13;
-"Acoustic telemetry tag", "Coded wire tag (CWT)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Type of mark found on fish. Levels = c("No marks or tags", "Fin clip", "Pigment / dye", "Elastomer", &#13;
-"Acoustic telemetry tag", "Coded wire tag (CWT)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markColor</attributeName>
-          <attributeLabel>mark_existing</attributeLabel>
-          <attributeDefinition>Color of mark found on fish. Levles = c("Not applicable (n/a)", "Brown", "Blue", "Purple / Violet", &#13;
-"Orange", "Pink", "Green", "Not recorded")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Color of mark found on fish. Levles = c("Not applicable (n/a)", "Brown", "Blue", "Purple / Violet", &#13;
-"Orange", "Pink", "Green", "Not recorded")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-      </attributeList>
-      <numberOfRecords>147676</numberOfRecords>
-    </dataTable>
-    <dataTable>
-      <entityName>release.csv</entityName>
-      <entityDescription>Release trial summary</entityDescription>
-      <physical>
-        <objectName>release.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
-        <dataFormat>
-          <textFormat>
-            <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\n</recordDelimiter>
-            <attributeOrientation>column</attributeOrientation>
-            <simpleDelimited>
-              <fieldDelimiter>,</fieldDelimiter>
-            </simpleDelimited>
-          </textFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release.csv</url>
-          </online>
-        </distribution>
-      </physical>
-      <attributeList>
-        <attribute>
-          <attributeName>projectDescriptionID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Knights Landing RST Program</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>sourceOfFishSiteID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Site where fish used for release were from</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3000</code>
-                    <definition>Eye Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Eye riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Gateway Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Gateway_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5000</code>
-                    <definition>Herringer Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Herringer_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4000</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Live Oak_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Reserved # 1 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Reserved # 2 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Reserved # 3 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Reserved # 4 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Shawn_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7000</code>
-                    <definition>Shawn's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2000</code>
-                    <definition>Steep Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Steep Riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6000</code>
-                    <definition>Sunset Pumps</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Sunset_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Test Release Site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseSiteID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Site where fish were released</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3000</code>
-                    <definition>Eye Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Eye riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Gateway Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Gateway_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5000</code>
-                    <definition>Herringer Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Herringer_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4000</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Live Oak_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Reserved # 1 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Reserved # 2 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Reserved # 3 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Reserved # 4 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Shawn_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7000</code>
-                    <definition>Shawn's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2000</code>
-                    <definition>Steep Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Steep Riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6000</code>
-                    <definition>Sunset Pumps</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Sunset_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Test Release Site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseSubSiteID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Subsite (within site) where fish were released. Corresponds to a trap location.</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2001</code>
-                    <definition>#Steep Riffle_RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44018</code>
-                    <definition>Below Weir Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44007</code>
-                    <definition>Eye Pool Left &amp; Right RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44017</code>
-                    <definition>Eye Pool Left RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44016</code>
-                    <definition>Eye Pool Right RM60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44013</code>
-                    <definition>Eye Pool RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3001</code>
-                    <definition>Eye riffle_north</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3002</code>
-                    <definition>Eye riffle_Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52003</code>
-                    <definition>Gateway Main 400' Up River</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51002</code>
-                    <definition>Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51003</code>
-                    <definition>Gateway release_RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52001</code>
-                    <definition>Gateway_main1</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52002</code>
-                    <definition>Gateway_Rootball</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52004</code>
-                    <definition>Gateway_Rootball_River_Left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90001</code>
-                    <definition>Gray's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46003</code>
-                    <definition>half mile above trap RM</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46001</code>
-                    <definition>Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46004</code>
-                    <definition>Herringer release_ RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5001</code>
-                    <definition>Herringer_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5003</code>
-                    <definition>Herringer_Upper_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5002</code>
-                    <definition>Herringer_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4001</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4002</code>
-                    <definition>Live Oak_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44010</code>
-                    <definition>Lower Robinson RM 61.4</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51001</code>
-                    <definition>next to Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46002</code>
-                    <definition>next to Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44001</code>
-                    <definition>Release at river left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44003</code>
-                    <definition>Release river left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44002</code>
-                    <definition>Release river middle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44004</code>
-                    <definition>Release river right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47002</code>
-                    <definition>release_100m above falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47001</code>
-                    <definition>release_below falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44009</code>
-                    <definition>Robinson Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44006</code>
-                    <definition>Robinson Side &amp; Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44008</code>
-                    <definition>Robinson Side RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7002</code>
-                    <definition>Shawns_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7003</code>
-                    <definition>Shawns_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44012</code>
-                    <definition>Steep Pool Left Middle Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44014</code>
-                    <definition>Steep Pool Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44011</code>
-                    <definition>Steep Pool Right &amp; Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44015</code>
-                    <definition>Steep Pool Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44005</code>
-                    <definition>Steep Pool RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43001</code>
-                    <definition>Steep release_RR &amp; RL</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2004</code>
-                    <definition>Steep Riffle_10' ext</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2003</code>
-                    <definition>Steep Riffle_100' below</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2002</code>
-                    <definition>Steep Riffle_Opposite RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2005</code>
-                    <definition>Steep Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6002</code>
-                    <definition>Sunset East bank</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6003</code>
-                    <definition>Sunset West bank</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>nReleased</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Number of fish released that were alive with mark intact</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>count of fish</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">81</minimum>
-                  <maximum exclusive="false">7180</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseTime</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Date and time of release</attributeDefinition>
-          <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-12-18 05:15:50</minimum>
-                  <maximum exclusive="false">2022-04-15 02:45:20</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>testDays</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Number of days this trap test is considered valid</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>day</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">136</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>appliedMarkPositionID</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Position of the mark that was applied to the mark group</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>1</code>
-                    <definition>Adipose fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6</code>
-                    <definition>Anal fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5</code>
-                    <definition>Caudal fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4</code>
-                    <definition>Caudal fin bottom lobe</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3</code>
-                    <definition>Caudal fin top and bottom lobes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2</code>
-                    <definition>Caudal fin top lobe</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>23</code>
-                    <definition>Caudal peduncle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>24</code>
-                    <definition>Caudal peduncle left side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>25</code>
-                    <definition>Caudal peduncle right side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>14</code>
-                    <definition>Dorsal fin</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>26</code>
-                    <definition>Head</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>22</code>
-                    <definition>Internal / coelom</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>15</code>
-                    <definition>Left side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>17</code>
-                    <definition>Left side, back</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>16</code>
-                    <definition>Left side, front</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>13</code>
-                    <definition>Nose</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>250</code>
-                    <definition>Other</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>10</code>
-                    <definition>Pectoral fin, left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>11</code>
-                    <definition>Pectoral fin, left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>12</code>
-                    <definition>Pectoral fin, right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7</code>
-                    <definition>Pelvic fin, left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>8</code>
-                    <definition>Pelvic fin, left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Pelvic fin, right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>18</code>
-                    <definition>Right side</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20</code>
-                    <definition>Right side, back</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>19</code>
-                    <definition>Right side, front</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>254</code>
-                    <definition>See Comments</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>21</code>
-                    <definition>Whole body</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releasePurpose</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Purpose of the release</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Purpose of the release</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>commonName</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Common name of marked species</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Common name of marked species</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedRun</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Run of fish marked. Levels = c("Not recorded", "Fall", "Other", "Late fall")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Run of fish marked. Levels = c("Not recorded", "Fall", "Other", "Late fall")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedLifeStage</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Lifestage of fish marked. Levels = c(NA, "Smolt", "Juvenile", "Not recorded")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Lifestage of fish marked. Levels = c(NA, "Smolt", "Juvenile", "Not recorded")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>markedFishOrigin</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Origin or production type of fish marked. Levels = c("Not recorded", "Unknown", "Hatchery", "Natural")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Origin or production type of fish marked. Levels = c("Not recorded", "Unknown", "Hatchery", "Natural")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseLightCondition</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Light condition when fish were released. Levels = c(NA, "Daylight")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Light condition when fish were released. Levels = c(NA, "Daylight")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>includeTest</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Code for whether release trial should be included</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Code for whether release trial should be included</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>appliedMarkType</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Mark type that was applied to the release group. Levels = c(NA, "Pigment / dye", "Elastomer", "Fin clip")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Mark type that was applied to the release group. Levels = c(NA, "Pigment / dye", "Elastomer", "Fin clip")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>appliedMarkColor</attributeName>
-          <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Color of mark that was applied to the release group. Levels = c(NA, "Brown", "Orange", "Red", "Pink", "Blue", "Purple / Violet", &#13;
-"Green", "Not applicable (n/a)")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Color of mark that was applied to the release group. Levels = c(NA, "Brown", "Orange", "Red", "Pink", "Blue", "Purple / Violet", &#13;
-"Green", "Not applicable (n/a)")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-      </attributeList>
-      <numberOfRecords>100</numberOfRecords>
-    </dataTable>
-    <dataTable>
-      <entityName>releasefish.csv</entityName>
-      <entityDescription>Release fish measurements</entityDescription>
-      <physical>
-        <objectName>releasefish.csv</objectName>
-        <size unit="bytes">14</size>
-        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
-        <dataFormat>
-          <textFormat>
-            <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\n</recordDelimiter>
-            <attributeOrientation>column</attributeOrientation>
-            <simpleDelimited>
-              <fieldDelimiter>,</fieldDelimiter>
-            </simpleDelimited>
-          </textFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release_fish.csv</url>
-          </online>
-        </distribution>
-      </physical>
-      <attributeList>
-        <attribute>
-          <attributeName>projectDescriptionID</attributeName>
-          <attributeLabel>release_fish</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Knights Landing RST Program</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseFishID</attributeName>
-          <attributeLabel>release_fish</attributeLabel>
-          <attributeDefinition>Primary key in the CAMP ReleaseFish table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Primary key in the CAMP ReleaseFish table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>releaseID</attributeName>
-          <attributeLabel>release_fish</attributeLabel>
-          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
-          <measurementScale>
-            <ordinal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign Key to the CAMP Release table</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </ordinal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>nMarked</attributeName>
-          <attributeLabel>release_fish</attributeLabel>
-          <attributeDefinition>Number of fish marked that weight/length measurements apply to</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <customUnit>count of fish</customUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">3</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>forkLength</attributeName>
-          <attributeLabel>release_fish</attributeLabel>
-          <attributeDefinition>Fork length of the fish measured in milimeters</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>millimeter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">41</minimum>
-                  <maximum exclusive="false">191</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>weight</attributeName>
-          <attributeLabel>release_fish</attributeLabel>
-          <attributeDefinition>Weight of the fish measured in grams</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>gram</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">40</minimum>
-                  <maximum exclusive="false">58</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-      </attributeList>
-      <numberOfRecords>2560</numberOfRecords>
-    </dataTable>
-    <dataTable>
       <entityName>trap.csv</entityName>
       <entityDescription>Daily trap operations</entityDescription>
       <physical>
@@ -2656,16 +282,13 @@
         <attribute>
           <attributeName>projectDescriptionID</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST Program, projectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>9</code>
-                    <definition>Knights Landing RST Program</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST Program, projectDescriptionID = 9.</definition>
+                </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
@@ -2685,401 +308,95 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>siteID</attributeName>
+          <attributeName>visitTime</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for name of the sampling site</attributeDefinition>
+          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2022-10-22 14:30:52</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteName</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Name of the sampling site. Levels = "Knights Landing RST"</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>3000</code>
-                    <definition>Eye Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Eye riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Gateway Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Gateway_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5000</code>
-                    <definition>Herringer Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Herringer_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4000</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Live Oak_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>252</code>
-                    <definition>Not applicable</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>251</code>
-                    <definition>Not recorded</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>255</code>
-                    <definition>Not yet assigned</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Reserved # 1 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Reserved # 2 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Reserved # 3 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Reserved # 4 Feather River Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Shawn_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7000</code>
-                    <definition>Shawn's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2000</code>
-                    <definition>Steep Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Steep Riffle_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6000</code>
-                    <definition>Sunset Pumps</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Sunset_release site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Test Release Site</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>253</code>
-                    <definition>Unknown</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Name of the sampling site. Levels = "Knights Landing RST"</definition>
+                </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>trapPositionID</attributeName>
+          <attributeName>subSiteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for position of trap within the site</attributeDefinition>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("8.4", "8.3")</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>2001</code>
-                    <definition>#Steep Riffle_RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44018</code>
-                    <definition>Below Weir Riffle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44007</code>
-                    <definition>Eye Pool Left &amp; Right RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44017</code>
-                    <definition>Eye Pool Left RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44016</code>
-                    <definition>Eye Pool Right RM60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44013</code>
-                    <definition>Eye Pool RM 60.5</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3001</code>
-                    <definition>Eye riffle_north</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>3002</code>
-                    <definition>Eye riffle_Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52003</code>
-                    <definition>Gateway Main 400' Up River</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51002</code>
-                    <definition>Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51003</code>
-                    <definition>Gateway release_RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52001</code>
-                    <definition>Gateway_main1</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52002</code>
-                    <definition>Gateway_Rootball</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52004</code>
-                    <definition>Gateway_Rootball_River_Left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90001</code>
-                    <definition>Gray's Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46003</code>
-                    <definition>half mile above trap RM</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46001</code>
-                    <definition>Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46004</code>
-                    <definition>Herringer release_ RL &amp; RR</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5001</code>
-                    <definition>Herringer_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5003</code>
-                    <definition>Herringer_Upper_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>5002</code>
-                    <definition>Herringer_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4001</code>
-                    <definition>Live Oak</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>4002</code>
-                    <definition>Live Oak_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44010</code>
-                    <definition>Lower Robinson RM 61.4</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51001</code>
-                    <definition>next to Gateway release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46002</code>
-                    <definition>next to Herringer Release boxes</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>45000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>46000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>50000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>51000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>52000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>53000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>54000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>55000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>56000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>90000</code>
-                    <definition>Not applicable (n/a)</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44001</code>
-                    <definition>Release at river left</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44003</code>
-                    <definition>Release river left and right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44002</code>
-                    <definition>Release river middle</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44004</code>
-                    <definition>Release river right</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47002</code>
-                    <definition>release_100m above falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>47001</code>
-                    <definition>release_below falls</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44009</code>
-                    <definition>Robinson Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44006</code>
-                    <definition>Robinson Side &amp; Main RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44008</code>
-                    <definition>Robinson Side RM 61.6</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7002</code>
-                    <definition>Shawns_east</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>7003</code>
-                    <definition>Shawns_west</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44012</code>
-                    <definition>Steep Pool Left Middle Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44014</code>
-                    <definition>Steep Pool Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44011</code>
-                    <definition>Steep Pool Right &amp; Left RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44015</code>
-                    <definition>Steep Pool Right RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>44005</code>
-                    <definition>Steep Pool RM 60.9</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>43001</code>
-                    <definition>Steep release_RR &amp; RL</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2004</code>
-                    <definition>Steep Riffle_10' ext</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2003</code>
-                    <definition>Steep Riffle_100' below</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2002</code>
-                    <definition>Steep Riffle_Opposite RST</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>2005</code>
-                    <definition>Steep Side Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6002</code>
-                    <definition>Sunset East bank</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>6003</code>
-                    <definition>Sunset West bank</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
+                <textDomain>
+                  <definition>Name of the trap or trap location. Levels = c("8.4", "8.3")</definition>
+                </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>visitTime</attributeName>
+          <attributeName>visitType</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 5, or 6 this is the date and the time of day of arrival at the trap. For visitTypeID=2, 3, or 4 this is the date and the time of day the trap was emptied.)</attributeDefinition>
+          <attributeDefinition>Code for work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", &#13;
+"End trapping", "Service/adjust/clean trap", "Drive-by only")</attributeDefinition>
           <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
-                  <maximum exclusive="false">2022-05-18 02:30:56</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", &#13;
+"End trapping", "Service/adjust/clean trap", "Drive-by only")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>visitTime2</attributeName>
+          <attributeName>fishProcessed</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 2, or 3 this is the date and the time of day the trap began fishing. For visitTypeID=4, 5, or 6 this is the date and the time of day of the end of the visit.)</attributeDefinition>
+          <attributeDefinition>If fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", &#13;
+"No catch data; fish released")</attributeDefinition>
           <measurementScale>
-            <dateTime>
-              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
-              <dateTimeDomain>
-                <bounds>
-                  <minimum exclusive="false">2006-10-02 02:30:00</minimum>
-                  <maximum exclusive="false">2022-05-18 02:30:56</maximum>
-                </bounds>
-              </dateTimeDomain>
-            </dateTime>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>If fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", &#13;
+"No catch data; fish released")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapFunctioning</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", &#13;
+"Trap not in service")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", &#13;
+"Trap not in service")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -3140,25 +457,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>rpmSecondsAtStart</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Number of seconds in the rpm measurement before cleaning trap (normally this will be 60)</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>second</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">60</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>rpmRevolutionsAtEnd</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Number of revolutions per minute before cleaning the trap</attributeDefinition>
@@ -3178,110 +476,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>rpmSecondsAtEnd</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Number of seconds in the rpm measurement after cleaning trap (normally this will be 60)</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>second</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">60</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>debrisVolume</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Volume of debris removed from trap live box</attributeDefinition>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>cubicMeter</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">0</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>visitType</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Type of visit. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
-"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
-)</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Type of visit. Levels = c("Continue trapping", "End trapping", "Start trap &amp; begin trapping", &#13;
-"Unplanned restart", "Service/adjust/clean trap", "Drive-by only"&#13;
-)</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>fishProcessed</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>If fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
-"No catch data; fish released")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>If fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
-"No catch data; fish released")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>trapFunctioning</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", &#13;
-"Trap not in service")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", &#13;
-"Trap not in service")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>debrisVolumeCat</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Description of volume of debris removed from live box. c("Partially Blocked", NA, "Clear", "Completely Blocked", "Backed up into Cone", &#13;
-"Not recorded")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Description of volume of debris removed from live box. c("Partially Blocked", NA, "Clear", "Completely Blocked", "Backed up into Cone", &#13;
-"Not recorded")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>includeCatch</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</attributeDefinition>
@@ -3296,35 +490,1077 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>inThalweg</attributeName>
+          <attributeName>discharge</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Whether trap was sampling in the thalweg of the stream at the beginning of the trap visit.</attributeDefinition>
+          <attributeDefinition>Instantaneous stream discharge measurement</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>cubicFeetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">32.9</minimum>
+                  <maximum exclusive="false">28700</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterVel</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Instantaneous water velocity measured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>metersPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">5431</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterTemp</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Instantaneous water temperature measured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">6.9</minimum>
+                  <maximum exclusive="false">78</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lightPenetration</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Instantaneous light penetration measured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.2</minimum>
+                  <maximum exclusive="false">214</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>turbidity</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Instantaneous turbidity measurement</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>Nephelometric Turbidity Units (NTU)</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.42</minimum>
+                  <maximum exclusive="false">1513</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dissolvedOxygen</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Instantaneous dissolved oxygen measurement</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>conductivity</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Instantaneous conductivity measurement</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>microSiemens per centimeter</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>7195</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>catch.csv</entityName>
+      <entityDescription>Daily catch</entityDescription>
+      <physical>
+        <objectName>catch.csv</objectName>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/catch.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ProjectDescriptionID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST, projectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Whether trap was sampling in the thalweg of the stream at the beginning of the trap visit.</definition>
+                  <definition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST, projectDescriptionID = 9.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>halfCone</attributeName>
-          <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Whether trap was in half cone configuration. Levels = c("No", "Yes")</attributeDefinition>
+          <attributeName>trapVisitID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP TrapVisit table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP TrapVisit table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2022-10-22 14:30:52</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Name of the sampling site. Levels = "Knights Landing RST"</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Whether trap was in half cone configuration. Levels = c("No", "Yes")</definition>
+                  <definition>Name of the sampling site. Levels = "Knights Landing RST"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>subSiteName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("8.4", "8.3")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the trap or trap location. Levels = c("8.4", "8.3")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Code for work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", &#13;
+"End trapping", "Service/adjust/clean trap", "Drive-by only")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", &#13;
+"End trapping", "Service/adjust/clean trap", "Drive-by only")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>catchRawID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Primary key in the CAMP CatchRaw table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key in the CAMP CatchRaw table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Common name of marked species.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of marked species.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign Key to the CAMP Release table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>run</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Run designation assigned at a later date.  Levels = c(NA, "Winter", "Late fall", "Spring", "Fall", "Not recorded", &#13;
+"Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run designation assigned at a later date.  Levels = c(NA, "Winter", "Late fall", "Spring", "Fall", "Not recorded", &#13;
+"Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishOrigin</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Not recorded", "Unknown")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Not recorded", "Unknown")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lifeStage</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Life stage of the fish. c("Not recorded", "Parr", "Ammocoete", "Button-up fry", "Juvenile", &#13;
+"Silvery parr", "Smolt", "Fry", "Yolk sac fry (alevin)", "Yearling", &#13;
+"Adult", "YOY (young of the year)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Life stage of the fish. c("Not recorded", "Parr", "Ammocoete", "Button-up fry", "Juvenile", &#13;
+"Silvery parr", "Smolt", "Fry", "Yolk sac fry (alevin)", "Yearling", &#13;
+"Adult", "YOY (young of the year)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>forkLength</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Fork length of the fish measured in millimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">991</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>totalLength</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Total length of the fish measured in millimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>weight</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Weight of the fish measured in grams</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1004</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>n</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">15105</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>146853</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>recaptures.csv</entityName>
+      <entityDescription>Recaptured catch</entityDescription>
+      <physical>
+        <objectName>recaptures.csv</objectName>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/recaptures.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ProjectDescriptionID</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST, projectDescriptionID = 9.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST, projectDescriptionID = 9.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>catchRawID</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Primary key in the CAMP CatchRaw table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key in the CAMP CatchRaw table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapVisitID</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP TrapVisit table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP TrapVisit table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Common name of marked species.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of marked species.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign Key to the CAMP Release table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>run</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Run designation assigned at a later date.  Levels = c(NA, "Winter", "Late fall", "Spring", "Fall", "Not recorded", &#13;
+"Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run designation assigned at a later date.  Levels = c(NA, "Winter", "Late fall", "Spring", "Fall", "Not recorded", &#13;
+"Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishOrigin</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Not recorded", "Unknown")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Not recorded", "Unknown")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lifeStage</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Life stage of the fish. c("Not recorded", "Parr", "Ammocoete", "Button-up fry", "Juvenile", &#13;
+"Silvery parr", "Smolt", "Fry", "Yolk sac fry (alevin)", "Yearling", &#13;
+"Adult", "YOY (young of the year)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Life stage of the fish. c("Not recorded", "Parr", "Ammocoete", "Button-up fry", "Juvenile", &#13;
+"Silvery parr", "Smolt", "Fry", "Yolk sac fry (alevin)", "Yearling", &#13;
+"Adult", "YOY (young of the year)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>forkLength</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Fork length of the fish measured in millimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">33</minimum>
+                  <maximum exclusive="false">163</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>n</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">4</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2007-01-02 09:15:00</minimum>
+                  <maximum exclusive="false">2022-04-01 10:15:03</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Code for work that was done during visit to trap. Levels = c("Unplanned restart", "Continue trapping", "End trapping")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for work that was done during visit to trap. Levels = c("Unplanned restart", "Continue trapping", "End trapping")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteName</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Name of the sampling site. Levels = "Knights Landing RST"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the sampling site. Levels = "Knights Landing RST"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>subSiteName</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("8.4", "8.3")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the trap or trap location. Levels = c("8.4", "8.3")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markType</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Type of mark found on fish. Levels = c("Pigment / dye", "Elastomer", "Fin clip")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Type of mark found on fish. Levels = c("Pigment / dye", "Elastomer", "Fin clip")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markColor</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Color of mark found on fish. Levels =c("Brown", "Purple / Violet", "Orange", "Not applicable (n/a)", &#13;
+"Blue", "Pink", "Green", "Not recorded")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Color of mark found on fish. Levels =c("Brown", "Purple / Violet", "Orange", "Not applicable (n/a)", &#13;
+"Blue", "Pink", "Green", "Not recorded")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markPosition</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Position of mark found on fish. Levels = c("Whole body", "Nose", "Adipose fin")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Position of mark found on fish. Levels = c("Whole body", "Nose", "Adipose fin")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markCode</attributeName>
+          <attributeLabel>recaptures</attributeLabel>
+          <attributeDefinition>Information for mark types that contain codes. Levels = c(NA, "F")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Information for mark types that contain codes. Levels = c(NA, "F")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>7177</numberOfRecords>
+      <numberOfRecords>327</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>release_fish.csv</entityName>
+      <entityDescription>Release fish measurements</entityDescription>
+      <physical>
+        <objectName>release_fish.csv</objectName>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release_fish.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>projectDescriptionID</attributeName>
+          <attributeLabel>release_fish</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST Program, projectDescriptionID = 9.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST Program, projectDescriptionID = 9.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseFishID</attributeName>
+          <attributeLabel>release_fish</attributeLabel>
+          <attributeDefinition>Primary key in the CAMP ReleaseFish table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key in the CAMP ReleaseFish table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>release_fish</attributeLabel>
+          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign Key to the CAMP Release table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>forkLength</attributeName>
+          <attributeLabel>release_fish</attributeLabel>
+          <attributeDefinition>Fork length of the fish measured in milimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">41</minimum>
+                  <maximum exclusive="false">191</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>2560</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>release.csv</entityName>
+      <entityDescription>Release trial summary</entityDescription>
+      <physical>
+        <objectName>release.csv</objectName>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/release.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>projectDescriptionID</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST Program, projectDescriptionID = 9.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP ProjectDescription table. For Knight's Landing RST Program, projectDescriptionID = 9.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseTime</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Date and time of release</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-12-18 13:15:50</minimum>
+                  <maximum exclusive="false">2022-03-11 09:45:37</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Common name of marked species. Levels = c("Chinook salmon", "Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of marked species. Levels = c("Chinook salmon", "Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedRun</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Run of fish marked. Levels = c("Not recorded", "Other", "Fall", "Late fall")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run of fish marked. Levels = c("Not recorded", "Other", "Fall", "Late fall")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedLifeStage</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Lifestage of fish marked. Levels =c(NA, "Juvenile", "Smolt")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Lifestage of fish marked. Levels =c(NA, "Juvenile", "Smolt")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedFishOrigin</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Origin or production type of fish marked. Levels =c("Unknown", "Natural", "Not recorded", "Hatchery")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin or production type of fish marked. Levels =c("Unknown", "Natural", "Not recorded", "Hatchery")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sourceOfFishSite</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Site where fish used for release were from. Levels = c("Knights Landing RST", "Not applicable", "Not yet assigned"&#13;
+)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Site where fish used for release were from. Levels = c("Knights Landing RST", "Not applicable", "Not yet assigned"&#13;
+)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseSite</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Site where fish were released. Levels = c("Knights Landing release site", "Not applicable")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Site where fish were released. Levels = c("Knights Landing release site", "Not applicable")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseSubSite</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Subsite (within site) where fish were released. Corresponds to a trap location.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Subsite (within site) where fish were released. Corresponds to a trap location.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>nReleased</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Number of fish released that were alive with mark intact</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">81</minimum>
+                  <maximum exclusive="false">7180</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>testDays</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Number of days this trap test is considered valid</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>day</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">136</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkType</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Mark type that was applied to the release group. Levels = c("Pigment / dye", "Fin clip", "Elastomer", NA)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mark type that was applied to the release group. Levels = c("Pigment / dye", "Fin clip", "Elastomer", NA)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkColor</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Color of mark that was applied to the release group. Levels = c("Brown", "Orange", "Pink", "Not applicable (n/a)", "Green", &#13;
+NA, "Red", "Blue", "Purple / Violet")&#13;
+"Green", "Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Color of mark that was applied to the release group. Levels = c("Brown", "Orange", "Pink", "Not applicable (n/a)", "Green", &#13;
+NA, "Red", "Blue", "Purple / Violet")&#13;
+"Green", "Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkPosition</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Position of the mark that was applied to the mark group. Levels = c("Whole body", "Nose", "Pelvic fin, left", NA)</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Position of the mark that was applied to the mark group. Levels = c("Whole body", "Nose", "Pelvic fin, left", NA)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>IncludeInAnalysis</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Code for whether release trial should be included. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for whether release trial should be included. Levels = c("Yes", "No")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>89</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
@@ -3344,6 +1580,9 @@
         </unit>
         <unit id="revolutions per minute" name="revolutions per minute" unitType="dimensionless">
           <description>Number of revolutions per minute</description>
+        </unit>
+        <unit id="microSiemens per centimeter" name="microSiemens per centimeter" unitType="dimensionless">
+          <description>Unit of measurement for conductivity</description>
         </unit>
       </unitList>
     </metadata>
