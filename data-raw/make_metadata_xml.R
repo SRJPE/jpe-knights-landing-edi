@@ -4,31 +4,27 @@ library(readxl)
 library(EML)
 
 datatable_metadata <-
-  dplyr::tibble(filepath = c("data/environmental.csv",
+  dplyr::tibble(filepath = c("data/trap.csv",
                              "data/catch.csv",
-                             "data/markexisting.csv",
-                             "data/release.csv",
-                             "data/releasefish.csv",
-                             "data/trap.csv"),
-                attribute_info = c("data-raw/metadata/camp_environmental_metadata.xlsx",
-                                   "data-raw/metadata/camp_catch_metadata.xlsx",
-                                   "data-raw/metadata/camp_markexisting_metadata.xlsx",
-                                   "data-raw/metadata/camp_release_metadata.xlsx",
-                                   "data-raw/metadata/camp_releasefish_metadata.xlsx",
-                                   "data-raw/metadata/camp_trap_metadata.xlsx"),
-                datatable_description = c("Environmental covariates",
+                             "data/recaptures.csv",
+                             "data/release_fish.csv",
+                             "data/release.csv"),
+                attribute_info = c("data-raw/metadata/trap_metadata.xlsx",
+                                   "data-raw/metadata/catch_metadata.xlsx",
+                                   "data-raw/metadata/recaptures_metadata.xlsx",
+                                   "data-raw/metadata/release_fish_metadata.xlsx",
+                                   "data-raw/metadata/release_metadata.xlsx"),
+                datatable_description = c("Daily trap operations",
                                           "Daily catch",
-                                          "Existing marks on catch",
-                                          "Release trial summary",
+                                          "Recaptured catch",
                                           "Release fish measurements",
-                                          "Daily trap operations"),
+                                          "Release trial summary"),
                 datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/",
-                                       c("environmental.csv",
+                                       c("trap.csv",
                                          "catch.csv",
-                                         "mark_existing.csv",
-                                         "release.csv",
+                                         "recaptures.csv",
                                          "release_fish.csv",
-                                         "trap.csv")))
+                                         "release.csv")))
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/camp_metadata.xlsx"
 sheets <- readxl::excel_sheets(excel_path)
