@@ -19,7 +19,7 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release fish measurements",
                                           "Release trial summary"),
-                datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/jpe-knights-edi/main/data/",
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/",
                                        c("trap.csv",
                                          "catch.csv",
                                          "recaptures.csv",
