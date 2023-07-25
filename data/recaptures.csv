@@ -77,8 +77,8 @@ ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,run,fishOrigin,
 9,25265,1544,Chinook salmon,260,Fall,Natural,Not recorded,40,1,2014-02-20T07:30:03Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
 9,26564,1572,Chinook salmon,261,Fall,Natural,Parr,45,1,2014-02-27T08:00:03Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
 9,26603,1573,Chinook salmon,261,Fall,Natural,Parr,48,1,2014-02-27T08:00:03Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Brown,Whole body,NA
-9,27894,1598,Chinook salmon,262,Not recorded,Natural,Not recorded,NA,1,2014-03-05T17:30:03Z,End trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
-9,27961,1599,Chinook salmon,262,Not recorded,Unknown,Not recorded,NA,4,2014-03-05T17:30:03Z,End trapping,Knights Landing RST,8.4,Pigment / dye,Brown,Whole body,NA
+9,27894,1598,Chinook salmon,262,NA,Natural,Not recorded,NA,1,2014-03-05T17:30:03Z,End trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
+9,27961,1599,Chinook salmon,262,NA,Unknown,Not recorded,NA,4,2014-03-05T17:30:03Z,End trapping,Knights Landing RST,8.4,Pigment / dye,Brown,Whole body,NA
 9,28881,1618,Chinook salmon,263,Fall,Natural,Button-up fry,36,1,2014-03-11T17:30:03Z,End trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
 9,28882,1618,Chinook salmon,263,Fall,Natural,Button-up fry,44,1,2014-03-11T17:30:03Z,End trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
 9,28883,1618,Chinook salmon,263,Fall,Natural,Button-up fry,36,1,2014-03-11T17:30:03Z,End trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
@@ -316,7 +316,7 @@ ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,run,fishOrigin,
 9,109642,4423,Chinook salmon,554,Fall,Natural,Parr,39,1,2007-03-06T09:15:00Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
 9,109682,4424,Chinook salmon,554,Fall,Natural,Parr,40,1,2007-03-06T09:15:00Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Brown,Whole body,NA
 9,109683,4424,Chinook salmon,554,Fall,Natural,Parr,44,1,2007-03-06T09:15:00Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Brown,Whole body,NA
-9,113114,4385,Chinook salmon,556,Not recorded,Natural,Not recorded,NA,1,2007-02-15T11:00:00Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
+9,113114,4385,Chinook salmon,556,NA,Natural,Not recorded,NA,1,2007-02-15T11:00:00Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Brown,Whole body,NA
 9,114060,4670,Chinook salmon,582,Late fall,Hatchery,Not recorded,103,1,2017-10-19T11:30:40Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Green,Nose,NA
 9,114060,4670,Chinook salmon,582,Late fall,Hatchery,Not recorded,103,1,2017-10-19T11:30:40Z,Continue trapping,Knights Landing RST,8.4,Fin clip,Not applicable (n/a),Adipose fin,NA
 9,114583,4760,Chinook salmon,583,Late fall,Hatchery,Silvery parr,95,1,2017-12-01T10:30:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Purple / Violet,Nose,NA
@@ -325,4 +325,4 @@ ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,run,fishOrigin,
 9,152127,7182,Chinook salmon,605,Fall,Not recorded,Silvery parr,63,1,2022-03-26T09:45:44Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,NA
 9,152128,7195,Chinook salmon,606,Fall,Not recorded,Parr,62,1,2022-04-01T10:15:03Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,NA
 9,152129,7034,Chinook salmon,608,NA,Natural,Fry,NA,2,2021-12-22T10:00:00Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Not recorded,Whole body,NA
-9,152130,7051,Chinook salmon,609,Not applicable (n/a),Natural,Parr,NA,1,2021-12-31T10:15:05Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Not recorded,Whole body,NA
+9,152130,7051,Chinook salmon,609,NA,Natural,Parr,NA,1,2021-12-31T10:15:05Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Not recorded,Whole body,NA
