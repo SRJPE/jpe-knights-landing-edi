@@ -121,10 +121,10 @@
       <geographicCoverage>
         <geographicDescription>Knights Landing Rotary Screw Trap</geographicDescription>
         <boundingCoordinates>
-          <westBoundingCoordinate>-121.6921</westBoundingCoordinate>
-          <eastBoundingCoordinate>-121.6921</eastBoundingCoordinate>
-          <northBoundingCoordinate>38.7911</northBoundingCoordinate>
-          <southBoundingCoordinate>38.7911</southBoundingCoordinate>
+          <westBoundingCoordinate>-121.712</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.6802</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.8065</northBoundingCoordinate>
+          <southBoundingCoordinate>38.7687</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
