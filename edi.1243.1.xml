@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-07-25</pubDate>
+    <pubDate>2023-07-31</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -121,10 +121,10 @@
       <geographicCoverage>
         <geographicDescription>Knights Landing Rotary Screw Trap</geographicDescription>
         <boundingCoordinates>
-          <westBoundingCoordinate>-121.6988</westBoundingCoordinate>
-          <eastBoundingCoordinate>-121.6988</eastBoundingCoordinate>
-          <northBoundingCoordinate>38.8023</northBoundingCoordinate>
-          <southBoundingCoordinate>38.8023</southBoundingCoordinate>
+          <westBoundingCoordinate>-121.6921</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.6921</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.7911</northBoundingCoordinate>
+          <southBoundingCoordinate>38.7911</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
@@ -234,10 +234,10 @@
           <section>
             <title>References</title>
             <para>
-      Fisher, F. W. 1992. Chinook salmon, Oncorhynchus tshawytscha,
+      Fisher, F.W. (1992). Chinook salmon, Oncorhynchus tshawytscha,
       growth and occurrence in the Sacramento-San Joaquin River system.
-      Draft report dated June 1992. Sacramento, CA: Inland Fisheries
-      Division, California Department Fish and Game. 42 p.
+      Draft copy. California Department of Fish and Game, Inland
+      Fisheries Division Office Report, Sacramento, CA. June 1992.
     </para>
           </section>
         </description>
