@@ -1,92 +1,90 @@
-projectDescriptionID,releaseID,releasePurposeID,markedTaxonID,markedRunID,markedLifeStageID,markedFishOriginID,sourceOfFishSiteID,releaseSiteID,releaseSubSiteID,nMortWhileHandling,nMortAtCheck,nReleased,releaseTime,releaseLightConditionID,testDays,includeTestID,appliedMarkTypeID,appliedMarkColorID,appliedMarkPositionID,appliedMarkCode
-9,0,252,252,251,NA,251,255,252,NA,NA,NA,NA,NA,NA,0,2,NA,NA,NA,NA
-9,1,1,161980,251,NA,253,63000,62000,62000,NA,NA,2870,2015-02-10T09:00:17Z,NA,4,1,3,1,21,NA
-9,255,252,252,251,NA,251,255,252,NA,NA,NA,NA,NA,NA,0,2,NA,NA,NA,NA
-9,256,1,161980,251,NA,253,63000,62000,62000,NA,NA,1278,2015-02-14T09:00:17Z,NA,10,1,3,1,21,NA
-9,258,1,161980,3,NA,1,255,62000,NA,NA,NA,570,2015-03-24T08:10:16Z,NA,7,1,1,9,13,NA
-9,259,1,161980,3,NA,1,255,62000,NA,NA,NA,513,2015-03-31T13:00:17Z,NA,10,1,1,14,13,NA
-9,260,1,161980,251,NA,253,63000,62000,62000,NA,NA,136,2014-02-19T10:30:17Z,NA,6,1,3,1,21,NA
-9,261,1,161980,251,NA,253,63000,62000,NA,NA,NA,149,2014-02-25T11:00:17Z,NA,6,1,3,1,21,NA
-9,262,1,161980,251,NA,253,63000,62000,NA,NA,NA,488,2014-03-05T15:30:17Z,NA,5,1,3,1,21,NA
-9,263,1,161980,251,NA,253,63000,62000,NA,NA,NA,590,2014-03-11T07:45:17Z,NA,7,1,3,1,21,NA
-9,264,1,161980,251,NA,253,63000,62000,62000,NA,NA,81,2014-03-19T08:30:17Z,NA,7,1,3,1,21,NA
-9,265,1,161980,250,NA,253,63000,62000,NA,NA,NA,284,2012-04-16T13:15:17Z,NA,10,1,3,1,21,NA
-9,266,1,161980,250,NA,253,63000,62000,NA,NA,NA,1944,2012-03-30T14:45:17Z,NA,10,1,3,1,21,NA
-9,267,1,161980,250,NA,253,63000,62000,NA,NA,NA,696,2012-03-19T16:00:17Z,NA,10,1,3,1,21,NA
-9,268,1,161980,250,NA,253,63000,62000,NA,NA,NA,196,2012-02-04T00:30:17Z,NA,10,1,3,1,21,NA
-9,269,1,161980,250,NA,253,63000,62000,NA,NA,NA,2291,2012-01-28T14:00:17Z,NA,6,1,3,1,21,NA
-9,270,1,161980,250,NA,2,63000,62000,NA,68,NA,3202,2016-01-10T09:45:17Z,NA,12,1,3,1,21,NA
-9,271,1,161980,250,NA,2,63000,62000,NA,30,NA,2864,2016-01-23T09:18:17Z,NA,8,1,3,1,21,NA
-9,272,1,161980,250,NA,2,63000,62000,NA,142,NA,419,2016-04-16T12:00:17Z,NA,8,1,3,1,21,NA
-9,273,1,161980,3,NA,1,255,62000,NA,15,NA,632,2016-02-10T10:20:17Z,NA,62,1,1,10,13,NA
-9,274,1,161980,3,NA,1,255,62000,NA,NA,NA,479,2016-02-17T10:00:17Z,NA,136,1,1,2,13,NA
-9,275,1,161980,3,NA,1,255,62000,NA,5,NA,489,2016-02-24T11:15:17Z,NA,28,1,1,9,13,NA
-9,276,1,161980,3,NA,1,255,62000,NA,0,NA,490,2016-03-16T11:15:17Z,NA,13,1,1,11,13,NA
-9,277,1,161980,3,NA,1,255,62000,NA,6,NA,488,2016-03-23T13:45:17Z,NA,13,1,1,9,13,NA
-9,278,1,161980,3,NA,1,255,62000,NA,7,NA,470,2016-03-30T10:20:17Z,NA,93,1,1,11,13,NA
-9,279,1,161980,3,NA,1,255,62000,NA,0,NA,516,2016-04-06T09:48:16Z,NA,20,1,1,9,13,NA
-9,280,1,161980,3,NA,1,255,62000,NA,0,NA,473,2016-04-13T09:48:16Z,NA,79,1,1,10,13,NA
-9,281,1,161980,3,NA,1,255,62000,NA,0,NA,507,2016-04-27T09:42:17Z,NA,65,1,1,9,13,NA
-9,283,1,161980,250,NA,2,63000,62000,NA,34,NA,1407,2017-01-16T09:40:16Z,NA,28,1,3,1,21,NA
-9,285,1,161980,250,NA,2,63000,62000,NA,9,NA,182,2017-01-28T09:49:17Z,NA,38,1,3,1,21,NA
-9,286,1,161980,5,NA,1,255,62000,NA,231,NA,334,2016-09-16T10:14:17Z,NA,45,1,1,11,13,NA
-9,287,1,161980,5,NA,1,255,62000,NA,407,NA,311,2016-09-29T14:30:17Z,NA,45,1,1,10,13,NA
-9,288,1,161980,5,NA,1,255,62000,NA,9,NA,304,2016-10-12T14:29:17Z,NA,45,1,1,9,13,NA
-9,289,1,161980,5,NA,1,255,62000,NA,1,NA,152,2016-10-19T15:44:17Z,NA,45,1,1,5,13,NA
-9,290,1,161980,5,NA,1,255,62000,NA,16,NA,969,2016-11-09T15:30:17Z,NA,45,1,1,11,13,NA
-9,291,1,161980,5,NA,1,255,62000,NA,0,NA,1126,2016-11-30T16:45:17Z,NA,45,1,1,2,13,NA
-9,292,1,161980,3,NA,1,255,62000,NA,22,NA,987,2017-03-08T09:10:17Z,NA,45,1,1,10,13,NA
-9,293,1,161980,3,NA,1,255,62000,NA,6,NA,950,2017-03-15T09:00:17Z,NA,45,1,1,11,13,NA
-9,294,1,161980,3,NA,1,255,62000,NA,13,NA,906,2017-03-22T09:00:17Z,NA,45,1,1,9,13,NA
-9,296,1,161980,251,NA,251,63000,62000,NA,NA,NA,341,2006-12-18T13:15:50Z,NA,13,1,3,1,21,NA
-9,551,1,161980,251,NA,251,63000,62000,NA,NA,NA,1307,2006-12-31T15:15:50Z,NA,45,1,3,1,21,NA
-9,552,1,161980,251,NA,251,63000,62000,NA,NA,NA,1670,2007-02-17T13:00:50Z,NA,7,1,3,1,21,NA
-9,553,1,161980,251,NA,251,63000,62000,NA,NA,NA,1052,2007-02-24T13:00:50Z,NA,9,1,3,1,21,NA
-9,554,1,161980,251,NA,251,63000,62000,NA,NA,NA,596,2007-03-03T11:30:50Z,NA,56,1,3,1,21,NA
-9,555,1,161980,251,NA,251,63000,62000,NA,NA,NA,712,2007-04-30T11:00:50Z,NA,30,1,3,1,21,NA
-9,556,1,161980,251,NA,251,63000,62000,NA,NA,NA,2031,2007-02-13T17:45:50Z,NA,3,1,3,1,21,NA
-9,557,1,161980,251,NA,251,63000,62000,NA,NA,NA,3500,2008-01-07T17:00:50Z,NA,4,1,3,1,21,NA
-9,558,1,161980,251,NA,251,63000,62000,NA,NA,NA,892,2008-01-12T17:00:50Z,NA,7,1,3,1,21,NA
-9,559,1,161980,251,NA,251,63000,62000,NA,NA,NA,2612,2008-01-29T15:30:50Z,NA,4,1,3,1,21,NA
-9,560,1,161980,251,NA,251,63000,62000,NA,NA,NA,7180,2008-02-02T14:00:50Z,NA,7,1,3,1,21,NA
-9,561,1,161980,251,NA,251,63000,62000,NA,NA,NA,554,2008-02-09T12:00:50Z,NA,7,1,3,1,21,NA
-9,562,1,161980,251,NA,251,63000,62000,NA,NA,NA,243,2008-02-16T11:30:50Z,NA,11,1,3,1,21,NA
-9,563,1,161980,251,NA,251,63000,62000,NA,NA,NA,626,2008-02-27T13:30:50Z,NA,3,1,3,1,21,NA
-9,564,1,161980,251,NA,251,63000,62000,NA,NA,NA,1058,2008-03-01T13:30:50Z,NA,7,1,3,1,21,NA
-9,565,1,161980,251,NA,251,63000,62000,NA,NA,NA,250,2009-01-29T11:45:50Z,NA,9,1,3,1,21,NA
-9,566,1,161980,251,NA,251,63000,62000,NA,NA,NA,2212,2009-02-22T15:20:50Z,NA,6,1,3,1,21,NA
-9,567,1,161980,251,NA,251,63000,62000,NA,NA,NA,2761,2009-03-01T16:30:50Z,NA,6,1,3,1,21,NA
-9,568,1,161980,251,NA,251,63000,62000,NA,NA,NA,1106,2009-03-15T15:15:50Z,NA,6,1,3,1,21,NA
-9,569,1,161980,251,NA,251,63000,62000,NA,NA,NA,1234,2009-03-21T14:00:50Z,NA,7,1,3,1,21,NA
-9,570,1,161980,251,NA,251,63000,62000,NA,NA,NA,1106,2009-03-08T13:15:50Z,NA,7,1,3,1,21,NA
-9,571,1,161980,251,NA,251,63000,62000,NA,NA,NA,465,2010-01-20T16:00:50Z,NA,3,1,3,1,21,NA
-9,572,1,161980,251,NA,251,63000,62000,NA,NA,NA,3273,2010-01-23T16:00:50Z,NA,5,1,3,1,21,NA
-9,573,1,161980,251,NA,251,63000,62000,NA,NA,NA,1096,2010-01-30T16:00:50Z,NA,7,1,3,1,21,NA
-9,574,1,161980,251,NA,251,255,62000,NA,NA,NA,399,2010-02-10T16:00:50Z,NA,7,1,3,1,21,NA
-9,575,1,161980,251,NA,251,63000,62000,NA,NA,NA,171,2010-03-03T16:00:50Z,NA,7,1,3,1,21,NA
-9,576,1,161980,251,NA,251,63000,62000,NA,NA,NA,708,2011-01-03T13:00:50Z,NA,7,1,3,1,21,NA
-9,577,1,161980,251,NA,251,63000,62000,NA,NA,NA,370,2011-02-23T12:15:50Z,NA,7,1,3,1,21,NA
-9,578,1,161980,251,NA,251,63000,62000,NA,NA,NA,414,2011-03-21T12:00:50Z,NA,7,1,3,1,21,NA
-9,579,1,161980,251,NA,251,63000,62000,NA,NA,NA,205,2011-03-30T12:15:50Z,NA,7,1,3,1,21,NA
-9,580,1,161980,251,NA,251,63000,62000,NA,NA,NA,136,2011-04-23T11:15:50Z,NA,7,1,3,1,21,NA
-9,581,1,161980,5,8,1,NA,62000,62001,1,NA,1033,2017-09-27T16:20:17Z,NA,21,1,1,10,13,NA
-9,582,1,161980,5,8,1,NA,62000,NA,3,NA,1311,2017-10-18T16:45:17Z,NA,21,1,1,5,13,NA
-9,583,1,161980,5,8,1,NA,62000,NA,90,NA,947,2017-11-30T10:10:17Z,NA,40,1,1,11,13,NA
-9,584,1,161980,250,10,253,NA,62000,NA,5,NA,240,2018-04-12T10:20:17Z,NA,40,1,3,1,21,NA
-9,585,1,161980,5,8,1,NA,62000,NA,NA,46,959,2017-11-08T16:30:17Z,NA,22,1,1,10,13,NA
-9,586,1,161980,5,8,1,252,62000,NA,42,NA,520,2018-10-25T09:41:17Z,NA,14,1,3,10,13,NA
-9,587,1,161980,5,8,1,252,62000,NA,26,NA,585,2018-10-25T09:55:17Z,NA,14,1,2,252,7,NA
-9,588,1,161980,5,8,1,252,62000,NA,364,NA,642,2018-11-08T10:30:17Z,NA,91,1,1,9,13,NA
-9,589,1,161980,250,10,253,63000,62000,NA,30,NA,293,2019-02-07T11:45:17Z,NA,35,1,3,1,21,NA
-9,590,1,161980,250,10,253,63000,62000,NA,27,NA,792,2019-04-13T11:00:17Z,NA,12,1,3,1,21,NA
-9,591,1,161980,3,10,1,252,62000,NA,1,NA,1114,2019-03-14T09:57:17Z,NA,13,1,1,10,13,NA
-9,592,1,161980,3,10,1,252,62000,NA,2,NA,910,2019-03-28T09:15:17Z,NA,13,1,1,9,13,NA
-9,593,1,161980,3,10,1,252,62000,NA,1,NA,1121,2019-04-11T11:15:17Z,NA,12,1,1,5,13,NA
-9,594,1,161980,251,10,253,63000,62000,NA,23,NA,127,2019-04-25T09:00:17Z,NA,57,2,3,1,21,NA
-9,595,1,161980,251,10,251,63000,62000,NA,18,NA,100,2021-02-04T10:05:50Z,NA,6,1,3,1,21,NA
-9,597,1,161980,251,10,251,63000,62000,NA,28,NA,264,2021-02-09T10:00:49Z,NA,22,1,3,1,21,NA
-9,598,1,161980,251,10,251,63000,62000,NA,32,NA,137,2021-02-11T10:00:49Z,NA,10,1,3,1,21,NA
-9,599,1,161980,251,10,251,63000,62000,NA,9,NA,246,2021-03-22T09:45:50Z,NA,6,1,3,1,21,NA
-9,600,1,161980,251,10,251,63000,62000,NA,21,NA,198,2021-03-24T09:15:49Z,NA,6,1,3,1,21,NA
-9,601,1,161980,251,10,251,63000,62000,NA,20,NA,112,2021-03-25T10:00:49Z,NA,6,1,3,1,21,NA
-9,602,1,161980,3,10,1,63000,62000,NA,143,NA,128,2021-04-01T10:30:08Z,NA,10,1,3,1,21,NA
+projectDescriptionID,releaseID,releaseTime,commonName,markedRun,markedLifeStage,markedFishOrigin,sourceOfFishSite,releaseSite,releaseSubSite,nReleased,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,IncludeInAnalysis
+9,1,2015-02-10T09:00:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,2870,4,Pigment / dye,Brown,Whole body,Yes
+9,256,2015-02-14T09:00:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,1278,10,Pigment / dye,Brown,Whole body,Yes
+9,260,2014-02-19T10:30:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,136,6,Pigment / dye,Brown,Whole body,Yes
+9,261,2014-02-25T11:00:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,149,6,Pigment / dye,Brown,Whole body,Yes
+9,262,2014-03-05T15:30:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,488,5,Pigment / dye,Brown,Whole body,Yes
+9,263,2014-03-11T07:45:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,590,7,Pigment / dye,Brown,Whole body,Yes
+9,264,2014-03-19T08:30:17Z,Chinook salmon,Not recorded,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,81,7,Pigment / dye,Brown,Whole body,Yes
+9,265,2012-04-16T13:15:17Z,Chinook salmon,Other,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,284,10,Pigment / dye,Brown,Whole body,Yes
+9,266,2012-03-30T14:45:17Z,Chinook salmon,Other,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,1944,10,Pigment / dye,Brown,Whole body,Yes
+9,267,2012-03-19T16:00:17Z,Chinook salmon,Other,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,696,10,Pigment / dye,Brown,Whole body,Yes
+9,268,2012-02-04T00:30:17Z,Chinook salmon,Other,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,196,10,Pigment / dye,Brown,Whole body,Yes
+9,269,2012-01-28T14:00:17Z,Chinook salmon,Other,NA,Unknown,Knights Landing RST,Knights Landing release site,NA,2291,6,Pigment / dye,Brown,Whole body,Yes
+9,270,2016-01-10T09:45:17Z,Chinook salmon,Other,NA,Natural,Knights Landing RST,Knights Landing release site,NA,3202,12,Pigment / dye,Brown,Whole body,Yes
+9,271,2016-01-23T09:18:17Z,Chinook salmon,Other,NA,Natural,Knights Landing RST,Knights Landing release site,NA,2864,8,Pigment / dye,Brown,Whole body,Yes
+9,272,2016-04-16T12:00:17Z,Chinook salmon,Other,NA,Natural,Knights Landing RST,Knights Landing release site,NA,419,8,Pigment / dye,Brown,Whole body,Yes
+9,283,2017-01-16T09:40:17Z,Chinook salmon,Other,NA,Natural,Knights Landing RST,Knights Landing release site,NA,1407,28,Pigment / dye,Brown,Whole body,Yes
+9,285,2017-01-28T09:49:17Z,Chinook salmon,Other,NA,Natural,Knights Landing RST,Knights Landing release site,NA,182,38,Pigment / dye,Brown,Whole body,Yes
+9,296,2006-12-18T13:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,341,13,Pigment / dye,Brown,Whole body,Yes
+9,551,2006-12-31T15:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1307,45,Pigment / dye,Brown,Whole body,Yes
+9,552,2007-02-17T13:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1670,7,Pigment / dye,Brown,Whole body,Yes
+9,553,2007-02-24T13:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1052,9,Pigment / dye,Brown,Whole body,Yes
+9,554,2007-03-03T11:30:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,596,56,Pigment / dye,Brown,Whole body,Yes
+9,555,2007-04-30T11:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,712,30,Pigment / dye,Brown,Whole body,Yes
+9,556,2007-02-13T17:45:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,2031,3,Pigment / dye,Brown,Whole body,Yes
+9,557,2008-01-07T17:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,3500,4,Pigment / dye,Brown,Whole body,Yes
+9,558,2008-01-12T17:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,892,7,Pigment / dye,Brown,Whole body,Yes
+9,559,2008-01-29T15:30:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,2612,4,Pigment / dye,Brown,Whole body,Yes
+9,560,2008-02-02T14:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,7180,7,Pigment / dye,Brown,Whole body,Yes
+9,561,2008-02-09T12:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,554,7,Pigment / dye,Brown,Whole body,Yes
+9,562,2008-02-16T11:30:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,243,11,Pigment / dye,Brown,Whole body,Yes
+9,563,2008-02-27T13:30:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,626,3,Pigment / dye,Brown,Whole body,Yes
+9,564,2008-03-01T13:30:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1058,7,Pigment / dye,Brown,Whole body,Yes
+9,565,2009-01-29T11:45:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,250,9,Pigment / dye,Brown,Whole body,Yes
+9,566,2009-02-22T15:20:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,2212,6,Pigment / dye,Brown,Whole body,Yes
+9,567,2009-03-01T16:30:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,2761,6,Pigment / dye,Brown,Whole body,Yes
+9,568,2009-03-15T15:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1106,6,Pigment / dye,Brown,Whole body,Yes
+9,569,2009-03-21T14:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1234,7,Pigment / dye,Brown,Whole body,Yes
+9,570,2009-03-08T13:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1106,7,Pigment / dye,Brown,Whole body,Yes
+9,571,2010-01-20T16:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,465,3,Pigment / dye,Brown,Whole body,Yes
+9,572,2010-01-23T16:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,3273,5,Pigment / dye,Brown,Whole body,Yes
+9,573,2010-01-30T16:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,1096,7,Pigment / dye,Brown,Whole body,Yes
+9,575,2010-03-03T16:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,171,7,Pigment / dye,Brown,Whole body,Yes
+9,576,2011-01-03T13:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,708,7,Pigment / dye,Brown,Whole body,Yes
+9,577,2011-02-23T12:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,370,7,Pigment / dye,Brown,Whole body,Yes
+9,578,2011-03-21T12:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,414,7,Pigment / dye,Brown,Whole body,Yes
+9,579,2011-03-30T12:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,205,7,Pigment / dye,Brown,Whole body,Yes
+9,580,2011-04-23T11:15:50Z,Chinook salmon,Not recorded,NA,Not recorded,Knights Landing RST,Knights Landing release site,NA,136,7,Pigment / dye,Brown,Whole body,Yes
+9,589,2019-02-07T11:45:17Z,Chinook salmon,Other,Juvenile,Unknown,Knights Landing RST,Knights Landing release site,NA,293,35,Pigment / dye,Brown,Whole body,Yes
+9,590,2019-04-13T11:00:17Z,Chinook salmon,Other,Juvenile,Unknown,Knights Landing RST,Knights Landing release site,NA,792,12,Pigment / dye,Brown,Whole body,Yes
+9,594,2019-04-25T09:00:17Z,Chinook salmon,Not recorded,Juvenile,Unknown,Knights Landing RST,Knights Landing release site,NA,127,57,Pigment / dye,Brown,Whole body,No
+9,595,2021-02-04T10:05:50Z,Chinook salmon,Not recorded,Juvenile,Not recorded,Knights Landing RST,Knights Landing release site,NA,100,6,Pigment / dye,Brown,Whole body,Yes
+9,597,2021-02-09T10:00:50Z,Chinook salmon,Not recorded,Juvenile,Not recorded,Knights Landing RST,Knights Landing release site,NA,264,22,Pigment / dye,Brown,Whole body,Yes
+9,598,2021-02-11T10:00:50Z,Chinook salmon,Not recorded,Juvenile,Not recorded,Knights Landing RST,Knights Landing release site,NA,137,10,Pigment / dye,Brown,Whole body,Yes
+9,599,2021-03-22T09:45:50Z,Chinook salmon,Not recorded,Juvenile,Not recorded,Knights Landing RST,Knights Landing release site,NA,246,6,Pigment / dye,Brown,Whole body,Yes
+9,600,2021-03-24T09:15:50Z,Chinook salmon,Not recorded,Juvenile,Not recorded,Knights Landing RST,Knights Landing release site,NA,198,6,Pigment / dye,Brown,Whole body,Yes
+9,601,2021-03-25T10:00:50Z,Chinook salmon,Not recorded,Juvenile,Not recorded,Knights Landing RST,Knights Landing release site,NA,112,6,Pigment / dye,Brown,Whole body,Yes
+9,602,2021-04-01T10:30:08Z,Chinook salmon,Fall,Juvenile,Hatchery,Knights Landing RST,Knights Landing release site,NA,128,10,Pigment / dye,Brown,Whole body,Yes
+9,608,2021-12-21T10:45:35Z,Chinook salmon,Not recorded,Juvenile,Natural,Knights Landing RST,Knights Landing release site,NA,275,7,Pigment / dye,Brown,Whole body,Yes
+9,609,2021-12-30T09:45:37Z,Chinook salmon,Not recorded,Juvenile,Natural,Knights Landing RST,Knights Landing release site,NA,212,7,Pigment / dye,Orange,Whole body,Yes
+9,610,2022-01-10T10:00:37Z,Chinook salmon,Not recorded,Juvenile,Natural,Knights Landing RST,Knights Landing release site,NA,320,7,Pigment / dye,Orange,Whole body,Yes
+9,586,2018-10-25T09:41:17Z,Chinook salmon,Late fall,Smolt,Hatchery,Not applicable,Knights Landing release site,NA,520,14,Pigment / dye,Pink,Nose,Yes
+9,587,2018-10-25T09:55:17Z,Chinook salmon,Late fall,Smolt,Hatchery,Not applicable,Knights Landing release site,NA,585,14,Fin clip,NA,"Pelvic fin, left",Yes
+9,588,2018-11-08T10:30:17Z,Chinook salmon,Late fall,Smolt,Hatchery,Not applicable,Knights Landing release site,NA,642,91,Elastomer,Orange,Nose,Yes
+9,591,2019-03-14T09:57:17Z,Chinook salmon,Fall,Juvenile,Hatchery,Not applicable,Knights Landing release site,NA,1114,13,Elastomer,Pink,Nose,Yes
+9,592,2019-03-28T09:15:17Z,Chinook salmon,Fall,Juvenile,Hatchery,Not applicable,Knights Landing release site,NA,910,13,Elastomer,Orange,Nose,Yes
+9,593,2019-04-11T11:15:17Z,Chinook salmon,Fall,Juvenile,Hatchery,Not applicable,Knights Landing release site,NA,1121,12,Elastomer,Green,Nose,Yes
+9,603,2022-03-11T09:45:37Z,Chinook salmon,Fall,NA,Hatchery,Not applicable,Knights Landing release site,NA,500,7,Elastomer,Orange,Nose,Yes
+9,255,NA,Not applicable (n/a),Not recorded,NA,Not recorded,Not yet assigned,Not applicable,NA,NA,0,NA,NA,NA,No
+9,258,2015-03-24T08:10:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,570,7,Elastomer,Orange,Nose,Yes
+9,259,2015-03-31T13:00:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,513,10,Elastomer,Red,Nose,Yes
+9,273,2016-02-10T10:20:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,632,62,Elastomer,Pink,Nose,Yes
+9,274,2016-02-17T10:00:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,479,136,Elastomer,Blue,Nose,Yes
+9,275,2016-02-24T11:15:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,489,28,Elastomer,Orange,Nose,Yes
+9,276,2016-03-16T11:15:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,490,13,Elastomer,Purple / Violet,Nose,Yes
+9,277,2016-03-23T13:45:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,488,13,Elastomer,Orange,Nose,Yes
+9,278,2016-03-30T10:20:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,470,93,Elastomer,Purple / Violet,Nose,Yes
+9,279,2016-04-06T09:48:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,516,20,Elastomer,Orange,Nose,Yes
+9,280,2016-04-13T09:48:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,473,79,Elastomer,Pink,Nose,Yes
+9,281,2016-04-27T09:42:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,507,65,Elastomer,Orange,Nose,Yes
+9,286,2016-09-16T10:14:17Z,Chinook salmon,Late fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,334,45,Elastomer,Purple / Violet,Nose,Yes
+9,287,2016-09-29T14:30:17Z,Chinook salmon,Late fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,311,45,Elastomer,Pink,Nose,Yes
+9,288,2016-10-12T14:29:17Z,Chinook salmon,Late fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,304,45,Elastomer,Orange,Nose,Yes
+9,289,2016-10-19T15:44:17Z,Chinook salmon,Late fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,152,45,Elastomer,Green,Nose,Yes
+9,290,2016-11-09T15:30:17Z,Chinook salmon,Late fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,969,45,Elastomer,Purple / Violet,Nose,Yes
+9,291,2016-11-30T16:45:17Z,Chinook salmon,Late fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,1126,45,Elastomer,Blue,Nose,Yes
+9,292,2017-03-08T09:10:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,987,45,Elastomer,Pink,Nose,Yes
+9,293,2017-03-15T09:00:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,950,45,Elastomer,Purple / Violet,Nose,Yes
+9,294,2017-03-22T09:00:17Z,Chinook salmon,Fall,NA,Hatchery,Not yet assigned,Knights Landing release site,NA,906,45,Elastomer,Orange,Nose,Yes
+9,574,2010-02-10T16:00:50Z,Chinook salmon,Not recorded,NA,Not recorded,Not yet assigned,Knights Landing release site,NA,399,7,Pigment / dye,Brown,Whole body,Yes
