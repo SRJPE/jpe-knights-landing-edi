@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-08-04</pubDate>
+    <pubDate>2023-09-05</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -254,6 +254,10 @@
         <electronicMailAddress>jeanine.phillips@wildlife.ca.gov</electronicMailAddress>
         <role>Project Lead</role>
       </personnel>
+      <award>
+        <funderName>California Department of Water Resources; U.S. Bureau of Reclamation</funderName>
+        <title>Interagency Ecological Program currently funded through California Department of Water Resources and the U.S. Bureau of Reclamation; Past Funding: Interagency Ecological Program funded through California Department of Water Resources</title>
+      </award>
     </project>
     <dataTable>
       <entityName>trap.csv</entityName>
