@@ -4,11 +4,11 @@ library(readxl)
 library(EML)
 
 datatable_metadata <-
-  dplyr::tibble(filepath = c("data/trap.csv",
-                             "data/catch.csv",
-                             "data/recaptures.csv",
-                             "data/release_fish.csv",
-                             "data/release.csv"),
+  dplyr::tibble(filepath = c("data/knights_trap_edi.csv",
+                             "data/knights_catch_edi.csv",
+                             "data/knights_recapture_edi.csv",
+                             "data/knights_release_fish_edi.csv",
+                             "data/knights_release_edi.csv"),
                 attribute_info = c("data-raw/metadata/trap_metadata.xlsx",
                                    "data-raw/metadata/catch_metadata.xlsx",
                                    "data-raw/metadata/recaptures_metadata.xlsx",
@@ -20,11 +20,11 @@ datatable_metadata <-
                                           "Release fish measurements",
                                           "Release trial summary"),
                 datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/",
-                                       c("trap.csv",
-                                         "catch.csv",
-                                         "recaptures.csv",
-                                         "release_fish.csv",
-                                         "release.csv")))
+                                       c("knights_trap_edi.csv",
+                                         "knights_catch_edi.csv",
+                                         "knights_recapture_edi.csv",
+                                         "knights_release_fish_edi.csv",
+                                         "knights_release_edi.csv")))
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/KDL_project_metadata.xlsx"
 sheets <- readxl::excel_sheets(excel_path)
@@ -34,8 +34,9 @@ names(metadata) <- sheets
 abstract_docx <- "data-raw/metadata/abstract.docx"
 methods_docx <- "data-raw/metadata/methods.md"
 
-#edi_number <- reserve_edi_id(user_id = Sys.getenv("EDI_USER_ID"), password = Sys.getenv("EDI_PASSWORD"))
-edi_number <- "edi.1243.1"
+#edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"), password = Sys.getenv("edi_password"))
+edi_number <- "edi.1501.1" # reserved 9-20-2023 under srjpe account
+
 
 dataset <- list() %>%
   add_pub_date() %>%
@@ -73,11 +74,13 @@ eml <- list(packageId = edi_number,
             additionalMetadata = list(metadata = list(unitList = unitList))
 )
 
-EML::write_eml(eml, "edi.1243.1.xml")
-EML::eml_validate("edi.1243.1.xml")
+EML::write_eml(eml, paste0(edi_number, ".xml"))
+EML::eml_validate(paste0(edi_number, ".xml"))
 
-# EMLaide::evaluate_edi_package(Sys.getenv("user_ID"), Sys.getenv("password"), "edi.1047.1.xml")
-# EMLaide::upload_edi_package(Sys.getenv("user_ID"), Sys.getenv("password"), "edi.1047.1.xml")
+EMLaide::evaluate_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
+report_df |> filter(Status == "error")
+EMLaide::upload_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
+
 # doc <- read_xml("edi.1243.1.xml")
 # edi_number<- data.frame(edi_number = doc %>% xml_attr("packageId"))
 # update_number <- edi_number %>%
