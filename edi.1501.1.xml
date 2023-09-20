@@ -1324,8 +1324,8 @@
       <entityDescription>Release trial summary</entityDescription>
       <physical>
         <objectName>knights_release_edi.csv</objectName>
-        <size unit="bytes">14241</size>
-        <authentication method="MD5">992cf567d50ac999bb61cedee2a1fcad</authentication>
+        <size unit="bytes">14151</size>
+        <authentication method="MD5">093ed7a2ff1f05d5083e786b96217a19</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
