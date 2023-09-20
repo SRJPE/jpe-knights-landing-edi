@@ -262,10 +262,10 @@
       </award>
     </project>
     <dataTable>
-      <entityName>trap.csv</entityName>
+      <entityName>knights_trap_edi.csv</entityName>
       <entityDescription>Daily trap operations</entityDescription>
       <physical>
-        <objectName>trap.csv</objectName>
+        <objectName>knights_trap_edi.csv</objectName>
         <size unit="bytes">1413821</size>
         <authentication method="MD5">2bdf7a1629777064e09d635b1f9420d5</authentication>
         <dataFormat>
@@ -280,7 +280,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/trap.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/knights_trap_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -632,10 +632,10 @@
       <numberOfRecords>7195</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>catch.csv</entityName>
+      <entityName>knights_catch_edi.csv</entityName>
       <entityDescription>Daily catch</entityDescription>
       <physical>
-        <objectName>catch.csv</objectName>
+        <objectName>knights_catch_edi.csv</objectName>
         <size unit="bytes">19457429</size>
         <authentication method="MD5">9c23bc890b3ec37118b0cd3790a94e38</authentication>
         <dataFormat>
@@ -650,7 +650,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/catch.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/knights_catch_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -937,10 +937,10 @@
       <numberOfRecords>146853</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>recaptures.csv</entityName>
+      <entityName>knights_recapture_edi.csv</entityName>
       <entityDescription>Recaptured catch</entityDescription>
       <physical>
-        <objectName>recaptures.csv</objectName>
+        <objectName>knights_recapture_edi.csv</objectName>
         <size unit="bytes">50576</size>
         <authentication method="MD5">74f11ed9148817076bb398c71d0b1096</authentication>
         <dataFormat>
@@ -955,7 +955,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/recaptures.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/knights_recapture_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -1232,10 +1232,10 @@
       <numberOfRecords>327</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>release_fish.csv</entityName>
+      <entityName>knights_release_fish_edi.csv</entityName>
       <entityDescription>Release fish measurements</entityDescription>
       <physical>
-        <objectName>release_fish.csv</objectName>
+        <objectName>knights_release_fish_edi.csv</objectName>
         <size unit="bytes">35410</size>
         <authentication method="MD5">d9a4ec8485fd01bb691fba70a565127e</authentication>
         <dataFormat>
@@ -1250,7 +1250,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/release_fish.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/knights_release_fish_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -1320,12 +1320,12 @@
       <numberOfRecords>2560</numberOfRecords>
     </dataTable>
     <dataTable>
-      <entityName>release.csv</entityName>
+      <entityName>knights_release_edi.csv</entityName>
       <entityDescription>Release trial summary</entityDescription>
       <physical>
-        <objectName>release.csv</objectName>
-        <size unit="bytes">14153</size>
-        <authentication method="MD5">67994cb0aa63b2617c20e9cbc29b7e7f</authentication>
+        <objectName>knights_release_edi.csv</objectName>
+        <size unit="bytes">14241</size>
+        <authentication method="MD5">992cf567d50ac999bb61cedee2a1fcad</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1338,7 +1338,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/release.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/knights_release_edi.csv</url>
           </online>
         </distribution>
       </physical>
