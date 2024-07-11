@@ -29,4 +29,13 @@ trap_start_end |>
   mutate(ck = trap_end_date - trap_start_date) |>
   filter(ck < 0)
 
+na_check <- trap_start_end |>
+  summarise(
+    na_trap_start_date = sum(is.na(trap_start_date)),
+    na_trap_end_date = sum(is.na(trap_end_date)),
+    na_visitTime = sum(is.na(visitTime)),
+    na_visitTime2 = sum(is.na(visitTime2)),
+  )
+
+
 write_csv(trap_start_end, "data-raw/test_trap_start_end.csv")
