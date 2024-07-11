@@ -7,10 +7,20 @@ library(lubridate)
 catch_raw <- readxl::read_xlsx(here::here("data-raw",
                                           "qry_Knights_CatchRaw_EDI.xlsx")) |>
   mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
+  arrange(subSiteName, visitTime) |>
+  mutate(trap_start_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+                                     T ~ visitTime),
+         trap_end_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+                                   T ~ visitTime2)) |>
   glimpse()
 
 trap_raw <- readxl::read_xlsx(here::here("data-raw",
                                           "qry_Knights_TrapVisit_EDI.xlsx")) |>
+  arrange(subSiteName, visitTime) |>
+  mutate(trap_start_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+                                     T ~ visitTime),
+         trap_end_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+                                   T ~ visitTime2)) |>
   glimpse()
 
 recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
