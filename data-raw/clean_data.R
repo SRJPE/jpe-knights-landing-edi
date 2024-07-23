@@ -2,16 +2,74 @@ library(tidyverse)
 library(knitr)
 library(lubridate)
 
+
+install.packages("EDIutils")
+remotes::install_github("ropensci/EDIutils", ref = "development")
+library(EDIutils)
+
+
 # metadata notes
 
-catch_raw <- readxl::read_xlsx(here::here("data-raw",
-                                          "qry_Knights_CatchRaw_EDI.xlsx")) |>
+# catch ----
+
+#EDI API code
+
+# knights_tables <- read_data_entity_names(packageId = "edi.1501.1")
+#  knights_tables
+#
+#  catch_raw <- read_data_entity(packageId = "edi.1501.1", entityId = knights_tables$entityId[2])
+#  head(catch_raw)
+#
+#  catch_raw <- readr::read_csv(file = catch_raw)
+#
+#  catch_raw <- catch_raw |>
+#    mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
+#   arrange(subSiteName, visitTime) |>
+#   mutate(trap_start_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+#                                         T ~ visitTime),
+#           trap_end_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+#                                       T ~ visitTime2)) |>
+#    glimpse()
+
+catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.xlsx")) |>
   mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
+  arrange(subSiteName, visitTime) |>
+  mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+                                     T ~ visitTime)),
+         trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+                                   T ~ visitTime2))) |>
   glimpse()
+
+
+# trap ----
+
+#EDI API code
+
+# trap_raw <- read_data_entity(packageId = "edi.1501.1", entityId = knights_tables$entityId[1])
+# head(trap_raw)
+#
+# trap_raw <- readr::read_csv(file = trap_raw)
+#
+# trap_raw <- trap_raw |>
+#   arrange(subSiteName, visitTime) |>
+#   mutate(trap_start_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+#                                        T ~ visitTime),
+#          trap_end_date = case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+#                                      T ~ visitTime2)) |>
+#   glimpse()
 
 trap_raw <- readxl::read_xlsx(here::here("data-raw",
                                           "qry_Knights_TrapVisit_EDI.xlsx")) |>
+  arrange(subSiteName, visitTime) |>
+  mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+                                     T ~ visitTime)),
+         trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+                                   T ~ visitTime2))) |>
   glimpse()
+
+
+
+# recapture ---
 
 recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
                                          "qry_Knights_Recaptures_EDI.xlsx")) |>

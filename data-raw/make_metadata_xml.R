@@ -25,6 +25,18 @@ datatable_metadata <-
                                          "knights_recapture_edi.csv",
                                          "knights_release_fish_edi.csv",
                                          "knights_release_edi.csv")))
+
+#placeholder for other_entity lookup tables
+
+# other_entity_metadata_1 <- list("file_name" = "Insert_name.zip",
+#                                 "file_description" = "Lookup tables for ",
+#                                 "file_type" = "zip",
+#                                 "physical" = create_physical("data-raw/metadata/Poxon_and_Bratovich_Supplementary_Report.zip",
+#                                                              data_url = "https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data-raw/metadata/nameofzip"))
+#
+# other_entity_metadata_1$physical$dataFormat <- list("externallyDefinedFormat" = list("formatName" = "zip"))
+
+
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/KDL_project_metadata.xlsx"
 sheets <- readxl::excel_sheets(excel_path)
@@ -35,7 +47,7 @@ abstract_docx <- "data-raw/metadata/abstract.docx"
 methods_docx <- "data-raw/metadata/methods.md"
 
 #edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"), password = Sys.getenv("edi_password"))
-edi_number <- "edi.1501.1" # reserved 9-20-2023 under srjpe account
+edi_number <- "edi.1501.2" # reserved 9-20-2023 under srjpe account
 
 
 dataset <- list() %>%
@@ -79,7 +91,7 @@ EML::eml_validate(paste0(edi_number, ".xml"))
 
 EMLaide::evaluate_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
 report_df |> filter(Status == "error")
-EMLaide::upload_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
+# EMLaide::upload_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
 
 # doc <- read_xml("edi.1243.1.xml")
 # edi_number<- data.frame(edi_number = doc %>% xml_attr("packageId"))

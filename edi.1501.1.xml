@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-09-20</pubDate>
+    <pubDate>2024-07-11</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -330,6 +330,22 @@
           </measurementScale>
         </attribute>
         <attribute>
+          <attributeName>visitTime2</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the end of trap visit. Definition varies based on visitType.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Name of the sampling site. Levels = "Knights Landing RST"</attributeDefinition>
@@ -408,7 +424,7 @@
         <attribute>
           <attributeName>counterAtStart</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Reading on the rotation counter at the start of the trap visit</attributeDefinition>
+          <attributeDefinition>Reading on the digital rotation counter at the start of a sampling period</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -427,7 +443,7 @@
         <attribute>
           <attributeName>counterAtEnd</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Reading on the rotation counter at the end of the trap visit but before resetting</attributeDefinition>
+          <attributeDefinition>Reading on the digital rotation counter at the end of a sampling period to represent the total revolutions the trap has completed during the sampling period</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -628,8 +644,40 @@
             </ratio>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>trap_start_date</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Start date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2023-12-24 14:15:08</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trap_end_date</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>End date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
       </attributeList>
-      <numberOfRecords>7195</numberOfRecords>
+      <numberOfRecords>7819</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_catch_edi.csv</entityName>
@@ -694,6 +742,22 @@
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
                   <maximum exclusive="false">2022-10-22 14:30:52</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime2</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the end of trap visit. Definition varies based on visitType.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -933,8 +997,40 @@
             </ratio>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>trap_start_date</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Start date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trap_end_date</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>End date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2006-10-02 09:30:00</minimum>
+                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
       </attributeList>
-      <numberOfRecords>146853</numberOfRecords>
+      <numberOfRecords>158719</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_recapture_edi.csv</entityName>
@@ -1033,12 +1129,12 @@
         <attribute>
           <attributeName>run</attributeName>
           <attributeLabel>recaptures</attributeLabel>
-          <attributeDefinition>Run designation assigned at a later date.  Levels = c("Fall", "Spring", NA, "Late fall", "Winter")</attributeDefinition>
+          <attributeDefinition>Run designation using length-at-date criteria developed by Sheila Greene.  Levels = c("Fall", "Spring", NA, "Late fall", "Winter")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run designation assigned at a later date.  Levels = c("Fall", "Spring", NA, "Late fall", "Winter")</definition>
+                  <definition>Run designation using length-at-date criteria developed by Sheila Greene.  Levels = c("Fall", "Spring", NA, "Late fall", "Winter")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1047,12 +1143,12 @@
         <attribute>
           <attributeName>fishOrigin</attributeName>
           <attributeLabel>recaptures</attributeLabel>
-          <attributeDefinition>Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Unknown", "Not recorded")</attributeDefinition>
+          <attributeDefinition>Origin determined based on presence or absence of fin clip. Levels = c("Natural", "Hatchery", "Unknown", "Not recorded")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Unknown", "Not recorded")</definition>
+                  <definition>Origin determined based on presence or absence of fin clip. Levels = c("Natural", "Hatchery", "Unknown", "Not recorded")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1061,13 +1157,13 @@
         <attribute>
           <attributeName>lifeStage</attributeName>
           <attributeLabel>recaptures</attributeLabel>
-          <attributeDefinition>Life stage of the fish. Levels = c("Parr", "Button-up fry", "Silvery parr", "Not recorded", "Smolt", &#13;
+          <attributeDefinition>Life stage assigned based on visual observation and photo key of lifestages. Levels = c("Parr", "Button-up fry", "Silvery parr", "Not recorded", "Smolt", &#13;
 "Fry")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Life stage of the fish. Levels = c("Parr", "Button-up fry", "Silvery parr", "Not recorded", "Smolt", &#13;
+                  <definition>Life stage assigned based on visual observation and photo key of lifestages. Levels = c("Parr", "Button-up fry", "Silvery parr", "Not recorded", "Smolt", &#13;
 "Fry")</definition>
                 </textDomain>
               </nonNumericDomain>
@@ -1229,7 +1325,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>327</numberOfRecords>
+      <numberOfRecords>332</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_release_fish_edi.csv</entityName>
@@ -1317,7 +1413,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>2560</numberOfRecords>
+      <numberOfRecords>2564</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_release_edi.csv</entityName>
@@ -1582,7 +1678,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>89</numberOfRecords>
+      <numberOfRecords>91</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
