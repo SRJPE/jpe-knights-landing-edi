@@ -30,7 +30,7 @@
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2024-07-17</pubDate>
+    <pubDate>2024-07-23</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -266,8 +266,8 @@
       <entityDescription>Daily trap operations</entityDescription>
       <physical>
         <objectName>knights_trap_edi.csv</objectName>
-        <size unit="bytes">1413821</size>
-        <authentication method="MD5">2bdf7a1629777064e09d635b1f9420d5</authentication>
+        <size unit="bytes">1910564</size>
+        <authentication method="MD5">9ad26b3404a8c7e0a4fd7bd72c8d4d1c</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -684,8 +684,8 @@
       <entityDescription>Daily catch</entityDescription>
       <physical>
         <objectName>knights_catch_edi.csv</objectName>
-        <size unit="bytes">19457429</size>
-        <authentication method="MD5">9c23bc890b3ec37118b0cd3790a94e38</authentication>
+        <size unit="bytes">30960439</size>
+        <authentication method="MD5">f85099feac232ce72e4066555776183b</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1037,8 +1037,8 @@
       <entityDescription>Recaptured catch</entityDescription>
       <physical>
         <objectName>knights_recapture_edi.csv</objectName>
-        <size unit="bytes">50576</size>
-        <authentication method="MD5">74f11ed9148817076bb398c71d0b1096</authentication>
+        <size unit="bytes">51677</size>
+        <authentication method="MD5">b090297c02c972867d19385d80463ed8</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1332,8 +1332,8 @@
       <entityDescription>Release fish measurements</entityDescription>
       <physical>
         <objectName>knights_release_fish_edi.csv</objectName>
-        <size unit="bytes">35410</size>
-        <authentication method="MD5">d9a4ec8485fd01bb691fba70a565127e</authentication>
+        <size unit="bytes">38029</size>
+        <authentication method="MD5">8adbe94af3be4a37cf995fc5642e3209</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1420,8 +1420,8 @@
       <entityDescription>Release trial summary</entityDescription>
       <physical>
         <objectName>knights_release_edi.csv</objectName>
-        <size unit="bytes">14151</size>
-        <authentication method="MD5">093ed7a2ff1f05d5083e786b96217a19</authentication>
+        <size unit="bytes">14556</size>
+        <authentication method="MD5">31f1306ac4cd96c6a81802f80ad8eb50</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
