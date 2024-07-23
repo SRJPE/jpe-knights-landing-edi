@@ -999,7 +999,7 @@
         </attribute>
         <attribute>
           <attributeName>trap_start_date</attributeName>
-          <attributeLabel>trap</attributeLabel>
+          <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Start date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
           <measurementScale>
             <dateTime>
@@ -1015,7 +1015,7 @@
         </attribute>
         <attribute>
           <attributeName>trap_end_date</attributeName>
-          <attributeLabel>trap</attributeLabel>
+          <attributeLabel>catch</attributeLabel>
           <attributeDefinition>End date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
           <measurementScale>
             <dateTime>
