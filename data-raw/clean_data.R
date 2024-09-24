@@ -31,13 +31,14 @@ library(EDIutils)
 #                                       T ~ visitTime2)) |>
 #    glimpse()
 
+#TODO this update does not have visitTime2, therefore need to check how to derive trap_start_date and trap_end_date. If not, delete from metadata
 catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.xlsx")) |>
   mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
-  arrange(subSiteName, visitTime) |>
-  mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
-                                     T ~ visitTime)),
-         trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
-                                   T ~ visitTime2))) |>
+  # arrange(subSiteName, visitTime) |>
+  # mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+  #                                    T ~ visitTime)),
+  #        trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+  #                                  T ~ visitTime2))) |>
   glimpse()
 
 
@@ -58,13 +59,14 @@ catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.
 #                                      T ~ visitTime2)) |>
 #   glimpse()
 
+#TODO same case for visitTime2 than catch
 trap_raw <- readxl::read_xlsx(here::here("data-raw",
                                           "qry_Knights_TrapVisit_EDI.xlsx")) |>
-  arrange(subSiteName, visitTime) |>
-  mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
-                                     T ~ visitTime)),
-         trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
-                                   T ~ visitTime2))) |>
+  # arrange(subSiteName, visitTime) |>
+  # mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+  #                                    T ~ visitTime)),
+  #        trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+  #                                  T ~ visitTime2))) |>
   glimpse()
 
 
