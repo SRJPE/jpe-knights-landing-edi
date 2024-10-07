@@ -58,14 +58,13 @@ catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.
 #                                      T ~ visitTime2)) |>
 #   glimpse()
 
-#TODO same case for visitTime2 than catch
 trap_raw <- readxl::read_xlsx(here::here("data-raw",
                                           "qry_Knights_TrapVisit_EDI.xlsx")) |>
-  # arrange(subSiteName, visitTime) |>
-  # mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
-  #                                    T ~ visitTime)),
-  #        trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
-  #                                  T ~ visitTime2))) |>
+  arrange(subSiteName, visitTime) |>
+  mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
+                                     T ~ visitTime)),
+         trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
+                                   T ~ visitTime2))) |>
   glimpse()
 
 
