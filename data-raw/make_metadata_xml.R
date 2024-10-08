@@ -83,7 +83,7 @@ eml <- list(packageId = edi_number,
             system = "EDI",
             access = add_access(),
             dataset = dataset,
-            additionalMetadata = list(metadata = list(unitList = unitList))
+            additionalMetadata = list(metadata = list(unitList = unitList)) #TODO look into update identifier # on project metadata
 )
 
 EML::write_eml(eml, paste0(edi_number, ".xml"))
