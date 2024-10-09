@@ -76,6 +76,7 @@ recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
   mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
   glimpse()
 
+# release ---
 release_raw <- readxl::read_xlsx(here::here("data-raw",
                                          "qry_Knights_Release_EDI.xlsx")) |>
   mutate(releaseSubSite = ifelse(releaseSubSite == "N/A", NA, releaseSubSite),
@@ -83,8 +84,11 @@ release_raw <- readxl::read_xlsx(here::here("data-raw",
          appliedMarkPosition = str_replace(appliedMarkPosition, ",", ":")) |>
   glimpse()
 
+# release_raw ---
 release_fish_raw <- readxl::read_xlsx(here::here("data-raw",
                                          "qry_Knights_ReleaseFish_EDI.xlsx")) |>
+  mutate(releaseFishID = as.character(releaseFishID),
+         releaseID = as.character(releaseID)) |>
   glimpse()
 
 # write clean tables ------------------------------------------------------
