@@ -78,6 +78,9 @@ recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
                                              T ~ visitTime)),
          trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
                                            T ~ visitTime2))) |>
+  select(ProjectDescriptionID, catchRawID, trapVisitID, commonName, releaseID, run, fishOrigin, lifeStage, forkLength, n,
+         visitTime, visitTime2, visitType, siteName, subSiteName, markType, markColor, markPosition, markCode, trap_start_date,
+         trap_end_date) |>
   glimpse()
 
 # release ---
