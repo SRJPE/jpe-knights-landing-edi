@@ -19,7 +19,7 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release fish measurements",
                                           "Release trial summary"),
-                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/",
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/updates-10-31-24/data/",
                                        c("knights_trap_edi.csv",
                                          "knights_catch_edi.csv",
                                          "knights_recapture_edi.csv",
@@ -47,7 +47,7 @@ abstract_docx <- "data-raw/metadata/abstract.docx"
 methods_docx <- "data-raw/metadata/methods.md"
 
 #edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"), password = Sys.getenv("edi_password"))
-edi_number <- "edi.1501.2" # reserved 9-20-2023 under srjpe account
+edi_number <- "edi.1501.3" # reserved 9-20-2023 under srjpe account
 
 
 dataset <- list() %>%
