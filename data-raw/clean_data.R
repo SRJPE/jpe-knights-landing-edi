@@ -40,6 +40,11 @@ catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.
                                    T ~ visitTime2))) |>
   glimpse()
 
+#TODO noticed a significantly higher value for forklength (7063). It comes from a record in 2024-03-30 10:15:33. Check if this is an error
+catch_raw |>
+  filter(forkLength > 1000) |>
+  glimpse()
+
 
 # trap ----
 
@@ -76,6 +81,7 @@ recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
   mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
   glimpse()
 
+# release ---
 release_raw <- readxl::read_xlsx(here::here("data-raw",
                                          "qry_Knights_Release_EDI.xlsx")) |>
   mutate(releaseSubSite = ifelse(releaseSubSite == "N/A", NA, releaseSubSite),
@@ -83,8 +89,11 @@ release_raw <- readxl::read_xlsx(here::here("data-raw",
          appliedMarkPosition = str_replace(appliedMarkPosition, ",", ":")) |>
   glimpse()
 
+# release_raw ---
 release_fish_raw <- readxl::read_xlsx(here::here("data-raw",
                                          "qry_Knights_ReleaseFish_EDI.xlsx")) |>
+  mutate(releaseFishID = as.character(releaseFishID),
+         releaseID = as.character(releaseID)) |>
   glimpse()
 
 # write clean tables ------------------------------------------------------
