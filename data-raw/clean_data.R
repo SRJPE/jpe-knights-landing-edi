@@ -40,11 +40,6 @@ catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.
                                    T ~ visitTime2))) |>
   glimpse()
 
-#TODO noticed a significantly higher value for forklength (7063). It comes from a record in 2024-03-30 10:15:33. Check if this is an error
-catch_raw |>
-  filter(forkLength > 1000) |>
-  glimpse()
-
 
 # trap ----
 
