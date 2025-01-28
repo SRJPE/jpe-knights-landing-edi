@@ -15,22 +15,13 @@
     <title>Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Sacramento River at Knights Landing</title>
     <creator>
       <individualName>
-        <givenName>Jeanine</givenName>
-        <surName>Phillips</surName>
-      </individualName>
-      <organizationName>California Department of Fish and Wildlife</organizationName>
-      <electronicMailAddress>jeanine.phillips@wildlife.ca.gov</electronicMailAddress>
-    </creator>
-    <associatedParty>
-      <individualName>
         <givenName>Nick</givenName>
         <surName>Bauer</surName>
       </individualName>
       <organizationName>California Department of Fish and Wildlife</organizationName>
       <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
-      <role>principal investigator</role>
-    </associatedParty>
-    <pubDate>2024-07-23</pubDate>
+    </creator>
+    <pubDate>2024-10-11</pubDate>
     <abstract>
       <para>
     Since 1995, the rotary screw traps (RSTs) at Knights Landing have
@@ -135,7 +126,7 @@
             <calendarDate>2006-10-02</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2022-10-22</calendarDate>
+            <calendarDate>2024-06-04</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -146,11 +137,11 @@
     </maintenance>
     <contact>
       <individualName>
-        <givenName>Jeanine</givenName>
-        <surName>Phillips</surName>
+        <givenName>Nick</givenName>
+        <surName>Bauer</surName>
       </individualName>
       <organizationName>California Department of Fish and Wildlife</organizationName>
-      <electronicMailAddress>jeanine.phillips@wildlife.ca.gov</electronicMailAddress>
+      <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
     </contact>
     <methods>
       <methodStep>
@@ -249,15 +240,16 @@
       <title>Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Sacramento River at Knights Landing</title>
       <personnel>
         <individualName>
-          <givenName>Jeanine</givenName>
-          <surName>Phillips</surName>
+          <givenName>Nick</givenName>
+          <surName>Bauer</surName>
         </individualName>
         <organizationName>California Department of Fish and Wildlife</organizationName>
-        <electronicMailAddress>jeanine.phillips@wildlife.ca.gov</electronicMailAddress>
+        <electronicMailAddress>nick.bauer@wildlife.ca.gov</electronicMailAddress>
         <role>Project Lead</role>
       </personnel>
       <award>
         <funderName>California Department of Water Resources; U.S. Bureau of Reclamation</funderName>
+        <funderIdentifier>NA</funderIdentifier>
         <title>Interagency Ecological Program currently funded through California Department of Water Resources and the U.S. Bureau of Reclamation; Past Funding: Interagency Ecological Program funded through California Department of Water Resources</title>
       </award>
     </project>
@@ -266,8 +258,8 @@
       <entityDescription>Daily trap operations</entityDescription>
       <physical>
         <objectName>knights_trap_edi.csv</objectName>
-        <size unit="bytes">1910564</size>
-        <authentication method="MD5">9ad26b3404a8c7e0a4fd7bd72c8d4d1c</authentication>
+        <size unit="bytes">2146730</size>
+        <authentication method="MD5">e517e922afc81bbfdcb56763d6dd1bcd</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -290,13 +282,16 @@
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
-            <nominal>
+            <ordinal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
-            </nominal>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -304,13 +299,13 @@
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Primary key that defines record in table.</attributeDefinition>
           <measurementScale>
-            <ordinal>
+            <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Primary key that defines record in table.</definition>
                 </textDomain>
               </nonNumericDomain>
-            </ordinal>
+            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -323,7 +318,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2022-10-22 14:30:52</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -339,7 +334,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -472,7 +467,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">5</maximum>
+                  <maximum exclusive="false">5.7</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -491,7 +486,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">5</maximum>
+                  <maximum exclusive="false">6</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -556,7 +551,7 @@
           <measurementScale>
             <ratio>
               <unit>
-                <standardUnit>celsius</standardUnit>
+                <customUnit>Fahrenheit</customUnit>
               </unit>
               <numericDomain>
                 <numberType>real</numberType>
@@ -581,7 +576,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0.2</minimum>
-                  <maximum exclusive="false">214</maximum>
+                  <maximum exclusive="false">434.3</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -637,7 +632,7 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">1</minimum>
+                  <minimum exclusive="false">0</minimum>
                   <maximum exclusive="false">1</maximum>
                 </bounds>
               </numericDomain>
@@ -654,7 +649,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2023-12-24 14:15:08</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -670,22 +665,22 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>7819</numberOfRecords>
+      <numberOfRecords>8209</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_catch_edi.csv</entityName>
       <entityDescription>Daily catch</entityDescription>
       <physical>
         <objectName>knights_catch_edi.csv</objectName>
-        <size unit="bytes">30960439</size>
-        <authentication method="MD5">f85099feac232ce72e4066555776183b</authentication>
+        <size unit="bytes">32534772</size>
+        <authentication method="MD5">c3009b01cf17851c4ca4100616cb5992</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -708,13 +703,16 @@
           <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
-            <nominal>
+            <ordinal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
-            </nominal>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -741,7 +739,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2022-10-22 14:30:52</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -757,7 +755,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -934,7 +932,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">991</maximum>
+                  <maximum exclusive="false">7063</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1007,7 +1005,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -1023,22 +1021,22 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-10-02 09:30:00</minimum>
-                  <maximum exclusive="false">2023-12-25 10:30:12</maximum>
+                  <maximum exclusive="false">2024-06-04 11:00:51</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>158719</numberOfRecords>
+      <numberOfRecords>166592</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_recapture_edi.csv</entityName>
       <entityDescription>Recaptured catch</entityDescription>
       <physical>
         <objectName>knights_recapture_edi.csv</objectName>
-        <size unit="bytes">51677</size>
-        <authentication method="MD5">b090297c02c972867d19385d80463ed8</authentication>
+        <size unit="bytes">72283</size>
+        <authentication method="MD5">0ac004e5b2f585b1e4022e06108f3948</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1061,13 +1059,16 @@
           <attributeLabel>recaptures</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
-            <nominal>
+            <ordinal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
-            </nominal>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -1218,7 +1219,23 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2007-01-02 09:15:00</minimum>
-                  <maximum exclusive="false">2022-04-01 10:15:03</maximum>
+                  <maximum exclusive="false">2023-04-27 10:45:43</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime2</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the end of trap visit. Definition varies based on visitType.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2007-01-02 09:15:00</minimum>
+                  <maximum exclusive="false">2023-04-27 10:45:43</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -1324,6 +1341,38 @@
             </nominal>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>trap_start_date</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Start date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2007-01-02 09:15:00</minimum>
+                  <maximum exclusive="false">2023-04-14 09:45:32</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trap_end_date</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>End date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2007-01-02 09:15:00</minimum>
+                  <maximum exclusive="false">2023-04-27 10:45:43</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
       </attributeList>
       <numberOfRecords>332</numberOfRecords>
     </dataTable>
@@ -1332,8 +1381,8 @@
       <entityDescription>Release fish measurements</entityDescription>
       <physical>
         <objectName>knights_release_fish_edi.csv</objectName>
-        <size unit="bytes">38029</size>
-        <authentication method="MD5">8adbe94af3be4a37cf995fc5642e3209</authentication>
+        <size unit="bytes">35480</size>
+        <authentication method="MD5">eb07baeda1867ecb8a9a2a5456dea504</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1356,13 +1405,16 @@
           <attributeLabel>release_fish</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
-            <nominal>
+            <ordinal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
-            </nominal>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -1413,15 +1465,15 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>2564</numberOfRecords>
+      <numberOfRecords>2565</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>knights_release_edi.csv</entityName>
       <entityDescription>Release trial summary</entityDescription>
       <physical>
         <objectName>knights_release_edi.csv</objectName>
-        <size unit="bytes">14556</size>
-        <authentication method="MD5">31f1306ac4cd96c6a81802f80ad8eb50</authentication>
+        <size unit="bytes">14633</size>
+        <authentication method="MD5">c4a6a48c134064c8772dde96483afc9a</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -1444,13 +1496,16 @@
           <attributeLabel>release</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</attributeDefinition>
           <measurementScale>
-            <nominal>
+            <ordinal>
               <nonNumericDomain>
-                <textDomain>
-                  <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
-                </textDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
               </nonNumericDomain>
-            </nominal>
+            </ordinal>
           </measurementScale>
         </attribute>
         <attribute>
@@ -1477,7 +1532,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">2006-12-18 13:15:50</minimum>
-                  <maximum exclusive="false">2022-03-11 09:45:37</maximum>
+                  <maximum exclusive="false">2024-03-26 10:15:50</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -1678,7 +1733,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>91</numberOfRecords>
+      <numberOfRecords>92</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
@@ -1701,6 +1756,9 @@
         </unit>
         <unit id="microSiemens per centimeter" name="microSiemens per centimeter" unitType="dimensionless">
           <description>Unit of measurement for conductivity</description>
+        </unit>
+        <unit id="Fahrenheit" name="Fahrenheit" unitType="dimensionless">
+          <description>Unit of measurement for temperature</description>
         </unit>
       </unitList>
     </metadata>
