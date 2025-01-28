@@ -19,7 +19,7 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release fish measurements",
                                           "Release trial summary"),
-                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/updates-10-31-24/data/",
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/",
                                        c("knights_trap_edi.csv",
                                          "knights_catch_edi.csv",
                                          "knights_recapture_edi.csv",
