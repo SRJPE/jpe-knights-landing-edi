@@ -55,6 +55,7 @@ clean_zip_data <- function(trap_path, new_path) {
              releaseID = as.character(releaseID))
   }
   # Write updated data back to the temporary directory
+  write_csv(trap_data, trap_file)
   write_csv(cleaned_data, new_file)
   setwd(temp_dir)
   files_to_zip <- list.files(pattern = "^knights_landing", recursive = TRUE)
