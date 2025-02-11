@@ -27,20 +27,14 @@ clean_zip_data <- function(trap_path, new_path) {
     readr::read_csv(new_file) |>
       mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
       arrange(subSiteName, visitTime) |>
-      mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
-                                                 T ~ visitTime)),
-             trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
-                                               T ~ visitTime2)))
+      left_join(trap_data |>
+                  select(trapVisitID, trap_start_date, trap_end_date))
   }else if(grepl("knights_landing_recapture.csv", new_path)) {
     readr::read_csv(new_file) |>
       left_join(trap_data |>
-                  select(trapVisitID, visitTime, visitTime2) |>
+                  select(trapVisitID, visitTime, visitTime2, trap_start_date, trap_end_date) |>
                   distinct()) |>
-      mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run),
-             trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
-                                                 T ~ visitTime)),
-             trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
-                                               T ~ visitTime2))) |>
+      mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
       select(ProjectDescriptionID, catchRawID, trapVisitID, commonName, releaseID, run, fishOrigin, lifeStage, forkLength, n,
              visitTime, visitTime2, visitType, siteName, subSiteName, markType, markColor, markPosition, markCode, trap_start_date,
              trap_end_date)
