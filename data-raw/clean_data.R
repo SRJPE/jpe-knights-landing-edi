@@ -26,6 +26,7 @@ library(lubridate)
 #    glimpse()
 
 catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.xlsx")) |>
+# catch_raw <- read_csv("data-raw/knights_landing_catch.csv")|>
   mutate(run = ifelse(run %in% c("Not applicable (n/a)", "Not recorded"), NA, run)) |>
   arrange(subSiteName, visitTime) |>
   mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
@@ -52,24 +53,26 @@ catch_raw <- readxl::read_xlsx(here::here("data-raw", "qry_Knights_CatchRaw_EDI.
 #                                      T ~ visitTime2)) |>
 #   glimpse()
 
-trap_raw <- readxl::read_xlsx(here::here("data-raw",
-                                          "qry_Knights_TrapVisit_EDI.xlsx"),
-                              col_types = c("numeric", "numeric","date","date","text","text","text","text","text",
-                                            "numeric","numeric","numeric","numeric","text","numeric","numeric",
-                                            "numeric","numeric","numeric","numeric","numeric")) |> # if don't specify col_type then dissolved oxygen and conductivity read as logical
+# trap_raw <- readxl::read_xlsx(here::here("data-raw",
+#                                           "qry_Knights_TrapVisit_EDI.xlsx"),
+#                               col_types = c("numeric", "numeric","date","date","text","text","text","text","text",
+#                                             "numeric","numeric","numeric","numeric","text","numeric","numeric",
+#                                             "numeric","numeric","numeric","numeric","numeric"))
+trap_raw <- read_csv("data-raw/knights_landing_trap.csv")|> # if don't specify col_type then dissolved oxygen and conductivity read as logical
   arrange(subSiteName, visitTime) |>
   mutate(trap_start_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ lag(visitTime2),
                                      T ~ visitTime)),
          trap_end_date = ymd_hms(case_when(visitType %in% c("Continue trapping", "Unplanned restart", "End trapping") ~ visitTime,
                                    T ~ visitTime2))) |>
   glimpse()
-
+#
 
 
 # recapture ---
 
-recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
-                                         "qry_Knights_Recaptures_EDI.xlsx")) |>
+# recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
+#                                          "qry_Knights_Recaptures_EDI.xlsx"))
+recaptures_raw <- read_csv("data-raw/knights_landing_recapture.csv")|>
   left_join(trap_raw |>
               select(trapVisitID, visitTime, visitTime2) |>
               distinct()) |>
@@ -84,27 +87,29 @@ recaptures_raw <- readxl::read_xlsx(here::here("data-raw",
   glimpse()
 
 # release ---
-release_raw <- readxl::read_xlsx(here::here("data-raw",
-                                         "qry_Knights_Release_EDI.xlsx")) |>
+# release_raw <- readxl::read_xlsx(here::here("data-raw",
+#                                          "qry_Knights_Release_EDI.xlsx"))
+release_raw <- read_csv("data-raw/knights_landing_release.csv")|>
   mutate(releaseSubSite = ifelse(releaseSubSite == "N/A", NA, releaseSubSite),
          appliedMarkColor = ifelse(appliedMarkColor == "Not applicable (n/a)", NA, appliedMarkColor),
          appliedMarkPosition = str_replace(appliedMarkPosition, ",", ":")) |>
   glimpse()
 
 # release_raw ---
-release_fish_raw <- readxl::read_xlsx(here::here("data-raw",
-                                         "qry_Knights_ReleaseFish_EDI.xlsx")) |>
+# release_fish_raw <- readxl::read_xlsx(here::here("data-raw",
+#                                          "qry_Knights_ReleaseFish_EDI.xlsx"))
+release_fish_raw <- read_csv("data-raw/knights_landing_releasefish.csv")|>
   mutate(releaseFishID = as.character(releaseFishID),
          releaseID = as.character(releaseID)) |>
   glimpse()
 
 # write clean tables ------------------------------------------------------
 
-write_csv(trap_raw, here::here("data", "knights_trap_edi.csv"))
-write_csv(catch_raw, here::here("data", "knights_catch_edi.csv"))
-write_csv(release_raw, here::here("data", "knights_release_edi.csv"))
-write_csv(release_fish_raw, here::here("data", "knights_release_fish_edi.csv"))
-write_csv(recaptures_raw, here::here("data", "knights_recapture_edi.csv"))
+write_csv(trap_raw, here::here("data", "knights_landing_trap.csv"))
+write_csv(catch_raw, here::here("data", "knights_landing_catch.csv"))
+write_csv(release_raw, here::here("data", "knights_landing_release.csv"))
+write_csv(release_fish_raw, here::here("data", "knights_landing_releasefish.csv"))
+write_csv(recaptures_raw, here::here("data", "knights_landing_recapture.csv"))
 
 
 # read in clean tables ----------------------------------------------------
