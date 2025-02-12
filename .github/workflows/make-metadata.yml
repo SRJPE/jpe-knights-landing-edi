@@ -43,7 +43,7 @@ jobs:
       - name: Check workspace
         run: |
           echo ${{ github.workspace }}
-      - name: Run bind historic data
+      - name: Run clean zip data
         run: |
           source('data-raw/clean_zip_data.R')
         shell: Rscript {0}

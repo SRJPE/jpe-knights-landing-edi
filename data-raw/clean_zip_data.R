@@ -1,8 +1,8 @@
-library(tidyverse)
 library(knitr)
 library(lubridate)
 library(readr)
 library(zip)
+library(dplyr)
 
 clean_zip_data <- function(trap_path, new_path) {
   # Temporary directories for extraction and writing
