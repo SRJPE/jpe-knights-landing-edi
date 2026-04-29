@@ -1,2 +1,5 @@
 projectDescriptionID,releaseID,releaseTime,commonName,markedRun,markedLifeStage,markedFishOrigin,sourceOfFishSite,releaseSite,releaseSubSite,nReleased,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,IncludeInAnalysis
-9,621,2025-02-12T12:30:50Z,Chinook salmon,Fall,NA,Natural,Knights Landing RST,Knights Landing release site,NA,134,7,Pigment / dye,Brown,Whole body,Yes
+9,625,2026-01-10T13:20:34Z,Chinook salmon,Fall,,Natural,Knights Landing RST,Knights Landing release site,,1544.0,3,Pigment / dye,Orange,Whole body,Yes
+9,627,2026-01-23T14:06:50Z,Chinook salmon,Fall,,Natural,Knights Landing RST,Knights Landing release site,,1908.0,3,Pigment / dye,Orange,Whole body,Yes
+9,628,2026-01-30T13:30:50Z,Chinook salmon,Fall,,Natural,Knights Landing RST,Knights Landing release site,,1060.0,3,Pigment / dye,Orange,Whole body,Yes
+9,629,2026-02-06T13:00:50Z,Chinook salmon,Fall,,Natural,Knights Landing RST,Knights Landing release site,,1059.0,3,Pigment / dye,Orange,Whole body,Yes
