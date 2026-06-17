@@ -1,31 +1,31 @@
-ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,run,fishOrigin,lifeStage,forkLength,n,visitTime,visitTime2,visitType,siteName,subSiteName,markType,markColor,markPosition,markCode,trap_start_date,trap_end_date
-9,191679,9244,Chinook salmon,625,NA,Natural,Button-up fry,37,1,2026-01-11T10:45:17Z,2026-01-11T10:45:17Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-01-10T11:45:07Z,2026-01-11T10:45:17Z
-9,191768,9245,Chinook salmon,625,NA,Natural,Button-up fry,37,1,2026-01-11T10:45:19Z,2026-01-11T10:45:19Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-10T11:45:24Z,2026-01-11T10:45:19Z
-9,192735,9258,Chinook salmon,626,NA,Hatchery,Button-up fry,33,1,2026-01-18T12:00:34Z,2026-01-18T12:00:34Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:11Z,2026-01-18T12:00:34Z
-9,192736,9258,Chinook salmon,626,NA,Hatchery,Button-up fry,33,1,2026-01-18T12:00:34Z,2026-01-18T12:00:34Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:11Z,2026-01-18T12:00:34Z
-9,192818,9259,Chinook salmon,626,NA,Hatchery,Button-up fry,37,1,2026-01-18T12:00:12Z,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:52Z,2026-01-18T12:00:12Z
-9,192819,9259,Chinook salmon,626,NA,Hatchery,Button-up fry,38,1,2026-01-18T12:00:12Z,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:52Z,2026-01-18T12:00:12Z
-9,192820,9259,Chinook salmon,626,NA,Hatchery,Button-up fry,40,1,2026-01-18T12:00:12Z,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:52Z,2026-01-18T12:00:12Z
-9,192821,9259,Chinook salmon,626,NA,Hatchery,Button-up fry,36,1,2026-01-18T12:00:12Z,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:52Z,2026-01-18T12:00:12Z
-9,192822,9259,Chinook salmon,626,NA,Hatchery,Button-up fry,36,1,2026-01-18T12:00:12Z,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:52Z,2026-01-18T12:00:12Z
-9,192823,9259,Chinook salmon,626,NA,Hatchery,Button-up fry,38,1,2026-01-18T12:00:12Z,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-17T12:00:52Z,2026-01-18T12:00:12Z
-9,193741,9270,Chinook salmon,627,NA,Hatchery,Button-up fry,38,1,2026-01-24T11:15:16Z,2026-01-24T11:15:16Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:04Z,2026-01-24T11:15:16Z
-9,193821,9271,Chinook salmon,627,Fall,Hatchery,Button-up fry,37,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193822,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,37,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193823,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,36,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193824,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,38,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193825,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,35,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193826,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,35,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193827,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,44,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,193828,9271,Chinook salmon,627,NA,Hatchery,Button-up fry,39,1,2026-01-24T11:45:35Z,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-23T12:15:28Z,2026-01-24T11:45:35Z
-9,194952,9284,Chinook salmon,628,NA,Natural,Not recorded,NA,2,2026-01-31T13:15:58Z,2026-01-31T13:15:58Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-01-30T11:00:46Z,2026-01-31T13:15:58Z
-9,195051,9285,Chinook salmon,628,NA,Natural,Not recorded,NA,2,2026-01-31T11:15:21Z,2026-01-31T11:15:21Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-30T11:00:27Z,2026-01-31T11:15:21Z
-9,195195,9287,Chinook salmon,628,NA,Natural,Button-up fry,38,1,2026-02-01T11:15:41Z,2026-02-01T11:15:41Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,NA,2026-01-31T11:15:21Z,2026-02-01T11:15:41Z
-9,196096,9298,Chinook salmon,629,NA,Hatchery,Parr,52,1,2026-02-07T10:30:43Z,2026-02-07T10:30:43Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-02-06T11:30:48Z,2026-02-07T10:30:43Z
-9,196097,9298,Chinook salmon,629,NA,Hatchery,Parr,40,1,2026-02-07T10:30:43Z,2026-02-07T10:30:43Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,NA,2026-02-06T11:30:48Z,2026-02-07T10:30:43Z
-9,200180,9443,Chinook salmon,630,NA,Natural,Parr,68,1,2026-05-02T10:15:53Z,2026-05-02T10:15:53Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,NA,2026-05-01T10:30:04Z,2026-05-02T10:15:53Z
-9,200181,9443,Chinook salmon,630,NA,Hatchery,Parr,71,1,2026-05-02T10:15:53Z,2026-05-02T10:15:53Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,NA,2026-05-01T10:30:04Z,2026-05-02T10:15:53Z
-9,200209,9444,Chinook salmon,630,NA,Hatchery,Parr,65,1,2026-05-02T10:15:19Z,2026-05-02T10:15:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,NA,2026-05-01T11:00:45Z,2026-05-02T10:15:19Z
-9,200210,9444,Chinook salmon,630,NA,Hatchery,Parr,84,1,2026-05-02T10:15:19Z,2026-05-02T10:15:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,NA,2026-05-01T11:00:45Z,2026-05-02T10:15:19Z
-9,200211,9444,Chinook salmon,630,NA,Hatchery,Parr,66,1,2026-05-02T10:15:19Z,2026-05-02T10:15:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,NA,2026-05-01T11:00:45Z,2026-05-02T10:15:19Z
-9,200236,9445,Chinook salmon,630,NA,Hatchery,Parr,74,1,2026-05-03T12:00:27Z,2026-05-03T12:00:27Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,NA,2026-05-02T10:15:53Z,2026-05-03T12:00:27Z
+ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,run,fishOrigin,lifeStage,forkLength,n,visitTime,visitType,siteName,subSiteName,markType,markColor,markPosition,markCode
+9,191679,9244,Chinook salmon,625,,Natural,Button-up fry,37.0,1,2026-01-11T10:45:17Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,191768,9245,Chinook salmon,625,,Natural,Button-up fry,37.0,1,2026-01-11T10:45:19Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,192735,9258,Chinook salmon,626,,Hatchery,Button-up fry,33.0,1,2026-01-18T12:00:34Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,192736,9258,Chinook salmon,626,,Hatchery,Button-up fry,33.0,1,2026-01-18T12:00:34Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,192818,9259,Chinook salmon,626,,Hatchery,Button-up fry,37.0,1,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,192819,9259,Chinook salmon,626,,Hatchery,Button-up fry,38.0,1,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,192820,9259,Chinook salmon,626,,Hatchery,Button-up fry,40.0,1,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,192821,9259,Chinook salmon,626,,Hatchery,Button-up fry,36.0,1,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,192822,9259,Chinook salmon,626,,Hatchery,Button-up fry,36.0,1,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,192823,9259,Chinook salmon,626,,Hatchery,Button-up fry,38.0,1,2026-01-18T12:00:12Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193741,9270,Chinook salmon,627,,Hatchery,Button-up fry,38.0,1,2026-01-24T11:15:16Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,193821,9271,Chinook salmon,627,Fall,Hatchery,Button-up fry,37.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193822,9271,Chinook salmon,627,,Hatchery,Button-up fry,37.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193823,9271,Chinook salmon,627,,Hatchery,Button-up fry,36.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193824,9271,Chinook salmon,627,,Hatchery,Button-up fry,38.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193825,9271,Chinook salmon,627,,Hatchery,Button-up fry,35.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193826,9271,Chinook salmon,627,,Hatchery,Button-up fry,35.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193827,9271,Chinook salmon,627,,Hatchery,Button-up fry,44.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,193828,9271,Chinook salmon,627,,Hatchery,Button-up fry,39.0,1,2026-01-24T11:45:35Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,194952,9284,Chinook salmon,628,,Natural,Not recorded,,2,2026-01-31T13:15:58Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,195051,9285,Chinook salmon,628,,Natural,Not recorded,,2,2026-01-31T11:15:21Z,Continue trapping,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,195195,9287,Chinook salmon,628,,Natural,Button-up fry,38.0,1,2026-02-01T11:15:41Z,Unplanned restart,Knights Landing RST,8.4,Pigment / dye,Orange,Whole body,
+9,196096,9298,Chinook salmon,629,Not applicable (n/a),Hatchery,Parr,52.0,1,2026-02-07T10:30:43Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,196097,9298,Chinook salmon,629,Not applicable (n/a),Hatchery,Parr,40.0,1,2026-02-07T10:30:43Z,Continue trapping,Knights Landing RST,8.3,Pigment / dye,Orange,Whole body,
+9,200180,9443,Chinook salmon,630,,Natural,Parr,68.0,1,2026-05-02T10:15:53Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,
+9,200181,9443,Chinook salmon,630,,Hatchery,Parr,71.0,1,2026-05-02T10:15:53Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,
+9,200209,9444,Chinook salmon,630,,Hatchery,Parr,65.0,1,2026-05-02T10:15:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,
+9,200210,9444,Chinook salmon,630,,Hatchery,Parr,84.0,1,2026-05-02T10:15:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,
+9,200211,9444,Chinook salmon,630,,Hatchery,Parr,66.0,1,2026-05-02T10:15:19Z,Continue trapping,Knights Landing RST,8.4,Elastomer,Pink,Nose,
+9,200236,9445,Chinook salmon,630,,Hatchery,Parr,74.0,1,2026-05-03T12:00:27Z,Continue trapping,Knights Landing RST,8.3,Elastomer,Pink,Nose,
