@@ -100,7 +100,6 @@ names(metadata) <- sheets
 
 abstract_docx <- "data-raw/metadata/abstract.docx"
 methods_docx <- "data-raw/metadata/methods.md"
-methods_docx <- "data-raw/metadata/methods.docx"
 
 catch_df <- readr::read_csv(unzip("data/knights_landing.zip", "knights_landing_catch.csv"))
 catch_coverage <- tail(catch_df$visitTime, 1)
