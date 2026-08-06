@@ -4,8 +4,7 @@ library(readxl)
 library(EML)
 library(readr)
 
-secret_edi_username = Sys.getenv("EDI_USERNAME")
-secret_edi_password = Sys.getenv("EDI_PASSWORD")
+secret_edi_api_key = Sys.getenv("EDI_ACCESS_KEY")
 
 datatable_metadata <- dplyr::tibble(
   filepath = character(),
@@ -53,38 +52,7 @@ for (i in seq_along(file_list)){
   }
 }
 
-# datatable_metadata <-
-#   dplyr::tibble(filepath = c("data/knights_trap_edi.csv",
-#                              "data/knights_catch_edi.csv",
-#                              "data/knights_recapture_edi.csv",
-#                              "data/knights_release_fish_edi.csv",
-#                              "data/knights_release_edi.csv"),
-#                 attribute_info = c("data-raw/metadata/trap_metadata.xlsx",
-#                                    "data-raw/metadata/catch_metadata.xlsx",
-#                                    "data-raw/metadata/recaptures_metadata.xlsx",
-#                                    "data-raw/metadata/release_fish_metadata.xlsx",
-#                                    "data-raw/metadata/release_metadata.xlsx"),
-#                 datatable_description = c("Daily trap operations",
-#                                           "Daily catch",
-#                                           "Recaptured catch",
-#                                           "Release fish measurements",
-#                                           "Release trial summary"),
-#                 datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data/",
-#                                        c("knights_trap_edi.csv",
-#                                          "knights_catch_edi.csv",
-#                                          "knights_recapture_edi.csv",
-#                                          "knights_release_fish_edi.csv",
-#                                          "knights_release_edi.csv")))
 
-#placeholder for other_entity lookup tables
-
-# other_entity_metadata_1 <- list("file_name" = "Insert_name.zip",
-#                                 "file_description" = "Lookup tables for ",
-#                                 "file_type" = "zip",
-#                                 "physical" = create_physical("data-raw/metadata/Poxon_and_Bratovich_Supplementary_Report.zip",
-#                                                              data_url = "https://raw.githubusercontent.com/SRJPE/jpe-knights-edi/main/data-raw/metadata/nameofzip"))
-#
-# other_entity_metadata_1$physical$dataFormat <- list("externallyDefinedFormat" = list("formatName" = "zip"))
 zipped_entity_metadata <- c("file_name" = "knights_landing.zip",
                             "file_description" = "Zipped folder",
                             "file_type" = "zip",
@@ -172,40 +140,8 @@ eml <- list(packageId = current_edi_number,
 EML::write_eml(eml, paste0(current_edi_number, ".xml"))
 message("EML Metadata generated")
 print(paste0("Current EDI Number:", current_edi_number))
-EMLaide::update_edi_package(user_id = secret_edi_username,
-                            password = secret_edi_password,
+EMLaide::update_edi_package(api_key = secret_edi_api_key,
                             eml_file_path = paste0(getwd(), "/", current_edi_number, ".xml"),
                             existing_package_identifier = paste0("edi.",previous_edi_id, ".", previous_edi_ver, ".xml"),
                             environment = "production")
 
-# EML::eml_validate(paste0(current_edi_number, ".xml"))
-
-# EMLaide::evaluate_edi_package(Sys.getenv("EDI_USER_ID"), Sys.getenv("EDI_PASSWORD"), paste0(edi_number, ".xml"))
-# report_df |> filter(Status == "error")
-# EMLaide::upload_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
-# EMLaide::update_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), "edi.1501.3", paste0(edi_number, ".xml"))
-
-# doc <- read_xml("edi.1243.1.xml")
-# edi_number<- data.frame(edi_number = doc %>% xml_attr("packageId"))
-# update_number <- edi_number %>%
-#   separate(edi_number, c("edi","package","version"), "\\.") %>%
-#   mutate(version = as.numeric(version) + 1)
-# edi_number <- paste0(update_number$edi, ".", update_number$package, ".", update_number$version)
-
-# preview_coverage <- function(dataset) {
-#   coords <- dataset$coverage$geographicCoverage$boundingCoordinates
-#   north <- coords$northBoundingCoordinate
-#   south <- coords$southBoundingCoordinate
-#   east <- coords$eastBoundingCoordinate
-#   west <- coords$westBoundingCoordinate
-#
-#   leaflet::leaflet() |>
-#     leaflet::addTiles() |>
-#     leaflet::addRectangles(
-#       lng1 = west, lat1 = south,
-#       lng2 = east, lat2 = north,
-#       fillColor = "blue"
-#     )
-# }
-
-# preview_coverage(dataset)
