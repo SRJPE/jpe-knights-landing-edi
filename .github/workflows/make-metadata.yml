@@ -11,7 +11,7 @@ jobs:
       image: ipeng93/edi-workflow:latest
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
-      ED_ACCESS_KEY: ${{ secrets.ED_ACCESS_KEY}}
+      EDI_ACCESS_KEY: ${{ secrets.EDI_ACCESS_KEY}}
     steps:
       - name: Update package lists
         run: sudo apt-get --allow-releaseinfo-change update
